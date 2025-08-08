@@ -24,7 +24,7 @@ const Index = () => {
   const handleOpenInvitation = () => {
     setShowInvitation(true);
     
-    // Start background music
+    // Start background music automatically
     if (audioRef.current && !musicStarted) {
       audioRef.current.play().catch(console.error);
       setMusicStarted(true);

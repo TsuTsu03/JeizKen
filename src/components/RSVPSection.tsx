@@ -65,15 +65,16 @@ const RSVPSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-gold hover:bg-gold/90 text-primary font-semibold px-12 py-4 text-lg rounded-full hover-elegant shadow-warm"
+              className="group relative px-20 py-8 text-xl font-display font-bold tracking-[0.2em] bg-gradient-to-r from-gold via-yellow-400 to-gold hover:from-yellow-400 hover:via-gold hover:to-yellow-400 text-white shadow-2xl hover:shadow-gold/50 transition-all duration-500 border-2 border-yellow-300/30 overflow-hidden rounded-2xl"
             >
               <a 
                 href="https://kennethJeizlrsvp.replit.app" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center"
+                className="relative inline-flex items-center justify-center w-full h-full z-10"
               >
-                RSVP Now
+                <span className="relative z-10">RSVP NOW</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform skew-x-12 group-hover:animate-pulse"></div>
               </a>
             </Button>
 

@@ -28,18 +28,21 @@ const VideoSection = () => {
       </div>
 
       {/* Video Container */}
-      <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+      <div className="absolute inset-0 w-full h-full">
         <video
           ref={videoRef}
-          className="w-full h-full object-contain sm:object-cover"
+          className="w-full h-full object-contain"
           muted
           loop
           playsInline
           style={{
+            display: 'block',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
             margin: 0,
             padding: 0,
-            lineHeight: 0,
-            display: 'block'
+            lineHeight: 0
           }}
         >
           <source
@@ -48,17 +51,6 @@ const VideoSection = () => {
           />
           Your browser does not support the video tag.
         </video>
-      </div>
-
-      {/* Play/Pause Button */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <Button
-          onClick={toggleVideo}
-          size="lg"
-          className="pointer-events-auto bg-white/20 hover:bg-white/30 text-white border-2 border-white/50 rounded-full w-20 h-20 flex items-center justify-center backdrop-blur-sm hover:scale-110 transition-all duration-300"
-        >
-          {isPlaying ? <Pause className="w-8 h-8" /> : <Play className="w-8 h-8 ml-1" />}
-        </Button>
       </div>
 
       {/* Elegant Overlay */}
