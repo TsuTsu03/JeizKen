@@ -52,16 +52,36 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Wedding Color Palette
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					foreground: 'hsl(var(--gold-foreground))'
+				},
+				'warm-brown': 'hsl(var(--warm-brown))',
+				'medium-brown': 'hsl(var(--medium-brown))',
+				'dusty-rose': 'hsl(var(--dusty-rose))',
+				'rose-brown': 'hsl(var(--rose-brown))',
+				'muted-pink': 'hsl(var(--muted-pink))',
+				'soft-blush': 'hsl(var(--soft-blush))',
+				'brick-red': 'hsl(var(--brick-red))',
+				'soft-pink': 'hsl(var(--soft-pink))'
+			},
+			fontFamily: {
+				display: ['var(--font-display)', 'serif'],
+				body: ['var(--font-body)', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-elegant': 'var(--gradient-elegant)',
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-warm': 'var(--gradient-warm)'
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'soft': 'var(--shadow-soft)',
+				'warm': 'var(--shadow-warm)'
+			},
+			transitionTimingFunction: {
+				'elegant': 'cubic-bezier(0.4, 0, 0.2, 1)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -88,7 +108,14 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-up': 'fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+				'fade-scale': 'fadeInScale 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+				'underline-gold': 'underlineGold 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+				'float': 'parallaxFloat 6s ease-in-out infinite'
+			},
+			backdropBlur: {
+				xs: '2px'
 			}
 		}
 	},
