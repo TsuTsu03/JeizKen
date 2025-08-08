@@ -62,7 +62,7 @@ const StorySection = () => {
                     <img
                       src={image}
                       alt={`Our story moment ${index + 1}`}
-                      className="w-full h-64 object-cover rounded"
+                      className="w-full h-64 object-contain rounded"
                       loading="lazy"
                     />
                     <div className="mt-3 text-center">

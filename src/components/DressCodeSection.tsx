@@ -1,13 +1,13 @@
 const DressCodeSection = () => {
   const dressCodeColors = [
-    { name: 'Warm Brown', color: 'hsl(25, 35%, 42%)', hex: '#895e4d' },
-    { name: 'Medium Brown', color: 'hsl(25, 30%, 45%)', hex: '#8a5f4e' },
-    { name: 'Soft Dusty Rose', color: 'hsl(15, 25%, 65%)', hex: '#c18a85' },
-    { name: 'Light Rose Brown', color: 'hsl(15, 30%, 63%)', hex: '#c08984' },
-    { name: 'Warm Muted Pink', color: 'hsl(15, 25%, 62%)', hex: '#be8782' },
-    { name: 'Muted Rose', color: 'hsl(15, 25%, 62%)', hex: '#ba837e' },
-    { name: 'Deep Brick Red', color: 'hsl(5, 45%, 38%)', hex: '#8c3b37' },
-    { name: 'Soft Blush Pink', color: 'hsl(15, 25%, 63%)', hex: '#bf8883' }
+    { name: 'Warm Brown', color: '#895e4d', hex: '#895e4d' },
+    { name: 'Medium Brown', color: '#8a5f4e', hex: '#8a5f4e' },
+    { name: 'Soft Dusty Rose', color: '#c18a85', hex: '#c18a85' },
+    { name: 'Light Rose Brown', color: '#c08984', hex: '#c08984' },
+    { name: 'Warm Muted Pink', color: '#be8782', hex: '#be8782' },
+    { name: 'Muted Rose', color: '#ba837e', hex: '#ba837e' },
+    { name: 'Deep Brick Red', color: '#8c3b37', hex: '#8c3b37' },
+    { name: 'Soft Blush Pink', color: '#bf8883', hex: '#bf8883' }
   ];
 
   return (
@@ -41,9 +41,11 @@ const DressCodeSection = () => {
           <div className="animate-fade-up">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-primary-foreground">👔</span>
-                </div>
+                <img 
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645003/download__6_-removebg-preview_er1f7i.png"
+                  alt="Men's formal attire"
+                  className="w-32 h-32 mx-auto object-contain mb-4"
+                />
                 <h3 className="text-2xl font-display font-semibold text-primary">
                   Gentlemen
                 </h3>
@@ -68,9 +70,11 @@ const DressCodeSection = () => {
           <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-primary">👗</span>
-                </div>
+                <img 
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645048/526212972_2848419708685550_5421439481788505964_n_PhotoGrid-removebg-preview_dqcnk3.png"
+                  alt="Women's formal attire"
+                  className="w-32 h-32 mx-auto object-contain mb-4"
+                />
                 <h3 className="text-2xl font-display font-semibold text-primary">
                   Ladies
                 </h3>

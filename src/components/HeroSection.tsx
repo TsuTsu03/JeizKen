@@ -23,17 +23,31 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <div className="animate-fade-up opacity-0 [animation-delay:0.2s]">
-          <h1 className="text-hero text-white font-display font-bold mb-6 tracking-wider">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-display font-light mb-2 tracking-[0.2em] uppercase">
             Kenneth
-            <span className="block text-gold font-light italic">&</span>
+          </h1>
+          <div className="flex items-center justify-center mb-2">
+            <div className="h-px bg-gold w-12"></div>
+            <span className="text-2xl sm:text-3xl md:text-4xl text-gold font-light italic mx-4">&</span>
+            <div className="h-px bg-gold w-12"></div>
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-display font-light mb-8 tracking-[0.2em] uppercase">
             Jeizl
           </h1>
         </div>
         
         <div className="animate-fade-up opacity-0 [animation-delay:0.6s]">
-          <p className="text-subtitle text-white/90 mb-12 max-w-md mx-auto font-light tracking-wide">
-            Together with their families, request the honor of your presence
+          <p className="text-lg sm:text-xl text-white/90 mb-4 font-light tracking-wide">
+            We're Saying "I Do"
           </p>
+          <div className="space-y-1 mb-12">
+            <p className="text-base sm:text-lg text-white/80 font-light">
+              October 8, 2025 at 2:00 PM
+            </p>
+            <p className="text-base sm:text-lg text-white/80 font-light">
+              Tagaytay Highlands
+            </p>
+          </div>
         </div>
 
         <div className="animate-fade-scale opacity-0 [animation-delay:1s]">

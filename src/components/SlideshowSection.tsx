@@ -58,7 +58,7 @@ const SlideshowSection = () => {
       </div>
 
       {/* Slideshow Container */}
-      <div className="relative w-full h-[70vh] overflow-hidden">
+      <div className="relative w-full h-[70vh] overflow-hidden bg-background">
         {images.map((image, index) => (
           <div
             key={index}
@@ -69,7 +69,7 @@ const SlideshowSection = () => {
             <img
               src={image}
               alt={`Our moments ${index + 1}`}
-              className="w-full h-full object-contain object-top"
+              className="w-full h-full object-contain"
               style={{
                 margin: 0,
                 padding: 0,
@@ -80,9 +80,6 @@ const SlideshowSection = () => {
             />
           </div>
         ))}
-        
-        {/* Elegant overlay for smooth transitions */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background/10 to-transparent pointer-events-none"></div>
       </div>
 
       {/* Progress indicators */}

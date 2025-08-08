@@ -34,7 +34,7 @@ const InvitationSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-gold hover:bg-gold/90 text-primary font-semibold px-8 py-3 rounded-full hover-elegant shadow-warm"
+              className="px-16 py-6 text-lg tracking-widest bg-gradient-to-r from-gold via-gold/90 to-gold hover:from-gold/90 hover:via-gold hover:to-gold/90 text-primary font-semibold rounded-full shadow-2xl hover:shadow-gold/30 hover:scale-105 transition-all duration-300 border-2 border-gold/20 backdrop-blur-sm"
             >
               <a 
                 href="https://kennethJeizlrsvp.replit.app" 
@@ -42,7 +42,7 @@ const InvitationSection = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
               >
-                RSVP Here
+                RSVP HERE
               </a>
             </Button>
           </div>
