@@ -122,7 +122,7 @@ const FAQSection = () => {
             <div className="flex justify-center items-center space-x-2">
               <div className="w-8 h-px bg-[#2c2421]"></div>
               <div className="w-2 h-2 rounded-full animate-float bg-[#2c2421]"></div>
-              <div className="w-8 h-px bg-gold"></div>
+              <div className="w-8 h-px bg-[#2c2421]"></div>
             </div>
           </div>
         </div>
