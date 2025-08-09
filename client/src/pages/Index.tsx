@@ -25,40 +25,43 @@ const Index = () => {
     console.log('handleOpenInvitation called');
     setShowInvitation(true);
     
-    // Start background music automatically
-    if (audioRef.current) {
-      const audio = audioRef.current;
-      audio.volume = 0.3;
-      audio.loop = true;
-      
-      audio.play().then(() => {
-        console.log('Background music started successfully');
-      }).catch((error) => {
-        console.log('Autoplay blocked, will try on next user interaction');
-        // Fallback for autoplay restrictions
-        const playOnInteraction = () => {
-          audio.play().then(() => {
-            console.log('Music started on user interaction');
-          }).catch(console.error);
-          document.removeEventListener('click', playOnInteraction);
-          document.removeEventListener('touchstart', playOnInteraction);
-        };
-        document.addEventListener('click', playOnInteraction);
-        document.addEventListener('touchstart', playOnInteraction);
-      });
-    }
+    // Start background music immediately
+    setTimeout(() => {
+      if (audioRef.current) {
+        const audio = audioRef.current;
+        audio.volume = 0.3;
+        audio.loop = true;
+        
+        console.log('Attempting to play background music...');
+        audio.play().then(() => {
+          console.log('Background music started successfully');
+        }).catch((error) => {
+          console.log('Music play error:', error);
+          console.log('Adding fallback listeners for user interaction');
+          
+          // Fallback for autoplay restrictions
+          const playOnInteraction = () => {
+            console.log('Trying to play music on user interaction...');
+            audio.play().then(() => {
+              console.log('Music started on user interaction');
+            }).catch((err) => {
+              console.error('Failed to play music on interaction:', err);
+            });
+            document.removeEventListener('click', playOnInteraction);
+            document.removeEventListener('touchstart', playOnInteraction);
+          };
+          document.addEventListener('click', playOnInteraction);
+          document.addEventListener('touchstart', playOnInteraction);
+        });
+      } else {
+        console.log('Audio element not found');
+      }
+    }, 100);
   };
-
-  if (!showInvitation) {
-    console.log('Rendering HeroSection, showInvitation:', showInvitation);
-    return <HeroSection onOpenInvitation={handleOpenInvitation} />;
-  }
-
-  console.log('Rendering main content, showInvitation:', showInvitation);
 
   return (
     <>
-      {/* Background Music */}
+      {/* Background Music - Always present */}
       <audio
         ref={audioRef}
         loop
@@ -68,29 +71,30 @@ const Index = () => {
         data-testid="background-audio"
       />
 
-      <div className="min-h-screen bg-background">
-        <Navigation />
-        
-
-        
-        {/* Main Content Sections */}
-        <main>
-          <SlideshowSection />
-          <InvitationSection />
-          <CountdownSection />
-          <StorySection />
-          <VideoSection />
-          <TimelineSection />
-          <VenueSection />
-          <DressCodeSection />
-          <EntourageSection />
-          <GiftSection />
-          <RSVPSection />
-          <FAQSection />
-        </main>
-
-        <Footer />
-      </div>
+      {!showInvitation ? (
+        <HeroSection onOpenInvitation={handleOpenInvitation} />
+      ) : (
+        <div className="min-h-screen bg-background">
+          <Navigation />
+          
+          {/* Main Content Sections */}
+          <main>
+            <SlideshowSection />
+            <InvitationSection />
+            <CountdownSection />
+            <StorySection />
+            <VideoSection />
+            <TimelineSection />
+            <VenueSection />
+            <DressCodeSection />
+            <EntourageSection />
+            <GiftSection />
+            <RSVPSection />
+            <FAQSection />
+            <Footer />
+          </main>
+        </div>
+      )}
     </>
   );
 };
