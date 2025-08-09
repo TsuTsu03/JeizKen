@@ -49,13 +49,13 @@ const SlideshowSection = () => {
 
   return (
     <section id="slideshow" className="relative py-8 bg-background overflow-hidden">
-      {/* Background Slideshow - Clean, No Blur */}
+      {/* Background Slideshow - Natural Images */}
       <div className="absolute inset-0">
         {images.map((image, index) => (
           <div
             key={`bg-${index}`}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-30' : 'opacity-0'
+              index === currentIndex ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <img
@@ -68,9 +68,9 @@ const SlideshowSection = () => {
         ))}
       </div>
 
-      {/* Main Slideshow Container - Compact Design */}
+      {/* Main Slideshow Container - Small Size */}
       <div className="relative z-10 flex items-center justify-center px-4">
-        <div className="relative w-full max-w-md">
+        <div className="relative w-full max-w-xs">
           {images.map((image, index) => (
             <div
               key={index}
@@ -83,7 +83,7 @@ const SlideshowSection = () => {
                 alt={`Kenneth and Jeizl moments ${index + 1}`}
                 className="w-full h-auto object-cover rounded-lg shadow-lg"
                 style={{
-                  height: '300px',
+                  height: '200px',
                   objectFit: 'cover',
                   objectPosition: 'center'
                 }}
