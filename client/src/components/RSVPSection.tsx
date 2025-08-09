@@ -11,12 +11,11 @@ const RSVPSection = () => {
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
-        <div className="mb-12">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-semibold mb-4 relative inline-block text-[#f6de94] tracking-wide">
+        <div className="mb-16">
+          <h2 className="text-section-title font-display text-[#f6de94] mb-6 gold-underline inline-block">
             Please RSVP
-            <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gold"></div>
           </h2>
-          <div className="w-32 h-0.5 bg-white/60 mx-auto mt-2"></div>
+          <div className="w-32 h-0.5 bg-gold mx-auto"></div>
         </div>
 
         {/* Main RSVP Content */}
