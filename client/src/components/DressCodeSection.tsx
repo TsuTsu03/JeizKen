@@ -93,9 +93,9 @@ const DressCodeSection = () => {
               </div>
 
               <div className="space-y-4">
-                <p className="text-center font-semibold text-[#4e403b] text-lg">
-                  Long gown in elegant shades
-                </p>
+                <div className="flex items-center justify-center p-4 bg-gradient-to-r from-[#4e403b] to-[#8B7355] rounded-lg">
+                  <span className="text-white font-semibold">Long gown in elegant shades</span>
+                </div>
 
                 <div className="text-center text-muted-foreground">
                   <p className="leading-relaxed">
