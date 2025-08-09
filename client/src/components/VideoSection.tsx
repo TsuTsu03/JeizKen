@@ -6,7 +6,7 @@ const VideoSection = () => {
   return (
     <section className="relative w-full overflow-hidden bg-black">
       {/* Section Header */}
-      <div className="text-center py-8 px-4 relative">
+      <div className="text-center py-8 px-4 relative text-[#1a1c25] bg-[#4e403b]">
         {/* Decorative Elements */}
         <div className="absolute top-0 left-1/4 w-6 h-6 border border-gold/40 rounded-full"></div>
         <div className="absolute top-2 right-1/4 w-3 h-3 bg-gold/30 rounded-full"></div>
