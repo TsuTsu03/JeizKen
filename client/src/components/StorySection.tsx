@@ -21,7 +21,7 @@ const StorySection = () => {
           <div className="space-y-8">
             <div className="max-w-none relative">
               {/* Decorative elements */}
-              <div className="absolute -left-4 top-0 w-1 h-20 bg-gradient-to-b from-gold to-gold/30"></div>
+              <div className="absolute -left-4 top-0 w-1 h-20 bg-gradient-to-b from-[#4e403b] to-[#4e403b]/30"></div>
 
               <div className="bg-card/30 border-l-4 border-[#4e403b]/40 pl-8 pr-6 py-6 rounded-r-lg mb-8">
                 <p className="text-lg text-foreground/85 leading-relaxed font-body" data-testid="text-story-intro">
@@ -47,8 +47,8 @@ const StorySection = () => {
                 </p>
               </div>
 
-              <div className="bg-gold/10 border-l-4 border-gold pl-8 pr-6 py-8 rounded-r-lg mb-8 relative">
-                <div className="absolute -left-2 top-4 w-4 h-4 bg-gold rounded-full"></div>
+              <div className="bg-[#4e403b]/10 border-l-4 border-[#4e403b] pl-8 pr-6 py-8 rounded-r-lg mb-8 relative">
+                <div className="absolute -left-2 top-4 w-4 h-4 bg-[#4e403b] rounded-full"></div>
                 <p className="text-xl text-foreground/90 leading-relaxed italic font-script" data-testid="text-story-quote">
                   "You've made every day brighter," he told her, "will you make forever even more beautiful?"
                 </p>
@@ -79,10 +79,10 @@ const StorySection = () => {
               >
                 <div className="bg-white p-4 shadow-xl border border-gray-100 max-w-sm mx-auto relative">
                   {/* Decorative corner elements */}
-                  <div className="absolute -top-1 -left-1 w-3 h-3 border-l-2 border-t-2 border-gold/30"></div>
-                  <div className="absolute -top-1 -right-1 w-3 h-3 border-r-2 border-t-2 border-gold/30"></div>
-                  <div className="absolute -bottom-1 -left-1 w-3 h-3 border-l-2 border-b-2 border-gold/30"></div>
-                  <div className="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-gold/30"></div>
+                  <div className="absolute -top-1 -left-1 w-3 h-3 border-l-2 border-t-2 border-[#4e403b]/30"></div>
+                  <div className="absolute -top-1 -right-1 w-3 h-3 border-r-2 border-t-2 border-[#4e403b]/30"></div>
+                  <div className="absolute -bottom-1 -left-1 w-3 h-3 border-l-2 border-b-2 border-[#4e403b]/30"></div>
+                  <div className="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-[#4e403b]/30"></div>
 
                   <img
                     src={image}
