@@ -16,7 +16,7 @@ const VideoSection = () => {
         <h2 className="font-display mb-4 gold-underline inline-block text-[#ffffff] text-[24px]">
           Our Prenup Video
         </h2>
-        <div className="w-32 h-0.5 bg-gold mx-auto"></div>
+        <div className="w-32 h-0.5 mx-auto bg-[#f8f7f6]"></div>
       </div>
       {/* Video Container */}
       <div className="relative w-full overflow-hidden bg-black">
