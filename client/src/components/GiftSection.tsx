@@ -44,9 +44,9 @@ const GiftSection = () => {
 
             {/* Decorative Elements */}
             <div className="mt-8 flex justify-center items-center space-x-4">
-              <div className="w-12 h-px bg-gold/30"></div>
-              <div className="w-3 h-3 bg-gold rounded-full animate-float"></div>
-              <div className="w-12 h-px bg-gold/30"></div>
+              <div className="w-12 h-px bg-[#4e403b]/30"></div>
+              <div className="w-3 h-3 bg-[#4e403b] rounded-full animate-float"></div>
+              <div className="w-12 h-px bg-[#4e403b]/30"></div>
             </div>
           </div>
         </div>
@@ -56,8 +56,8 @@ const GiftSection = () => {
           {/* Monetary Gifts */}
           <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gift className="w-6 h-6 text-gold" />
+              <div className="w-12 h-12 bg-[#4e403b]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Gift className="w-6 h-6 text-[#4e403b]" />
               </div>
               <h3 className="text-lg font-display font-semibold text-primary mb-4">
                 Monetary Gifts

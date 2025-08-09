@@ -80,9 +80,9 @@ const CountdownSection = () => {
 
         {/* Decorative Elements */}
         <div className="mt-16 flex justify-center space-x-4">
-          <div className="w-12 h-px bg-gold"></div>
-          <div className="w-2 h-2 bg-gold rounded-full animate-float"></div>
-          <div className="w-12 h-px bg-gold"></div>
+          <div className="w-12 h-px bg-[#4e403b]"></div>
+          <div className="w-2 h-2 bg-[#4e403b] rounded-full animate-float"></div>
+          <div className="w-12 h-px bg-[#4e403b]"></div>
         </div>
       </div>
     </section>

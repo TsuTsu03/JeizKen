@@ -74,7 +74,7 @@ const TimelineSection = () => {
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gold rounded-full border-4 border-background shadow-warm z-10"></div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#4e403b] rounded-full border-4 border-background shadow-warm z-10"></div>
 
                   {/* Event Card */}
                   <div className={`w-full max-w-md ${isEven ? 'pr-8' : 'pl-8'}`}>

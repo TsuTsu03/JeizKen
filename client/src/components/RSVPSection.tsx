@@ -6,8 +6,8 @@ const RSVPSection = () => {
     <section id="rsvp" className="py-20 px-4 bg-gradient-warm relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-96 h-96 border border-gold rounded-full transform translate-x-1/3 -translate-y-1/3"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 border border-gold rounded-full transform -translate-x-1/3 translate-y-1/3"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 border border-[#4e403b] rounded-full transform translate-x-1/3 -translate-y-1/3"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 border border-[#4e403b] rounded-full transform -translate-x-1/3 translate-y-1/3"></div>
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
@@ -15,7 +15,7 @@ const RSVPSection = () => {
           <h2 className="font-display text-section-title mb-6 text-primary" data-testid="text-rsvp-title">
             Please RSVP
           </h2>
-          <div className="w-20 h-0.5 bg-gold mx-auto"></div>
+          <div className="w-20 h-0.5 bg-[#4e403b] mx-auto"></div>
         </div>
 
         {/* Main RSVP Content */}
@@ -24,24 +24,24 @@ const RSVPSection = () => {
             {/* Wedding Details */}
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-3">
-                  <Calendar className="w-6 h-6 text-gold" />
+                <div className="w-12 h-12 bg-[#4e403b]/10 rounded-full flex items-center justify-center mb-3">
+                  <Calendar className="w-6 h-6 text-[#4e403b]" />
                 </div>
                 <h3 className="font-display font-semibold text-primary mb-1">Date</h3>
                 <p className="text-muted-foreground">October 8, 2025</p>
               </div>
-              
+
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-3">
-                  <Clock className="w-6 h-6 text-gold" />
+                <div className="w-12 h-12 bg-[#4e403b]/10 rounded-full flex items-center justify-center mb-3">
+                  <Clock className="w-6 h-6 text-[#4e403b]" />
                 </div>
                 <h3 className="font-display font-semibold text-primary mb-1">Time</h3>
                 <p className="text-muted-foreground">2:00 PM</p>
               </div>
-              
+
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-3">
-                  <MapPin className="w-6 h-6 text-gold" />
+                <div className="w-12 h-12 bg-[#4e403b]/10 rounded-full flex items-center justify-center mb-3">
+                  <MapPin className="w-6 h-6 text-[#4e403b]" />
                 </div>
                 <h3 className="font-display font-semibold text-primary mb-1">Location</h3>
                 <p className="text-muted-foreground">Tagaytay Highlands</p>
@@ -63,7 +63,7 @@ const RSVPSection = () => {
             <Button
               asChild
               size="lg"
-              className="group relative px-16 py-6 text-lg font-script font-medium tracking-wide bg-gradient-to-r from-gold via-yellow-400 to-gold hover:from-yellow-400 hover:via-gold hover:to-yellow-400 text-white shadow-2xl hover:shadow-gold/50 transition-all duration-500 border-2 border-yellow-300/30 overflow-hidden rounded-full"
+              className="group relative px-16 py-6 text-lg font-script font-medium tracking-wide bg-gradient-to-r from-[#4e403b] via-[#8B7355] to-[#4e403b] hover:from-[#8B7355] hover:via-[#4e403b] hover:to-[#8B7355] text-white shadow-2xl hover:shadow-[#4e403b]/50 transition-all duration-500 border-2 border-[#8B7355]/30 overflow-hidden rounded-full"
               data-testid="button-rsvp"
             >
               <a 
@@ -78,9 +78,9 @@ const RSVPSection = () => {
             </Button>
 
             {/* RSVP Deadline */}
-            <div className="mt-8 p-4 bg-gold/5 border border-gold/20 rounded-lg">
+            <div className="mt-8 p-4 bg-[#4e403b]/5 border border-[#4e403b]/20 rounded-lg">
               <p className="text-primary font-semibold">
-                RSVP Deadline: <span className="text-gold">August 20, 2025</span>
+                RSVP Deadline: <span className="text-[#4e403b]">August 20, 2025</span>
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Please respond by this date to help us finalize our arrangements
@@ -97,19 +97,19 @@ const RSVPSection = () => {
             </h3>
             <div className="space-y-3 text-left">
               <p className="flex items-start gap-2 text-muted-foreground">
-                <span className="text-gold mt-1 text-sm">•</span>
+                <span className="text-[#4e403b] mt-1 text-sm">•</span>
                 <span className="text-sm">This invitation is for the specified number of guests only</span>
               </p>
               <p className="flex items-start gap-2 text-muted-foreground">
-                <span className="text-gold mt-1 text-sm">•</span>
+                <span className="text-[#4e403b] mt-1 text-sm">•</span>
                 <span className="text-sm">Kindly arrive 30 minutes before the ceremony</span>
               </p>
               <p className="flex items-start gap-2 text-muted-foreground">
-                <span className="text-gold mt-1 text-sm">•</span>
+                <span className="text-[#4e403b] mt-1 text-sm">•</span>
                 <span className="text-sm">Please follow the dress code guidelines</span>
               </p>
               <p className="flex items-start gap-2 text-muted-foreground">
-                <span className="text-gold mt-1 text-sm">•</span>
+                <span className="text-[#4e403b] mt-1 text-sm">•</span>
                 <span className="text-sm">Contact us if you have any questions or special requirements</span>
               </p>
             </div>

@@ -27,9 +27,9 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
             Kenneth
           </h1>
           <div className="flex items-center justify-center mb-4">
-            <div className="h-px bg-gold w-16 opacity-70"></div>
-            <span className="text-hero-script text-gold font-script mx-6" data-testid="text-ampersand">&</span>
-            <div className="h-px bg-gold w-16 opacity-70"></div>
+            <div className="h-px bg-[#4e403b] w-16 opacity-70"></div>
+            <span className="text-hero-script text-[#4e403b] font-script mx-6" data-testid="text-ampersand">&</span>
+            <div className="h-px bg-[#4e403b] w-16 opacity-70"></div>
           </div>
           <h1 className="text-hero text-white font-display font-light mb-8 uppercase" data-testid="text-bride">
             Jeizl
@@ -66,7 +66,7 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
                 onOpenInvitation();
               }}
               size="lg"
-              className="bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/90 hover:to-yellow-500/90 text-primary font-display font-medium px-20 py-7 text-xl tracking-widest shadow-2xl border-0 rounded-full relative overflow-hidden transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-gold/50 z-20"
+              className="bg-gradient-to-r from-[#4e403b] to-[#8B7355] hover:from-[#4e403b]/90 hover:to-[#8B7355]/90 text-white font-display font-medium px-20 py-7 text-xl tracking-widest shadow-2xl border-0 rounded-full relative overflow-hidden transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-[#4e403b]/50 z-20"
               aria-label="Open Wedding Invitation"
               data-testid="button-open-invitation"
             >
