@@ -218,20 +218,48 @@
     width: 100%;
   }
 
+  /* Clean Mobile Styles */
+  @media (max-width: 768px) {
+    * {
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+    }
+    
+    img {
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+      filter: none !important;
+    }
+    
+    .shadow-elegant,
+    .shadow-soft,
+    .shadow-warm {
+      box-shadow: none !important;
+    }
+  }
+
   /* Custom Scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-muted;
+    @apply bg-background;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gold rounded-full;
+    @apply bg-gold/50 rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-accent;
+    @apply bg-gold;
+  }
+  
+  /* Remove any glass/overlay effects */
+  *::before,
+  *::after {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 }

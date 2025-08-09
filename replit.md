@@ -52,3 +52,7 @@ Successfully migrated from Lovable to Replit environment:
 - **2024-01-09**: Enhanced typography with Google Fonts (Playfair Display, Cormorant Garamond, Inter)
 - **2024-01-09**: Updated HeroSection with elegant font styling and improved spacing
 - **2024-01-09**: Added data-testid attributes for accessibility and testing
+- **2024-01-09**: Removed visual artifacts from slideshow section
+- **2024-01-09**: Improved InvitationSection layout and styling
+- **2024-01-09**: Enhanced StorySection with designer polaroid frames and elegant text layout
+- **2024-01-09**: Fixed mobile shadows and glass effects across all components

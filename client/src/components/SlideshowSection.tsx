@@ -50,18 +50,12 @@ const SlideshowSection = () => {
   return (
     <section id="slideshow" className="relative bg-background">
       {/* Section Header */}
-      <div className="text-center py-8 px-4 relative">
-        {/* Decorative Elements */}
-        <div className="absolute top-0 left-1/4 w-8 h-8 border-2 border-gold/30 rounded-full"></div>
-        <div className="absolute top-4 right-1/4 w-4 h-4 bg-gold/20 rounded-full"></div>
-        <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-gold/40 rounded-full"></div>
-        <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-gold/30 rounded-full"></div>
-        
-        <h2 className="text-section-title font-display text-primary mb-4 gold-underline inline-block">Timeless Frames</h2>
-        <div className="w-24 h-0.5 bg-gold mx-auto mt-4"></div>
+      <div className="text-center py-8 px-4">
+        <h2 className="text-section-title font-display text-primary mb-4">Timeless Frames</h2>
+        <div className="w-20 h-0.5 bg-gold mx-auto"></div>
       </div>
-      {/* Slideshow Container */}
-      <div className="relative w-full overflow-hidden bg-background">
+      {/* Clean Slideshow Container */}
+      <div className="relative w-full max-w-4xl mx-auto bg-background">
         {images.map((image, index) => (
           <div
             key={index}
@@ -71,18 +65,14 @@ const SlideshowSection = () => {
           >
             <img
               src={image}
-              alt={`Our moments ${index + 1}`}
+              alt={`Kenneth and Jeizl moments ${index + 1}`}
+              className="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-100"
               style={{
-                display: 'block',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-                objectPosition: 'top',
-                margin: 0,
-                padding: 0,
-                lineHeight: 0
+                maxHeight: '500px',
+                objectPosition: 'center'
               }}
               loading={index === 0 ? 'eager' : 'lazy'}
+              data-testid={`img-slideshow-${index + 1}`}
             />
           </div>
         ))}
