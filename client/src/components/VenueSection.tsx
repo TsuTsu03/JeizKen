@@ -30,7 +30,7 @@ const VenueSection = () => {
   ];
 
   return (
-    <section id="venue" className="py-20 px-4 bg-background">
+    <section id="venue" className="py-16 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
         {/* Venues List */}
         <div className="space-y-20">

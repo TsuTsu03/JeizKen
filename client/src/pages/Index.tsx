@@ -82,9 +82,9 @@ const Index = () => {
             <SlideshowSection />
             
             {/* Love Quote Section */}
-            <section className="py-12 px-4 bg-background">
+            <section className="py-8 px-4 bg-background">
               <div className="max-w-2xl mx-auto text-center">
-                <p className="text-xl md:text-2xl font-script text-primary italic" data-testid="text-love-quote">
+                <p className="text-lg md:text-xl font-script text-primary italic" data-testid="text-love-quote">
                   "Love is not about finding the perfect person, but about seeing an imperfect person perfectly."
                 </p>
               </div>

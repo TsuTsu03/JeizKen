@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 
 const InvitationSection = () => {
   return (
-    <section id="invitation" className="py-20 px-4 bg-background">
+    <section id="invitation" className="py-12 px-4 bg-background">
       <div className="max-w-2xl mx-auto text-center space-y-12">
         {/* Main Invitation Text */}
         <div className="space-y-8">

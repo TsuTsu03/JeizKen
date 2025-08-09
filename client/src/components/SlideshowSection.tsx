@@ -48,7 +48,7 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative py-8 bg-background overflow-hidden">
+    <section id="slideshow" className="relative py-6 md:py-0 md:min-h-screen bg-background overflow-hidden">
       {/* Background Slideshow - Natural Images */}
       <div className="absolute inset-0">
         {images.map((image, index) => (
@@ -68,9 +68,9 @@ const SlideshowSection = () => {
         ))}
       </div>
 
-      {/* Main Slideshow Container - Small Size */}
-      <div className="relative z-10 flex items-center justify-center px-4">
-        <div className="relative w-full max-w-xs">
+      {/* Main Slideshow Container - Responsive */}
+      <div className="relative z-10 flex items-center justify-center px-4 md:min-h-screen">
+        <div className="relative w-full max-w-xs md:max-w-sm">
           {images.map((image, index) => (
             <div
               key={index}
@@ -83,7 +83,7 @@ const SlideshowSection = () => {
                 alt={`Kenneth and Jeizl moments ${index + 1}`}
                 className="w-full h-auto object-cover rounded-lg shadow-lg"
                 style={{
-                  height: '200px',
+                  height: '160px',
                   objectFit: 'cover',
                   objectPosition: 'center'
                 }}
@@ -96,7 +96,7 @@ const SlideshowSection = () => {
       </div>
       
       {/* Progress indicators */}
-      <div className="relative z-10 flex justify-center space-x-2 pt-4">
+      <div className="relative z-10 flex justify-center space-x-2 pt-3 md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 md:pt-0">
         {images.map((_, index) => (
           <button
             key={index}
