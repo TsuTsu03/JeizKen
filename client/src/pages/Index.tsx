@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { Volume2, VolumeX } from 'lucide-react';
+
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import SlideshowSection from '@/components/SlideshowSection';
@@ -20,7 +20,6 @@ import Footer from '@/components/Footer';
 const Index = () => {
   const [showInvitation, setShowInvitation] = useState(false);
   const [musicStarted, setMusicStarted] = useState(false);
-  const [musicPlaying, setMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const handleOpenInvitation = () => {
@@ -39,7 +38,6 @@ const Index = () => {
           
           await audio.play();
           setMusicStarted(true);
-          setMusicPlaying(true);
           console.log('Background music started successfully');
           
           // Remove event listeners after successful play
@@ -51,36 +49,22 @@ const Index = () => {
         }
       };
 
-      // Try to play immediately (this will work if user already interacted)
-      setTimeout(() => {
-        startMusic();
-      }, 500);
-
-      // Also add listeners for the next user interaction as fallback
-      document.addEventListener('click', startMusic, { once: true });
-      document.addEventListener('touchstart', startMusic, { once: true });
-      document.addEventListener('keydown', startMusic, { once: true });
+      // Try to play immediately after a short delay
+      setTimeout(async () => {
+        try {
+          await startMusic();
+        } catch (error) {
+          console.log('Initial music play failed, adding fallback listeners');
+          // Add listeners for the next user interaction as fallback
+          document.addEventListener('click', startMusic, { once: true });
+          document.addEventListener('touchstart', startMusic, { once: true });
+          document.addEventListener('keydown', startMusic, { once: true });
+        }
+      }, 800);
     }
   };
 
-  const toggleMusic = () => {
-    if (audioRef.current) {
-      const audio = audioRef.current;
-      if (musicPlaying) {
-        audio.pause();
-        setMusicPlaying(false);
-        console.log('Music paused');
-      } else {
-        audio.play().then(() => {
-          setMusicPlaying(true);
-          setMusicStarted(true);
-          console.log('Music resumed');
-        }).catch((error) => {
-          console.error('Error resuming music:', error);
-        });
-      }
-    }
-  };
+
 
   useEffect(() => {
     // Preload audio
@@ -112,20 +96,7 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         
-        {/* Music Control Button */}
-        {showInvitation && (
-          <div className="fixed bottom-6 right-6 z-50">
-            <Button
-              onClick={toggleMusic}
-              size="sm"
-              className="bg-gold/90 hover:bg-gold text-primary rounded-full w-12 h-12 shadow-lg backdrop-blur-sm"
-              aria-label={musicPlaying ? "Pause music" : "Play music"}
-              data-testid="button-music-toggle"
-            >
-              {musicPlaying ? <Volume2 size={20} /> : <VolumeX size={20} />}
-            </Button>
-          </div>
-        )}
+
         
         {/* Main Content Sections */}
         <main>

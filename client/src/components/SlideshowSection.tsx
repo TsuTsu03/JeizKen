@@ -103,21 +103,14 @@ const SlideshowSection = () => {
         ))}
       </div>
       {/* Quote Section */}
-      <div className="text-center py-6 px-4 bg-background relative overflow-hidden">
-        
-        <div className="max-w-4xl mx-auto relative">
-          <blockquote className="text-2xl md:text-3xl font-script text-primary/80 italic mb-6">
+      <div className="text-center py-12 px-4 bg-background">
+        <div className="max-w-2xl mx-auto">
+          <blockquote className="text-xl md:text-2xl font-script text-primary/90 italic leading-relaxed">
             "Love is not about finding the perfect person, but about seeing an imperfect person perfectly."
           </blockquote>
-          
-          <div className="flex justify-center mb-4">
-            <div className="w-16 h-px bg-gold/50"></div>
+          <div className="flex justify-center mt-6">
+            <div className="w-12 h-px bg-gold/60"></div>
           </div>
-          
-          {/* Removed the text as requested */}
-          {/* <p className="text-lg text-muted-foreground">
-            Every moment with you is a treasure we'll cherish forever
-          </p> */}
         </div>
       </div>
     </section>
