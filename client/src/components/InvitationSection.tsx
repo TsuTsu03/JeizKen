@@ -35,7 +35,7 @@ const InvitationSection = () => {
             <Button
               asChild
               size="lg"
-              className="group relative px-12 py-4 text-lg font-body font-semibold tracking-wide bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/90 hover:to-yellow-500/90 text-primary shadow-xl hover:shadow-gold/40 transition-all duration-300 border-0 rounded-full overflow-hidden"
+              className="group relative px-12 py-4 text-lg font-body font-semibold tracking-wide bg-gradient-to-r from-[#4e403b] to-[#8B7355] hover:from-[#4e403b]/90 hover:to-[#8B7355]/90 text-white shadow-xl hover:shadow-[#4e403b]/40 transition-all duration-300 border-0 rounded-full overflow-hidden"
               data-testid="button-rsvp"
             >
               <a 
@@ -52,7 +52,7 @@ const InvitationSection = () => {
         </div>
 
         {/* Important Notice */}
-        <div className="bg-card/50 border border-gold/20 rounded-xl p-6 shadow-lg max-w-xl mx-auto">
+        <div className="bg-card/50 border border-[#4e403b]/20 rounded-xl p-6 shadow-lg max-w-xl mx-auto">
           <div className="text-center space-y-3">
             <p className="font-semibold text-primary text-base" data-testid="text-invitation-only">
               This event is strictly by invitation only.

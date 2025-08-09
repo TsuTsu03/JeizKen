@@ -36,15 +36,15 @@ const CountdownSection = () => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
         <div className="mb-12">
-          <h2 className="text-section-title font-display text-primary mb-4 gold-underline inline-block">
+          <h2 className="text-section-title font-display text-primary mb-4">
             Countdown to Forever
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto mt-6"></div>
+          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto mt-6"></div>
         </div>
 
         {/* Date and Venue */}
         <div className="mb-12">
-          <h3 className="text-2xl sm:text-3xl font-display font-semibold text-gold mb-2">
+          <h3 className="text-2xl sm:text-3xl font-display font-semibold text-[#4e403b] mb-2">
             October 8, 2025
           </h3>
           <p className="text-xl font-body text-muted-foreground mb-1">
@@ -68,7 +68,7 @@ const CountdownSection = () => {
               className={`bg-card border border-border rounded-xl p-6 shadow-soft hover-elegant animate-fade-scale`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-3xl sm:text-4xl font-display font-bold text-gold mb-2">
+              <div className="text-3xl sm:text-4xl font-display font-bold text-[#4e403b] mb-2">
                 {item.value.toString().padStart(2, '0')}
               </div>
               <div className="text-sm font-body uppercase tracking-wide text-muted-foreground">
