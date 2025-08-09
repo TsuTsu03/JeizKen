@@ -52,7 +52,7 @@ const SlideshowSection = () => {
       {/* Section Header */}
       <div className="text-center py-8 px-4">
         <h2 className="text-section-title font-display text-primary mb-4">Timeless Frames</h2>
-        <div className="w-20 h-0.5 bg-gold mx-auto"></div>
+        <div className="w-20 h-0.5 bg-[#4e403b] mx-auto"></div>
       </div>
       {/* Clean Slideshow Container */}
       <div className="relative w-full max-w-4xl mx-auto bg-background">
@@ -84,9 +84,9 @@ const SlideshowSection = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex 
-                ? 'bg-gold w-8' 
-                : 'bg-muted hover:bg-gold/50'
+              index === currentIndex
+                ? 'bg-[#4e403b] w-8'
+                : 'bg-muted hover:bg-[#4e403b]/50'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
@@ -99,7 +99,7 @@ const SlideshowSection = () => {
             "Love is not about finding the perfect person, but about seeing an imperfect person perfectly."
           </blockquote>
           <div className="flex justify-center mt-6">
-            <div className="w-12 h-px bg-gold/60"></div>
+            <div className="w-12 h-px bg-[#4e403b]/60"></div>
           </div>
         </div>
       </div>

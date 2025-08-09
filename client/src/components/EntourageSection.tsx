@@ -120,11 +120,11 @@ const EntourageSection = () => {
                       className="flex items-center justify-center text-center"
                     >
                       <div className="relative">
-                        <p className="text-foreground/90 hover:text-gold transition-colors duration-300 cursor-default">
+                        <p className="text-foreground/90 hover:text-[#4e403b] transition-colors duration-300 cursor-default">
                           {member}
                         </p>
                         {memberIndex < group.members.length - 1 && group.title !== 'Bridesmaids' && group.title !== 'Groomsmen' && (
-                          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-1 h-1 bg-gold/30 rounded-full"></div>
+                          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-1 h-1 bg-[#4e403b]/30 rounded-full"></div>
                         )}
                       </div>
                     </div>
@@ -134,9 +134,9 @@ const EntourageSection = () => {
                 {/* Decorative Bottom Element */}
                 <div className="mt-6 flex justify-center">
                   <div className="flex items-center space-x-1">
-                    <div className="w-6 h-px bg-gold/30"></div>
-                    <div className="w-1 h-1 bg-gold rounded-full"></div>
-                    <div className="w-6 h-px bg-gold/30"></div>
+                    <div className="w-6 h-px bg-[#4e403b]/30"></div>
+                    <div className="w-1 h-1 bg-[#4e403b] rounded-full"></div>
+                    <div className="w-6 h-px bg-[#4e403b]/30"></div>
                   </div>
                 </div>
               </div>

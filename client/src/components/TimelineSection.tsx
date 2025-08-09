@@ -38,8 +38,8 @@ const TimelineSection = () => {
     <section id="timeline" className="py-20 px-4 bg-background relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-gold rounded-full"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-gold rounded-full"></div>
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-[#4e403b] rounded-full"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-[#4e403b] rounded-full"></div>
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
@@ -48,7 +48,7 @@ const TimelineSection = () => {
           <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
             Event Timeline
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto mb-6"></div>
+          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto mb-6"></div>
           <p className="text-elegant-body text-muted-foreground max-w-2xl mx-auto">
             Join us for a day filled with love, laughter, and unforgettable memories as we celebrate our union
           </p>
@@ -57,7 +57,7 @@ const TimelineSection = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold via-gold to-gold opacity-30"></div>
+          <div className="absolute left-1/2 transform -translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4e403b] via-[#4e403b] to-[#4e403b] opacity-30"></div>
 
           {/* Timeline Events */}
           <div className="space-y-12">
@@ -84,13 +84,13 @@ const TimelineSection = () => {
                       <div className={`flex items-center gap-3 mb-3 ${
                         isEven ? 'justify-end' : 'justify-start'
                       }`}>
-                        <div className={`w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center ${
+                        <div className={`w-10 h-10 bg-[#4e403b]/10 rounded-full flex items-center justify-center ${
                           isEven ? 'order-2' : 'order-1'
                         }`}>
-                          <IconComponent className="w-5 h-5 text-gold" />
+                          <IconComponent className="w-5 h-5 text-[#4e403b]" />
                         </div>
                         <div className={isEven ? 'order-1' : 'order-2'}>
-                          <div className="text-2xl font-display font-semibold text-gold">
+                          <div className="text-2xl font-display font-semibold text-[#4e403b]">
                             {item.time}
                           </div>
                         </div>
@@ -114,9 +114,9 @@ const TimelineSection = () => {
         {/* Bottom Decorative */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-2">
-            <div className="w-8 h-px bg-gold"></div>
-            <div className="w-2 h-2 bg-gold rounded-full animate-float"></div>
-            <div className="w-8 h-px bg-gold"></div>
+            <div className="w-8 h-px bg-[#4e403b]"></div>
+            <div className="w-2 h-2 bg-[#4e403b] rounded-full animate-float"></div>
+            <div className="w-8 h-px bg-[#4e403b]"></div>
           </div>
           <p className="mt-4 text-muted-foreground font-body italic">
             A celebration of love from dusk till dawn

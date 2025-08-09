@@ -5,9 +5,9 @@ const GiftSection = () => {
     <section className="py-20 px-4 bg-background relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-gold rounded-full animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-gold rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-3/4 left-3/4 w-24 h-24 border border-gold rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-[#4e403b] rounded-full animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-[#4e403b] rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-3/4 left-3/4 w-24 h-24 border border-[#4e403b] rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -16,15 +16,15 @@ const GiftSection = () => {
           <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
             Wedding Gifts
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto"></div>
+          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto"></div>
         </div>
 
         {/* Main Gift Message */}
         <div className="animate-fade-up mb-12">
           <div className="bg-gradient-elegant border border-border rounded-2xl p-12 shadow-elegant">
             {/* Icon */}
-            <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-8">
-              <Heart className="w-10 h-10 text-gold" />
+            <div className="w-20 h-20 bg-[#4e403b]/10 rounded-full flex items-center justify-center mx-auto mb-8">
+              <Heart className="w-10 h-10 text-[#4e403b]" />
             </div>
 
             {/* Main Message */}
@@ -71,8 +71,8 @@ const GiftSection = () => {
           {/* Well Wishes */}
           <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Home className="w-6 h-6 text-gold" />
+              <div className="w-12 h-12 bg-[#4e403b]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Home className="w-6 h-6 text-[#4e403b]" />
               </div>
               <h3 className="text-lg font-display font-semibold text-primary mb-4">
                 Heartfelt Wishes
@@ -90,7 +90,7 @@ const GiftSection = () => {
             <p className="text-foreground/80 font-body italic">
               "The best gifts are those that come from the heart. Your love and support as we begin this new chapter is all we could ever ask for."
             </p>
-            <div className="mt-4 text-gold font-display text-lg">
+            <div className="mt-4 text-[#4e403b] font-display text-lg">
               — Kenneth & Jeizl
             </div>
           </div>

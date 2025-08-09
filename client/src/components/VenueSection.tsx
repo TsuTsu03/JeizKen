@@ -61,7 +61,7 @@ const VenueSection = () => {
                   
                   {/* Venue Type Badge */}
                   <div className="absolute top-4 left-4">
-                    <span className="bg-gold text-primary px-4 py-2 rounded-full text-sm font-semibold shadow-soft">
+                    <span className="bg-[#4e403b] text-white px-4 py-2 rounded-full text-sm font-semibold shadow-soft">
                       {venue.title}
                     </span>
                   </div>
@@ -69,7 +69,7 @@ const VenueSection = () => {
 
                 {/* Venue Content */}
                 <div className="p-8">
-                  <h3 className="text-2xl font-display font-semibold text-primary mb-3 group-hover:text-gold transition-colors duration-300">
+                  <h3 className="text-2xl font-display font-semibold text-primary mb-3 group-hover:text-[#4e403b] transition-colors duration-300">
                     {venue.name}
                   </h3>
                   
@@ -81,7 +81,7 @@ const VenueSection = () => {
                   <Button
                     asChild
                     variant="outline"
-                    className="w-full group-hover:bg-gold group-hover:text-primary group-hover:border-gold transition-all duration-300"
+                    className="w-full group-hover:bg-[#4e403b] group-hover:text-white group-hover:border-[#4e403b] transition-all duration-300"
                   >
                     <a
                       href={venue.mapUrl}
@@ -100,9 +100,9 @@ const VenueSection = () => {
               {/* Decorative Elements */}
               <div className={`mt-8 flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
                 <div className="flex items-center space-x-2 opacity-30">
-                  <div className="w-12 h-px bg-gold"></div>
-                  <div className="w-2 h-2 bg-gold rounded-full animate-float" style={{ animationDelay: `${index * 2}s` }}></div>
-                  <div className="w-6 h-px bg-gold"></div>
+                  <div className="w-12 h-px bg-[#4e403b]"></div>
+                  <div className="w-2 h-2 bg-[#4e403b] rounded-full animate-float" style={{ animationDelay: `${index * 2}s` }}></div>
+                  <div className="w-6 h-px bg-[#4e403b]"></div>
                 </div>
               </div>
             </div>

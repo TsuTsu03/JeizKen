@@ -14,30 +14,30 @@ const DressCodeSection = () => {
     <section id="dresscode" className="py-20 px-4 bg-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/3 left-1/4 w-64 h-64 border border-gold rounded-full"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 border border-gold rounded-full"></div>
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 border border-[#4e403b] rounded-full"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 border border-[#4e403b] rounded-full"></div>
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 relative">
           {/* Decorative Elements */}
-          <div className="absolute top-0 left-1/4 w-8 h-8 border-2 border-gold/30 rounded-full"></div>
-          <div className="absolute top-4 right-1/4 w-4 h-4 bg-gold/20 rounded-full"></div>
-          <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-gold/40 rounded-full"></div>
-          <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-gold/30 rounded-full"></div>
-          
-          <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
+          <div className="absolute top-0 left-1/4 w-8 h-8 border-2 border-[#4e403b]/30 rounded-full"></div>
+          <div className="absolute top-4 right-1/4 w-4 h-4 bg-[#4e403b]/20 rounded-full"></div>
+          <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-[#4e403b]/40 rounded-full"></div>
+          <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-[#4e403b]/30 rounded-full"></div>
+
+          <h2 className="text-section-title font-display text-primary mb-6 #4e403b-underline inline-block">
             Dress Code
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto mb-6"></div>
-          <div className="bg-gold/10 border border-gold/20 rounded-2xl p-6 max-w-md mx-auto relative">
+          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto mb-6"></div>
+          <div className="bg-[#4e403b]/10 border border-[#4e403b]/20 rounded-2xl p-6 max-w-md mx-auto relative">
             {/* Decorative Corner Elements */}
-            <div className="absolute top-2 left-2 w-3 h-3 border-l-2 border-t-2 border-gold/50"></div>
-            <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-gold/50"></div>
-            <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-gold/50"></div>
-            <div className="absolute bottom-2 right-2 w-3 h-3 border-r-2 border-b-2 border-gold/50"></div>
-            
+            <div className="absolute top-2 left-2 w-3 h-3 border-l-2 border-t-2 border-[#4e403b]/50"></div>
+            <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-[#4e403b]/50"></div>
+            <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-[#4e403b]/50"></div>
+            <div className="absolute bottom-2 right-2 w-3 h-3 border-r-2 border-b-2 border-[#4e403b]/50"></div>
+
             <p className="text-2xl font-display font-bold text-primary mb-2">
               STRICTLY FORMAL
             </p>
@@ -62,12 +62,12 @@ const DressCodeSection = () => {
                   Gentlemen
                 </h3>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center justify-center p-4 bg-gradient-to-r from-gray-900 to-black rounded-lg">
                   <span className="text-white font-semibold">Black Suit and Pants</span>
                 </div>
-                
+
                 <div className="text-center text-muted-foreground">
                   <p className="leading-relaxed">
                     Classic black formal attire with dress shirt, tie, and formal shoes. 
@@ -91,12 +91,12 @@ const DressCodeSection = () => {
                   Ladies
                 </h3>
               </div>
-              
+
               <div className="space-y-4">
-                <p className="text-center font-semibold text-gold text-lg">
+                <p className="text-center font-semibold text-[#4e403b] text-lg">
                   Long gown in elegant shades
                 </p>
-                
+
                 <div className="text-center text-muted-foreground">
                   <p className="leading-relaxed">
                     Floor-length formal gowns in the color palette below. 
@@ -113,7 +113,7 @@ const DressCodeSection = () => {
           <h3 className="text-xl font-display font-semibold text-primary mb-8">
             Approved Color Palette for Ladies' Gowns
           </h3>
-          
+
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {dressCodeColors.map((colorItem, index) => (
               <div
@@ -145,19 +145,19 @@ const DressCodeSection = () => {
           </h3>
           <div className="space-y-3 text-muted-foreground">
             <p className="flex items-start gap-2">
-              <span className="text-gold mt-1">•</span>
+              <span className="text-[#4e403b] mt-1">•</span>
               <span>Avoid white, ivory, or cream colors (reserved for the bride)</span>
             </p>
             <p className="flex items-start gap-2">
-              <span className="text-gold mt-1">•</span>
+              <span className="text-[#4e403b] mt-1">•</span>
               <span>Cocktail dresses and short gowns are not appropriate for this formal event</span>
             </p>
             <p className="flex items-start gap-2">
-              <span className="text-gold mt-1">•</span>
+              <span className="text-[#4e403b] mt-1">•</span>
               <span>Please ensure your attire is suitable for a religious ceremony</span>
             </p>
             <p className="flex items-start gap-2">
-              <span className="text-gold mt-1">•</span>
+              <span className="text-[#4e403b] mt-1">•</span>
               <span>Comfortable formal shoes recommended for the outdoor reception venue</span>
             </p>
           </div>
