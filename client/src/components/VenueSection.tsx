@@ -26,14 +26,13 @@ const VenueSection = () => {
         <div className="absolute top-0 right-0 w-96 h-96 border border-gold rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 border border-gold rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
       </div>
-
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
             Venue Details
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto mb-6"></div>
+          <div className="w-32 h-0.5 mx-auto mb-6 bg-[#2c2421]"></div>
           <p className="text-elegant-body text-muted-foreground max-w-2xl mx-auto">
             Two beautiful locations in Tagaytay Highlands, each carefully chosen to create the perfect atmosphere for our special day
           </p>
