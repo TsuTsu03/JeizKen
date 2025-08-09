@@ -8,19 +8,15 @@ const StorySection = () => {
   return (
     <section id="story" className="py-20 px-4 bg-gradient-elegant">
       <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-16 relative">
-          {/* Decorative Elements */}
-          <div className="absolute top-0 left-1/4 w-8 h-8 border-2 border-gold/30 rounded-full"></div>
-          <div className="absolute top-4 right-1/4 w-4 h-4 bg-gold/20 rounded-full"></div>
-          <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-gold/40 rounded-full"></div>
-          <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-gold/30 rounded-full"></div>
-          
-          <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
-            Our Love Story
-          </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto"></div>
-        </div>
+      {/* Section Header */}
+      <div className="text-center mb-16 relative">
+        {/* Decorative Elements */}
+        
+        <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
+          Our Love Story
+        </h2>
+        <div className="w-32 h-0.5 bg-gold mx-auto"></div>
+      </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Story Text */}
@@ -42,7 +38,7 @@ const StorySection = () => {
                 The proposal was a testament to their shared aesthetic—a deception of beautiful simplicity. On an ordinary evening in Julian's glass-walled studio, he presented Serena with a bowl of pearl-white paint, insisting she dip her hands in for a 'texture experiment.' As her fingers brushed the bottom, they closed around a ring box hidden beneath the liquid opalescence.
               </p>
               
-              <p className="text-elegant-body text-foreground/90 leading-relaxed italic text-gold">
+              <p className="text-elegant-body text-foreground/90 leading-relaxed italic">
                 'You've always turned my world white,' he told her, kneeling on the polished concrete floor, 'will you make it permanent?'
               </p>
               
@@ -84,8 +80,9 @@ const StorySection = () => {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-gold rounded-full opacity-30 animate-float"></div>
-            <div className="absolute bottom-1/4 -left-6 w-4 h-4 bg-gold/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+            {/* Removed decorative circular elements as requested */}
+            {/* <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-gold rounded-full opacity-30 animate-float"></div> */}
+            {/* <div className="absolute bottom-1/4 -left-6 w-4 h-4 bg-gold/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div> */}
           </div>
         </div>
       </div>

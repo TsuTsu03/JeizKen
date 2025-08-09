@@ -24,6 +24,31 @@ const Index = () => {
   const handleOpenInvitation = () => {
     console.log('handleOpenInvitation called');
     setShowInvitation(true);
+    if (audioRef.current && !musicStarted) {
+      const audio = audioRef.current;
+      audio.pause();
+      audio.currentTime = 0;
+      audio.src = "https://res.cloudinary.com/dbiboclqa/video/upload/v1754639888/ytmp3free.cc_the-biggest-taylor-swift-wedding-entrance-pt-10-youtubemp3free.org_oaw336.mp3";
+      audio.volume = 0.3;
+
+      const playAudio = () => {
+        audio.play().then(() => {
+          setMusicStarted(true);
+          console.log('Background music started on invitation open');
+          window.removeEventListener('click', playAudio);
+          window.removeEventListener('keydown', playAudio);
+        }).catch((error) => {
+          console.error('Error playing audio:', error);
+        });
+      };
+
+      // Try to play immediately
+      playAudio();
+
+      // Fallback: play on user interaction if autoplay blocked
+      window.addEventListener('click', playAudio);
+      window.addEventListener('keydown', playAudio);
+    }
   };
 
   useEffect(() => {
@@ -31,32 +56,7 @@ const Index = () => {
     if (audioRef.current) {
       audioRef.current.preload = 'auto';
     }
-
-    // Add event listener to start music on any user interaction
-    const handleUserInteraction = () => {
-      if (audioRef.current && !musicStarted && showInvitation) {
-        audioRef.current.volume = 0.3;
-        audioRef.current.play().then(() => {
-          setMusicStarted(true);
-          console.log('Background music started on user interaction');
-        }).catch(console.error);
-        
-        // Remove event listeners after music starts
-        document.removeEventListener('click', handleUserInteraction);
-        document.removeEventListener('touchstart', handleUserInteraction);
-      }
-    };
-
-    if (showInvitation) {
-      document.addEventListener('click', handleUserInteraction);
-      document.addEventListener('touchstart', handleUserInteraction);
-    }
-
-    return () => {
-      document.removeEventListener('click', handleUserInteraction);
-      document.removeEventListener('touchstart', handleUserInteraction);
-    };
-  }, [showInvitation, musicStarted]);
+  }, []);
 
   if (!showInvitation) {
     console.log('Rendering HeroSection, showInvitation:', showInvitation);
@@ -72,12 +72,8 @@ const Index = () => {
         ref={audioRef}
         loop
         preload="auto"
-        className="hidden"
+        style={{ display: 'none' }}
       >
-        <source 
-          src="https://res.cloudinary.com/dbiboclqa/video/upload/v1754639888/ytmp3free.cc_the-biggest-taylor-swift-wedding-entrance-pt-10-youtubemp3free.org_oaw336.mp3" 
-          type="audio/mpeg" 
-        />
       </audio>
 
       <div className="min-h-screen bg-background">

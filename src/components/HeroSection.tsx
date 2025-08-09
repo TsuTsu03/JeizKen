@@ -7,7 +7,7 @@ interface HeroSectionProps {
 const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
   return (
     <section 
-      className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       style={{
         backgroundImage: "url('https://res.cloudinary.com/dbiboclqa/image/upload/v1754639890/1ST_PAGE_x6bpxd.jpg')",
         backgroundSize: 'cover',
@@ -21,7 +21,7 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
       <div className="absolute inset-0 bg-black/20"></div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="animate-fade-up opacity-0 [animation-delay:0.2s]">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-display font-light mb-2 tracking-[0.2em] uppercase">
             Kenneth
@@ -35,7 +35,7 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
             Jeizl
           </h1>
         </div>
-        
+
         <div className="animate-fade-up opacity-0 [animation-delay:0.6s]">
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 mb-8 max-w-md mx-auto">
             <p className="text-lg sm:text-xl text-white font-medium tracking-wide mb-3">

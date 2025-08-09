@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const SlideshowSection = () => {
   const images = [
@@ -108,7 +108,7 @@ const SlideshowSection = () => {
       </div>
 
       {/* Quote Section */}
-      <div className="text-center py-12 px-4 bg-gradient-elegant relative overflow-hidden">
+      <div className="text-center py-6 px-4 bg-gradient-elegant relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full opacity-5">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-gold rounded-full"></div>
@@ -118,11 +118,12 @@ const SlideshowSection = () => {
         
         <div className="max-w-4xl mx-auto relative z-10">
           {/* Quote Icon */}
-          <div className="flex justify-center mb-6">
+          {/* Removed the circled icon as requested */}
+          {/* <div className="flex justify-center mb-6">
             <div className="w-12 h-12 border-2 border-gold rounded-full flex items-center justify-center">
               <div className="w-6 h-6 border border-gold rounded-full"></div>
             </div>
-          </div>
+          </div> */}
           
           <blockquote className="text-2xl md:text-3xl font-display text-primary/80 italic mb-6">
             "Love is not about finding the perfect person, but about seeing an imperfect person perfectly."
@@ -132,9 +133,10 @@ const SlideshowSection = () => {
             <div className="w-16 h-px bg-gold/50"></div>
           </div>
           
-          <p className="text-lg text-muted-foreground">
+          {/* Removed the text as requested */}
+          {/* <p className="text-lg text-muted-foreground">
             Every moment with you is a treasure we'll cherish forever
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
