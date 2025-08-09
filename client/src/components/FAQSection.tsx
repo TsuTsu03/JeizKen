@@ -67,7 +67,7 @@ const FAQSection = () => {
           <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
             Frequently Asked Questions
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto mb-6"></div>
+          <div className="w-32 h-0.5 mx-auto mb-6 bg-[#2c2421]"></div>
           <p className="text-elegant-body text-muted-foreground max-w-2xl mx-auto">
             We've compiled answers to the most common questions about our wedding day. 
             If you have additional questions, please don't hesitate to contact us.
