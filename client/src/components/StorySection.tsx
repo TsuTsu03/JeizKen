@@ -13,7 +13,7 @@ const StorySection = () => {
           <h2 className="text-section-title font-display text-primary mb-6">
             Our Love Story
           </h2>
-          <div className="w-20 h-0.5 bg-gold mx-auto"></div>
+          <div className="w-20 h-0.5 mx-auto bg-[#2c2421]"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
