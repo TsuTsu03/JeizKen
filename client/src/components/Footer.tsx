@@ -72,7 +72,7 @@ const Footer = () => {
             <p className="text-primary-foreground/60 text-sm">
               With love and gratitude,
             </p>
-            <p className="text-gold font-display font-semibold">
+            <p className="font-display font-semibold text-[#aca8a6]">
               Kenneth & Jeizl
             </p>
           </div>
