@@ -70,9 +70,10 @@
     --shadow-soft: 0 10px 30px -5px hsl(var(--primary) / 0.08);
     --shadow-warm: 0 15px 40px -8px hsl(var(--gold) / 0.15);
 
-    /* Typography Scale */
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    /* Elegant Typography Scale */
+    --font-display: 'Playfair Display', 'Cormorant Garamond', serif;
+    --font-script: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 
     /* Smooth Transitions */
     --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -155,13 +156,25 @@
     font-family: var(--font-body);
   }
 
+  .font-script {
+    font-family: var(--font-script);
+  }
+
   /* Mobile-First Responsive Typography */
   .text-hero {
-    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-bold tracking-tight;
+    @apply text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-light tracking-tight;
+    line-height: 0.9;
+    letter-spacing: 0.15em;
+  }
+
+  .text-hero-script {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-script font-normal italic;
+    line-height: 1.2;
   }
 
   .text-subtitle {
-    @apply text-lg sm:text-xl lg:text-2xl font-body font-light tracking-wide;
+    @apply text-lg sm:text-xl lg:text-2xl font-body font-light tracking-wider;
+    letter-spacing: 0.05em;
   }
 
   .text-section-title {
