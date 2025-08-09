@@ -13,12 +13,11 @@ const VideoSection = () => {
         <div className="absolute bottom-0 left-1/3 w-4 h-4 border border-gold/50 rounded-full"></div>
         <div className="absolute bottom-1 right-1/3 w-2 h-2 bg-gold/40 rounded-full"></div>
         
-        <h2 className="text-section-title font-display text-white mb-4 gold-underline inline-block">
+        <h2 className="font-display mb-4 gold-underline inline-block text-[#413a37]">
           Our Prenup Video
         </h2>
         <div className="w-32 h-0.5 bg-gold mx-auto"></div>
       </div>
-
       {/* Video Container */}
       <div className="relative w-full overflow-hidden bg-black">
         <video
@@ -43,7 +42,6 @@ const VideoSection = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-
       {/* Elegant Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/30 pointer-events-none"></div>
     </section>
