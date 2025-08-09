@@ -98,7 +98,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h2 className="text-xl font-display font-semibold text-primary">
-              K<span className="text-gold">&</span>J
+              K<span className="text-[#4e403b]">&</span>J
             </h2>
           </div>
 
@@ -109,9 +109,9 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 hover:bg-gold/10 hover:text-gold ${
+                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 hover:bg-[#4e403b]/10 hover:text-[#4e403b] ${
                     activeSection === item.href.slice(1)
-                      ? 'text-gold bg-gold/5'
+                      ? 'text-[#4e403b] bg-[#4e403b]/5'
                       : 'text-foreground'
                   }`}
                 >
@@ -127,7 +127,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:bg-gold/10"
+              className="text-foreground hover:bg-[#4e403b]/10"
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
@@ -143,9 +143,9 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-all duration-300 hover:bg-gold/10 hover:text-gold ${
+                className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-all duration-300 hover:bg-[#4e403b]/10 hover:text-[#4e403b] ${
                   activeSection === item.href.slice(1)
-                    ? 'text-gold bg-gold/5'
+                    ? 'text-[#4e403b] bg-[#4e403b]/5'
                     : 'text-foreground'
                 }`}
               >

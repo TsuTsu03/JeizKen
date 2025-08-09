@@ -63,7 +63,7 @@ const RSVPSection = () => {
             <Button
               asChild
               size="lg"
-              className="group relative px-16 py-6 text-lg font-script font-medium tracking-wide bg-gradient-to-r from-[#4e403b] via-[#8B7355] to-[#4e403b] hover:from-[#8B7355] hover:via-[#4e403b] hover:to-[#8B7355] text-white shadow-2xl hover:shadow-[#4e403b]/50 transition-all duration-500 border-2 border-[#8B7355]/30 overflow-hidden rounded-full"
+              className="group relative px-16 py-6 text-lg font-script font-medium tracking-wide bg-gradient-to-r from-[#4e403b] to-[#8B7355] hover:from-[#4e403b]/90 hover:to-[#8B7355]/90 text-white shadow-2xl hover:shadow-[#4e403b]/50 transition-all duration-500 border-2 border-[#8B7355]/30 overflow-hidden rounded-full"
               data-testid="button-rsvp"
             >
               <a 
