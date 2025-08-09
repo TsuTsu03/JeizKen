@@ -85,11 +85,10 @@ const EntourageSection = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-entourage-title">
             Our Wedding Entourage
           </h2>
-          <div className="w-32 h-0.5 mx-auto mb-6 bg-[#403936]"></div>
-          <p className="text-elegant-body text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
             We are honored to have these special people stand with us as we begin our journey as husband and wife
           </p>
         </div>

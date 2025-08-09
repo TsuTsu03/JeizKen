@@ -45,11 +45,10 @@ const TimelineSection = () => {
       <div className="max-w-4xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-timeline-title">
             Event Timeline
           </h2>
-          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto mb-6"></div>
-          <p className="text-elegant-body text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
             Join us for a day filled with love, laughter, and unforgettable memories as we celebrate our union
           </p>
         </div>

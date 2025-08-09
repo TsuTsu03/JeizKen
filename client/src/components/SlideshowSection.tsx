@@ -55,7 +55,7 @@ const SlideshowSection = () => {
           <div
             key={`bg-${index}`}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-20' : 'opacity-0'
+              index === currentIndex ? 'opacity-50' : 'opacity-0'
             }`}
           >
             <img
@@ -64,7 +64,6 @@ const SlideshowSection = () => {
               className="w-full h-full object-cover blur-sm scale-110"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-blue-50/20"></div>
           </div>
         ))}
       </div>
