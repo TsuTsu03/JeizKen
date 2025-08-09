@@ -62,44 +62,64 @@ const StorySection = () => {
             </div>
           </div>
 
-          {/* Enhanced Polaroid Images */}
-          <div className="flex flex-col items-center space-y-8">
-            {storyImages.map((image, index) => (
-              <div
-                key={index}
-                className={`relative animate-fade-scale transform ${
-                  index % 2 === 0 ? 'rotate-1' : '-rotate-1'
-                } hover:rotate-0 transition-all duration-300`}
-                style={{ 
-                  animationDelay: `${index * 0.2}s`,
-                  marginLeft: index % 2 === 0 ? '0' : '1rem',
-                  marginRight: index % 2 === 0 ? '1rem' : '0'
-                }}
-                data-testid={`img-story-${index + 1}`}
-              >
-                <div className="bg-white p-4 shadow-xl border border-gray-100 max-w-sm mx-auto relative">
-                  {/* Decorative corner elements */}
-                  <div className="absolute -top-1 -left-1 w-3 h-3 border-l-2 border-t-2 border-[#4e403b]/30"></div>
-                  <div className="absolute -top-1 -right-1 w-3 h-3 border-r-2 border-t-2 border-[#4e403b]/30"></div>
-                  <div className="absolute -bottom-1 -left-1 w-3 h-3 border-l-2 border-b-2 border-[#4e403b]/30"></div>
-                  <div className="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-[#4e403b]/30"></div>
+          {/* Artistic Photo Collage */}
+          <div className="relative h-[600px] w-full max-w-4xl mx-auto">
+            {/* Background Image - Large */}
+            <div className="absolute top-8 left-8 w-64 h-80 animate-fade-scale" style={{ animationDelay: '0.2s' }}>
+              <img
+                src={storyImages[0]}
+                alt="Kenneth and Jeizl story moment 1"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+                loading="lazy"
+                data-testid="img-story-collage-1"
+              />
+            </div>
 
-                  <img
-                    src={image}
-                    alt={`Kenneth and Jeizl story moment ${index + 1}`}
-                    className="w-full h-52 object-cover border border-gray-50"
-                    loading="lazy"
-                  />
-                  <div className="mt-3 text-center bg-white">
-                    <p className="text-sm font-script italic text-primary/70 tracking-wide">
-                      {index === 0 && "Where it all began..."}
-                      {index === 1 && "Creating memories together"}
-                      {index === 2 && "Forever starts here"}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+            {/* Top Right Image - Medium */}
+            <div className="absolute top-4 right-12 w-48 h-32 animate-fade-scale" style={{ animationDelay: '0.4s' }}>
+              <img
+                src={storyImages[1]}
+                alt="Kenneth and Jeizl story moment 2"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+                loading="lazy"
+                data-testid="img-story-collage-2"
+              />
+            </div>
+
+            {/* Central Text */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 bg-background/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+              <h3 className="text-3xl md:text-4xl font-script italic text-primary mb-2" data-testid="text-story-quote-main">
+                I choose you
+              </h3>
+              <h3 className="text-4xl md:text-5xl font-display font-light text-primary mb-2 tracking-wide" data-testid="text-story-quote-forever">
+                FOREVER
+              </h3>
+              <h3 className="text-2xl md:text-3xl font-script italic text-primary/80" data-testid="text-story-quote-always">
+                and always
+              </h3>
+            </div>
+
+            {/* Bottom Left Image - Medium */}
+            <div className="absolute bottom-8 left-4 w-56 h-40 animate-fade-scale" style={{ animationDelay: '0.6s' }}>
+              <img
+                src={storyImages[2]}
+                alt="Kenneth and Jeizl story moment 3"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+                loading="lazy"
+                data-testid="img-story-collage-3"
+              />
+            </div>
+
+            {/* Bottom Right Image - Small accent */}
+            <div className="absolute bottom-12 right-8 w-40 h-28 animate-fade-scale" style={{ animationDelay: '0.8s' }}>
+              <img
+                src={storyImages[0]}
+                alt="Kenneth and Jeizl story accent"
+                className="w-full h-full object-cover rounded-lg shadow-md opacity-80 grayscale"
+                loading="lazy"
+                data-testid="img-story-collage-accent"
+              />
+            </div>
           </div>
         </div>
       </div>
