@@ -9,11 +9,10 @@ const RSVPSection = () => {
         <div className="absolute top-0 right-0 w-96 h-96 border border-gold rounded-full transform translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 border border-gold rounded-full transform -translate-x-1/3 translate-y-1/3"></div>
       </div>
-
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
         <div className="mb-16">
-          <h2 className="text-section-title font-display text-white mb-6 relative inline-block">
+          <h2 className="font-display mb-6 relative inline-block text-[#f6de94]">
             Please RSVP
             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-white/50"></div>
           </h2>
