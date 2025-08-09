@@ -1,0 +1,46 @@
+# Wedding Invitation Website
+
+## Project Overview
+This is a wedding invitation website migrated from Lovable to Replit. The project is a full-stack JavaScript application showcasing a beautiful wedding invitation with multiple sections including hero, slideshow, invitation details, countdown, story, venue information, RSVP, and more.
+
+## Project Architecture
+- **Frontend**: React with TypeScript, Vite for bundling, Tailwind CSS + shadcn/ui for styling
+- **Backend**: Express.js server with TypeScript
+- **Routing**: Wouter (React routing library)
+- **State Management**: TanStack Query for server state
+- **Database**: In-memory storage (MemStorage) - can be upgraded to PostgreSQL if needed
+- **Styling**: Tailwind CSS with custom wedding theme
+- **Audio**: Background music integration with user interaction triggers
+
+## Key Features
+- Responsive wedding invitation website
+- Interactive hero section with invitation opening animation
+- Background music that starts on user interaction
+- Multiple content sections (story, venue, RSVP, FAQ, etc.)
+- Modern UI components using shadcn/ui
+- Dark/light theme support
+- SEO optimized
+
+## Migration Status
+Currently migrating from Lovable to Replit environment:
+- [x] Install required dependencies (react-router-dom, sonner, nanoid)
+- [x] Convert routing from react-router-dom to wouter 
+- [x] Set up proper QueryClient configuration
+- [ ] Verify all components work properly
+- [ ] Test the application functionality
+- [ ] Complete migration verification
+
+## Development Notes
+- Uses Replit's full-stack template with Express backend and React frontend
+- Server runs on port 5000 and serves both API and frontend
+- Vite handles development bundling and HMR
+- Audio files are hosted on Cloudinary CDN
+
+## User Preferences
+- None specified yet
+
+## Recent Changes
+- **2024-01-09**: Started migration from Lovable to Replit
+- **2024-01-09**: Updated routing system from react-router-dom to wouter
+- **2024-01-09**: Created QueryClient setup with proper API request handling
+- **2024-01-09**: Added data-testid attributes for accessibility
