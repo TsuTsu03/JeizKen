@@ -64,11 +64,10 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-faq-title">
             Frequently Asked Questions
           </h2>
-          <div className="w-32 h-0.5 mx-auto mb-6 bg-[#2c2421]"></div>
-          <p className="text-elegant-body text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
             We've compiled answers to the most common questions about our wedding day. 
             If you have additional questions, please don't hesitate to contact us.
           </p>

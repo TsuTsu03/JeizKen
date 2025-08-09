@@ -27,10 +27,9 @@ const DressCodeSection = () => {
           <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-[#4e403b]/40 rounded-full"></div>
           <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-[#4e403b]/30 rounded-full"></div>
 
-          <h2 className="text-section-title font-display text-primary mb-6 #4e403b-underline inline-block">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-dresscode-title">
             Dress Code
           </h2>
-          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto mb-6"></div>
           <div className="bg-[#4e403b]/10 border border-[#4e403b]/20 rounded-2xl p-6 max-w-md mx-auto relative">
             {/* Decorative Corner Elements */}
             <div className="absolute top-2 left-2 w-3 h-3 border-l-2 border-t-2 border-[#4e403b]/50"></div>

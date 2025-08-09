@@ -12,10 +12,9 @@ const RSVPSection = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
         <div className="mb-16">
-          <h2 className="font-display text-section-title mb-6 text-primary" data-testid="text-rsvp-title">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-rsvp-title">
             Please RSVP
           </h2>
-          <div className="w-20 h-0.5 bg-[#4e403b] mx-auto"></div>
         </div>
 
         {/* Main RSVP Content */}

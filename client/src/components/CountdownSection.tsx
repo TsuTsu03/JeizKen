@@ -35,28 +35,24 @@ const CountdownSection = () => {
     <section id="countdown" className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
-        <div className="mb-12">
-          <h2 className="text-section-title font-display text-primary mb-4">
+        <div className="mb-16">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-countdown-title">
             Countdown to Forever
           </h2>
-          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto mt-6"></div>
         </div>
 
-        {/* Date and Venue */}
-        <div className="mb-12">
-          <h3 className="text-2xl sm:text-3xl font-display font-semibold text-[#4e403b] mb-2">
-            October 8, 2025
+        {/* Wedding Date Display */}
+        <div className="mb-12 space-y-2">
+          <h3 className="text-3xl md:text-4xl font-display font-light text-primary tracking-widest" data-testid="text-countdown-date">
+            OCTOBER 8, 2025
           </h3>
-          <p className="text-xl font-body text-muted-foreground mb-1">
-            2:00 PM
-          </p>
-          <p className="text-lg font-body text-primary">
-            Tagaytay Highlands
+          <p className="text-lg font-body text-foreground/70" data-testid="text-countdown-time">
+            2:00 PM • Tagaytay Highlands
           </p>
         </div>
 
-        {/* Countdown Timer */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+        {/* Countdown Timer Grid */}
+        <div className="grid grid-cols-4 gap-4 md:gap-8 max-w-lg mx-auto">
           {[
             { label: 'Days', value: timeLeft.days },
             { label: 'Hours', value: timeLeft.hours },
@@ -65,13 +61,14 @@ const CountdownSection = () => {
           ].map((item, index) => (
             <div
               key={item.label}
-              className={`bg-card border border-border rounded-xl p-6 shadow-soft hover-elegant animate-fade-scale`}
+              className="text-center animate-fade-scale"
               style={{ animationDelay: `${index * 0.1}s` }}
+              data-testid={`countdown-${item.label.toLowerCase()}`}
             >
-              <div className="text-3xl sm:text-4xl font-display font-bold text-[#4e403b] mb-2">
+              <div className="text-4xl md:text-5xl font-display font-light text-primary mb-2">
                 {item.value.toString().padStart(2, '0')}
               </div>
-              <div className="text-sm font-body uppercase tracking-wide text-muted-foreground">
+              <div className="text-xs md:text-sm font-body uppercase tracking-wider text-foreground/60">
                 {item.label}
               </div>
             </div>

@@ -10,10 +10,9 @@ const StorySection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-section-title font-display text-primary mb-6">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-story-title">
             Our Love Story
           </h2>
-          <div className="w-20 h-0.5 mx-auto bg-[#2c2421]"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">

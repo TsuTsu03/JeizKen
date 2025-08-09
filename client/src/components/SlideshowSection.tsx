@@ -55,7 +55,7 @@ const SlideshowSection = () => {
           <div
             key={`bg-${index}`}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-30' : 'opacity-0'
+              index === currentIndex ? 'opacity-20' : 'opacity-0'
             }`}
           >
             <img
@@ -64,15 +64,14 @@ const SlideshowSection = () => {
               className="w-full h-full object-cover blur-sm scale-110"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-background/60"></div>
+            <div className="absolute inset-0 bg-blue-50/20"></div>
           </div>
         ))}
       </div>
 
       {/* Section Header */}
       <div className="relative z-10 text-center py-8 px-4">
-        <h2 className="text-section-title font-display text-primary mb-4">Timeless Frames</h2>
-        <div className="w-20 h-0.5 bg-primary mx-auto"></div>
+        <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-slideshow-title">Timeless Frames</h2>
       </div>
 
       {/* Main Slideshow Container */}

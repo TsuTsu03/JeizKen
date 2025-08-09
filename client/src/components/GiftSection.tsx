@@ -13,10 +13,9 @@ const GiftSection = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
         <div className="mb-16">
-          <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
+          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-gifts-title">
             Wedding Gifts
           </h2>
-          <div className="w-32 h-0.5 bg-[#4e403b] mx-auto"></div>
         </div>
 
         {/* Main Gift Message */}
