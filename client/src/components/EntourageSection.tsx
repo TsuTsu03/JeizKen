@@ -88,7 +88,7 @@ const EntourageSection = () => {
           <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
             Our Wedding Entourage
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto mb-6"></div>
+          <div className="w-32 h-0.5 mx-auto mb-6 bg-[#403936]"></div>
           <p className="text-elegant-body text-muted-foreground max-w-2xl mx-auto">
             We are honored to have these special people stand with us as we begin our journey as husband and wife
           </p>
