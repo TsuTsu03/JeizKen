@@ -65,12 +65,11 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
                 console.log('HeroSection button clicked');
                 onOpenInvitation();
               }}
-              size="lg"
-              className="bg-gradient-to-r from-[#4e403b] to-[#8B7355] hover:from-[#4e403b]/90 hover:to-[#8B7355]/90 text-white font-display font-medium px-20 py-7 text-xl tracking-widest shadow-2xl border-0 rounded-full relative overflow-hidden transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-[#4e403b]/50 z-20"
+              className="bg-gradient-to-r from-[#4e403b] to-[#8B7355] hover:from-[#4e403b]/90 hover:to-[#8B7355]/90 text-white font-display font-medium w-12 h-12 text-sm shadow-2xl border-0 rounded-md relative overflow-hidden transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-[#4e403b]/50 z-20"
               aria-label="Open Wedding Invitation"
               data-testid="button-open-invitation"
             >
-              <span className="relative z-10 font-display font-medium tracking-widest">
+              <span className="relative z-10 font-display font-medium">
                 Open Invitation
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
