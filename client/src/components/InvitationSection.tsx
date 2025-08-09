@@ -58,7 +58,7 @@ const InvitationSection = () => {
               This event is strictly by invitation only.
             </p>
             <p className="text-muted-foreground text-sm leading-relaxed" data-testid="text-rsvp-deadline">
-              Kindly RSVP on or before <span className="font-semibold text-gold">August 20, 2025</span> to ensure we can accommodate you on our special day.
+              Kindly RSVP on or before <span className="font-semibold text-[#1a1c25]">August 20, 2025</span> to ensure we can accommodate you on our special day.
             </p>
           </div>
         </div>
