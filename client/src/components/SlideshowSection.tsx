@@ -48,34 +48,57 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative bg-background">
-      {/* Section Header */}
-      <div className="text-center py-8 px-4">
-        <h2 className="text-section-title font-display text-primary mb-4">Timeless Frames</h2>
-        <div className="w-20 h-0.5 bg-[#4e403b] mx-auto"></div>
-      </div>
-      {/* Clean Slideshow Container */}
-      <div className="relative w-full max-w-4xl mx-auto bg-background">
+    <section id="slideshow" className="relative min-h-screen bg-background overflow-hidden">
+      {/* Background Slideshow */}
+      <div className="absolute inset-0">
         {images.map((image, index) => (
           <div
-            key={index}
-            className={`transition-opacity duration-500 ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
+            key={`bg-${index}`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentIndex ? 'opacity-30' : 'opacity-0'
             }`}
           >
             <img
               src={image}
-              alt={`Kenneth and Jeizl moments ${index + 1}`}
-              className="w-full h-auto object-cover rounded-lg shadow-sm border border-gray-100"
-              style={{
-                maxHeight: '500px',
-                objectPosition: 'center'
-              }}
-              loading={index === 0 ? 'eager' : 'lazy'}
-              data-testid={`img-slideshow-${index + 1}`}
+              alt=""
+              className="w-full h-full object-cover blur-sm scale-110"
+              loading="lazy"
             />
+            <div className="absolute inset-0 bg-background/60"></div>
           </div>
         ))}
+      </div>
+
+      {/* Section Header */}
+      <div className="relative z-10 text-center py-8 px-4">
+        <h2 className="text-section-title font-display text-primary mb-4">Timeless Frames</h2>
+        <div className="w-20 h-0.5 bg-primary mx-auto"></div>
+      </div>
+
+      {/* Main Slideshow Container */}
+      <div className="relative z-10 flex items-center justify-center min-h-[70vh] px-4">
+        <div className="relative w-full max-w-2xl">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`transition-opacity duration-500 ${
+                index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
+              }`}
+            >
+              <img
+                src={image}
+                alt={`Kenneth and Jeizl moments ${index + 1}`}
+                className="w-full h-auto object-cover rounded-lg shadow-2xl border-4 border-white"
+                style={{
+                  maxHeight: '600px',
+                  objectPosition: 'center'
+                }}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                data-testid={`img-slideshow-${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
       </div>
       {/* Progress indicators */}
       <div className="flex justify-center space-x-2 py-8">
