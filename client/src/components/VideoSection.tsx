@@ -13,7 +13,7 @@ const VideoSection = () => {
         <div className="absolute bottom-0 left-1/3 w-4 h-4 border border-gold/50 rounded-full"></div>
         <div className="absolute bottom-1 right-1/3 w-2 h-2 bg-gold/40 rounded-full"></div>
         
-        <h2 className="font-display mb-4 gold-underline inline-block text-[#413a37]">
+        <h2 className="font-display mb-4 gold-underline inline-block text-[#ffffff] text-[24px]">
           Our Prenup Video
         </h2>
         <div className="w-32 h-0.5 bg-gold mx-auto"></div>
