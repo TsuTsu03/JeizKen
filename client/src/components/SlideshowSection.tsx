@@ -103,10 +103,24 @@ const SlideshowSection = () => {
         ))}
       </div>
       {/* Quote Section */}
-      <div className="text-center py-6 px-4 bg-background relative overflow-hidden">
+      <div className="text-center py-6 px-4 bg-gradient-elegant relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-5">
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-gold rounded-full"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-24 h-24 border border-gold rounded-full"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-gold rounded-full"></div>
+        </div>
         
-        <div className="max-w-4xl mx-auto relative">
-          <blockquote className="text-2xl md:text-3xl font-script text-primary/80 italic mb-6">
+        <div className="max-w-4xl mx-auto relative z-10">
+          {/* Quote Icon */}
+          {/* Removed the circled icon as requested */}
+          {/* <div className="flex justify-center mb-6">
+            <div className="w-12 h-12 border-2 border-gold rounded-full flex items-center justify-center">
+              <div className="w-6 h-6 border border-gold rounded-full"></div>
+            </div>
+          </div> */}
+          
+          <blockquote className="text-2xl md:text-3xl font-display text-primary/80 italic mb-6">
             "Love is not about finding the perfect person, but about seeing an imperfect person perfectly."
           </blockquote>
           
