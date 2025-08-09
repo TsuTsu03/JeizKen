@@ -48,10 +48,29 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative py-16 bg-background">
+    <section id="slideshow" className="relative py-8 bg-background overflow-hidden">
+      {/* Background Slideshow - Clean, No Blur */}
+      <div className="absolute inset-0">
+        {images.map((image, index) => (
+          <div
+            key={`bg-${index}`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentIndex ? 'opacity-30' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={image}
+              alt=""
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+
       {/* Main Slideshow Container - Compact Design */}
-      <div className="flex items-center justify-center px-4">
-        <div className="relative w-full max-w-lg">
+      <div className="relative z-10 flex items-center justify-center px-4">
+        <div className="relative w-full max-w-md">
           {images.map((image, index) => (
             <div
               key={index}
@@ -64,7 +83,8 @@ const SlideshowSection = () => {
                 alt={`Kenneth and Jeizl moments ${index + 1}`}
                 className="w-full h-auto object-cover rounded-lg shadow-lg"
                 style={{
-                  maxHeight: '400px',
+                  height: '300px',
+                  objectFit: 'cover',
                   objectPosition: 'center'
                 }}
                 loading={index === 0 ? 'eager' : 'lazy'}
@@ -76,7 +96,7 @@ const SlideshowSection = () => {
       </div>
       
       {/* Progress indicators */}
-      <div className="flex justify-center space-x-2 pt-6">
+      <div className="relative z-10 flex justify-center space-x-2 pt-4">
         {images.map((_, index) => (
           <button
             key={index}
@@ -84,7 +104,7 @@ const SlideshowSection = () => {
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
               index === currentIndex
                 ? 'bg-[#4e403b] w-8'
-                : 'bg-muted hover:bg-[#4e403b]/50'
+                : 'bg-white/70 hover:bg-[#4e403b]/50'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
