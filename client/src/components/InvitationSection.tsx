@@ -9,7 +9,7 @@ const InvitationSection = () => {
           <h2 className="text-section-title font-display text-primary mb-4">
             You Are Invited
           </h2>
-          <div className="w-20 h-0.5 bg-gold mx-auto"></div>
+          <div className="w-20 h-0.5 mx-auto bg-[#2c2421]"></div>
         </div>
 
         {/* Invitation Image */}
