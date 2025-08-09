@@ -120,7 +120,7 @@ const FAQSection = () => {
               We're here to help! Feel free to reach out to us directly if you need more information about our special day.
             </p>
             <div className="flex justify-center items-center space-x-2">
-              <div className="w-8 h-px bg-gold"></div>
+              <div className="w-8 h-px bg-[#2c2421]"></div>
               <div className="w-2 h-2 rounded-full animate-float bg-[#2c2421]"></div>
               <div className="w-8 h-px bg-gold"></div>
             </div>
