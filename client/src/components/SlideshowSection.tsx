@@ -95,7 +95,7 @@ const SlideshowSection = () => {
       {/* Quote Section */}
       <div className="text-center py-12 px-4 bg-background">
         <div className="max-w-2xl mx-auto">
-          <blockquote className="md:text-2xl font-script text-primary/90 italic text-[23px]">
+          <blockquote className="md:text-2xl font-script text-primary/90 italic text-[21px]">
             "Love is not about finding the perfect person, but about seeing an imperfect person perfectly."
           </blockquote>
           <div className="flex justify-center mt-6">
