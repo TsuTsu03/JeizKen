@@ -48,34 +48,10 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative min-h-screen bg-background overflow-hidden">
-      {/* Background Slideshow */}
-      <div className="absolute inset-0">
-        {images.map((image, index) => (
-          <div
-            key={`bg-${index}`}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-50' : 'opacity-0'
-            }`}
-          >
-            <img
-              src={image}
-              alt=""
-              className="w-full h-full object-cover blur-sm scale-110"
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Section Header */}
-      <div className="relative z-10 text-center py-8 px-4">
-        <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-slideshow-title">Timeless Frames</h2>
-      </div>
-
-      {/* Main Slideshow Container */}
-      <div className="relative z-10 flex items-center justify-center min-h-[70vh] px-4">
-        <div className="relative w-full max-w-2xl">
+    <section id="slideshow" className="relative py-16 bg-background">
+      {/* Main Slideshow Container - Compact Design */}
+      <div className="flex items-center justify-center px-4">
+        <div className="relative w-full max-w-lg">
           {images.map((image, index) => (
             <div
               key={index}
@@ -86,9 +62,9 @@ const SlideshowSection = () => {
               <img
                 src={image}
                 alt={`Kenneth and Jeizl moments ${index + 1}`}
-                className="w-full h-auto object-cover rounded-lg shadow-2xl border-4 border-white"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
                 style={{
-                  maxHeight: '600px',
+                  maxHeight: '400px',
                   objectPosition: 'center'
                 }}
                 loading={index === 0 ? 'eager' : 'lazy'}
@@ -98,8 +74,9 @@ const SlideshowSection = () => {
           ))}
         </div>
       </div>
+      
       {/* Progress indicators */}
-      <div className="flex justify-center space-x-2 py-8">
+      <div className="flex justify-center space-x-2 pt-6">
         {images.map((_, index) => (
           <button
             key={index}
