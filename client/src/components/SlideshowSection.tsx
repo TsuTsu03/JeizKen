@@ -57,12 +57,9 @@ const SlideshowSection = () => {
         <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-gold/40 rounded-full"></div>
         <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-gold/30 rounded-full"></div>
         
-        <h2 className="text-section-title font-display text-primary mb-4 gold-underline inline-block">
-          Our Love Story
-        </h2>
+        <h2 className="text-section-title font-display text-primary mb-4 gold-underline inline-block">Timeless Frames</h2>
         <div className="w-24 h-0.5 bg-gold mx-auto mt-4"></div>
       </div>
-
       {/* Slideshow Container */}
       <div className="relative w-full overflow-hidden bg-background">
         {images.map((image, index) => (
@@ -90,7 +87,6 @@ const SlideshowSection = () => {
           </div>
         ))}
       </div>
-
       {/* Progress indicators */}
       <div className="flex justify-center space-x-2 py-8">
         {images.map((_, index) => (
@@ -106,7 +102,6 @@ const SlideshowSection = () => {
           />
         ))}
       </div>
-
       {/* Quote Section */}
       <div className="text-center py-6 px-4 bg-gradient-elegant relative overflow-hidden">
         {/* Decorative Background Elements */}
