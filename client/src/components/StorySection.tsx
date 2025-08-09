@@ -6,7 +6,7 @@ const StorySection = () => {
   ];
 
   return (
-    <section id="story" className="py-16 px-4 bg-background">
+    <section id="story" className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
