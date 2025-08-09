@@ -12,10 +12,10 @@ const RSVPSection = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
         <div className="mb-16">
-          <h2 className="font-display mb-6 gold-underline inline-block text-[#2c2421] text-[24px]">
+          <h2 className="font-display text-section-title mb-6 text-primary" data-testid="text-rsvp-title">
             Please RSVP
           </h2>
-          <div className="w-32 h-0.5 bg-gold mx-auto"></div>
+          <div className="w-20 h-0.5 bg-gold mx-auto"></div>
         </div>
 
         {/* Main RSVP Content */}
@@ -50,10 +50,10 @@ const RSVPSection = () => {
 
             {/* RSVP Message */}
             <div className="space-y-6 mb-8">
-              <p className="text-xl font-display text-primary leading-relaxed">
+              <p className="text-xl font-script italic text-primary leading-relaxed" data-testid="text-rsvp-message">
                 Your presence would make our day complete
               </p>
-              <p className="text-elegant-body text-muted-foreground leading-relaxed">
+              <p className="text-lg font-body text-muted-foreground leading-relaxed" data-testid="text-rsvp-details">
                 Please confirm your attendance by clicking the button below. 
                 We're excited to celebrate this special moment with you!
               </p>
@@ -63,7 +63,8 @@ const RSVPSection = () => {
             <Button
               asChild
               size="lg"
-              className="group relative px-20 py-8 text-xl font-display font-bold tracking-[0.2em] bg-gradient-to-r from-gold via-yellow-400 to-gold hover:from-yellow-400 hover:via-gold hover:to-yellow-400 text-white shadow-2xl hover:shadow-gold/50 transition-all duration-500 border-2 border-yellow-300/30 overflow-hidden rounded-2xl"
+              className="group relative px-16 py-6 text-lg font-script font-medium tracking-wide bg-gradient-to-r from-gold via-yellow-400 to-gold hover:from-yellow-400 hover:via-gold hover:to-yellow-400 text-white shadow-2xl hover:shadow-gold/50 transition-all duration-500 border-2 border-yellow-300/30 overflow-hidden rounded-full"
+              data-testid="button-rsvp"
             >
               <a 
                 href="https://kennethJeizlrsvp.replit.app" 
@@ -71,7 +72,7 @@ const RSVPSection = () => {
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center justify-center w-full h-full z-10"
               >
-                <span className="relative z-10">RSVP NOW</span>
+                <span className="relative z-10 font-script italic">RSVP Now</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform skew-x-12 group-hover:animate-pulse"></div>
               </a>
             </Button>
