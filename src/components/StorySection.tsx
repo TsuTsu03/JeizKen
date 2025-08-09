@@ -9,7 +9,13 @@ const StorySection = () => {
     <section id="story" className="py-20 px-4 bg-gradient-elegant">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 relative">
+          {/* Decorative Elements */}
+          <div className="absolute top-0 left-1/4 w-8 h-8 border-2 border-gold/30 rounded-full"></div>
+          <div className="absolute top-4 right-1/4 w-4 h-4 bg-gold/20 rounded-full"></div>
+          <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-gold/40 rounded-full"></div>
+          <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-gold/30 rounded-full"></div>
+          
           <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
             Our Love Story
           </h2>
@@ -62,7 +68,7 @@ const StorySection = () => {
                     <img
                       src={image}
                       alt={`Our story moment ${index + 1}`}
-                      className="w-full h-64 object-contain rounded"
+                      className="w-full h-64 object-cover rounded"
                       loading="lazy"
                     />
                     <div className="mt-3 text-center">

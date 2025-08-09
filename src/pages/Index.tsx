@@ -22,13 +22,8 @@ const Index = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const handleOpenInvitation = () => {
+    console.log('handleOpenInvitation called');
     setShowInvitation(true);
-    
-    // Start background music automatically
-    if (audioRef.current && !musicStarted) {
-      audioRef.current.play().catch(console.error);
-      setMusicStarted(true);
-    }
   };
 
   useEffect(() => {
@@ -36,11 +31,39 @@ const Index = () => {
     if (audioRef.current) {
       audioRef.current.preload = 'auto';
     }
-  }, []);
+
+    // Add event listener to start music on any user interaction
+    const handleUserInteraction = () => {
+      if (audioRef.current && !musicStarted && showInvitation) {
+        audioRef.current.volume = 0.3;
+        audioRef.current.play().then(() => {
+          setMusicStarted(true);
+          console.log('Background music started on user interaction');
+        }).catch(console.error);
+        
+        // Remove event listeners after music starts
+        document.removeEventListener('click', handleUserInteraction);
+        document.removeEventListener('touchstart', handleUserInteraction);
+      }
+    };
+
+    if (showInvitation) {
+      document.addEventListener('click', handleUserInteraction);
+      document.addEventListener('touchstart', handleUserInteraction);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleUserInteraction);
+      document.removeEventListener('touchstart', handleUserInteraction);
+    };
+  }, [showInvitation, musicStarted]);
 
   if (!showInvitation) {
+    console.log('Rendering HeroSection, showInvitation:', showInvitation);
     return <HeroSection onOpenInvitation={handleOpenInvitation} />;
   }
+
+  console.log('Rendering main content, showInvitation:', showInvitation);
 
   return (
     <>

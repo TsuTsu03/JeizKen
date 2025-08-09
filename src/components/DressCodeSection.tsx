@@ -1,13 +1,13 @@
 const DressCodeSection = () => {
   const dressCodeColors = [
-    { name: 'Warm Brown', color: '#895e4d', hex: '#895e4d' },
-    { name: 'Medium Brown', color: '#8a5f4e', hex: '#8a5f4e' },
-    { name: 'Soft Dusty Rose', color: '#c18a85', hex: '#c18a85' },
-    { name: 'Light Rose Brown', color: '#c08984', hex: '#c08984' },
-    { name: 'Warm Muted Pink', color: '#be8782', hex: '#be8782' },
-    { name: 'Muted Rose', color: '#ba837e', hex: '#ba837e' },
-    { name: 'Deep Brick Red', color: '#8c3b37', hex: '#8c3b37' },
-    { name: 'Soft Blush Pink', color: '#bf8883', hex: '#bf8883' }
+    { name: 'Deep Burgundy', color: '#8B2635', hex: '#8B2635' },
+    { name: 'Navy Blue', color: '#1B365D', hex: '#1B365D' },
+    { name: 'Emerald Green', color: '#2D5A27', hex: '#2D5A27' },
+    { name: 'Plum Purple', color: '#5D3754', hex: '#5D3754' },
+    { name: 'Dusty Rose', color: '#B76E79', hex: '#B76E79' },
+    { name: 'Sage Green', color: '#7A918D', hex: '#7A918D' },
+    { name: 'Terracotta', color: '#A0522D', hex: '#A0522D' },
+    { name: 'Slate Gray', color: '#4A5568', hex: '#4A5568' }
   ];
 
   return (
@@ -20,12 +20,24 @@ const DressCodeSection = () => {
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 relative">
+          {/* Decorative Elements */}
+          <div className="absolute top-0 left-1/4 w-8 h-8 border-2 border-gold/30 rounded-full"></div>
+          <div className="absolute top-4 right-1/4 w-4 h-4 bg-gold/20 rounded-full"></div>
+          <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-gold/40 rounded-full"></div>
+          <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-gold/30 rounded-full"></div>
+          
           <h2 className="text-section-title font-display text-primary mb-6 gold-underline inline-block">
             Dress Code
           </h2>
           <div className="w-32 h-0.5 bg-gold mx-auto mb-6"></div>
-          <div className="bg-gold/10 border border-gold/20 rounded-2xl p-6 max-w-md mx-auto">
+          <div className="bg-gold/10 border border-gold/20 rounded-2xl p-6 max-w-md mx-auto relative">
+            {/* Decorative Corner Elements */}
+            <div className="absolute top-2 left-2 w-3 h-3 border-l-2 border-t-2 border-gold/50"></div>
+            <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-gold/50"></div>
+            <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-gold/50"></div>
+            <div className="absolute bottom-2 right-2 w-3 h-3 border-r-2 border-b-2 border-gold/50"></div>
+            
             <p className="text-2xl font-display font-bold text-primary mb-2">
               STRICTLY FORMAL
             </p>

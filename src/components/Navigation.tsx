@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
 
   const navItems = [
     { name: 'Our Moments', href: '#slideshow' },
@@ -19,6 +20,15 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Show/hide navigation based on scroll - only show when scrolling starts
+      if (window.scrollY > 100) {
+        setIsVisible(true);
+      } else {
+        // Hide navigation when at the top
+        setIsVisible(false);
+      }
+
+      // Update active section
       const sections = navItems.map(item => item.href.slice(1));
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
@@ -34,20 +44,55 @@ const Navigation = () => {
       }
     };
 
+    // Don't show navigation immediately when component mounts
+    setIsVisible(false);
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+    const sectionId = href.slice(1); // Remove the # from the href
+    const element = document.getElementById(sectionId);
+    
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Calculate the offset for the fixed navigation
+      const navHeight = 64; // Approximate navigation height
+      const elementTop = element.offsetTop - navHeight;
+      
+      // Smooth scroll to the element
+      window.scrollTo({
+        top: Math.max(0, elementTop),
+        behavior: 'smooth'
+      });
+    } else {
+      // Fallback: try querySelector if getElementById fails
+      const fallbackElement = document.querySelector(href);
+      if (fallbackElement) {
+        const navHeight = 64;
+        const rect = fallbackElement.getBoundingClientRect();
+        const elementTop = rect.top + window.pageYOffset - navHeight;
+        
+        window.scrollTo({
+          top: Math.max(0, elementTop),
+          behavior: 'smooth'
+        });
+      } else {
+        // If element is not found, scroll to top
+        console.warn(`Section ${sectionId} not found`);
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
     }
     setIsOpen(false);
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-soft">
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-soft transition-all duration-300 ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

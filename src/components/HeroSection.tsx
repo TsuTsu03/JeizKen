@@ -37,27 +37,44 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
         </div>
         
         <div className="animate-fade-up opacity-0 [animation-delay:0.6s]">
-          <p className="text-lg sm:text-xl text-white/90 mb-4 font-light tracking-wide">
-            We're Saying "I Do"
-          </p>
-          <div className="space-y-1 mb-12">
-            <p className="text-base sm:text-lg text-white/80 font-light">
-              October 8, 2025 at 2:00 PM
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 mb-8 max-w-md mx-auto">
+            <p className="text-lg sm:text-xl text-white font-medium tracking-wide mb-3">
+              We're Saying "I Do"
             </p>
-            <p className="text-base sm:text-lg text-white/80 font-light">
-              Tagaytay Highlands
-            </p>
+            <div className="space-y-2">
+              <div className="flex items-center justify-center space-x-2">
+                <p className="text-base sm:text-lg text-white font-light">
+                  October 8, 2025 at 2:00 PM
+                </p>
+              </div>
+              <div className="flex items-center justify-center space-x-2">
+                <p className="text-base sm:text-lg text-white font-light">
+                  Tagaytay Highlands
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="animate-fade-scale opacity-0 [animation-delay:1s]">
-          <Button
-            onClick={onOpenInvitation}
-            size="lg"
-            className="bg-gold hover:bg-gold/90 text-primary font-semibold px-12 py-4 text-lg tracking-wide hover-elegant shadow-warm border-0 rounded-full"
-          >
-            Open Invitation
-          </Button>
+          <div className="relative group">
+            <Button
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('HeroSection button clicked');
+                onOpenInvitation();
+              }}
+              size="lg"
+              className="bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/90 hover:to-yellow-500/90 text-primary font-semibold px-16 py-6 text-xl tracking-wide shadow-2xl border-0 rounded-full relative overflow-hidden transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-gold/50 z-20"
+              aria-label="Open Wedding Invitation"
+            >
+              <span className="relative z-10">
+                Open Invitation
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+            </Button>
+          </div>
         </div>
       </div>
 
