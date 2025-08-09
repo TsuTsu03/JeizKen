@@ -21,7 +21,7 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-gold" />
                 <a 
                   href="tel:09178396781" 
-                  className="text-gold hover:text-gold/80 transition-colors duration-300 font-semibold"
+                  className="hover:text-gold/80 transition-colors duration-300 font-semibold text-[#f9f8f7]"
                 >
                   0917-839-6781
                 </a>
@@ -78,7 +78,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       {/* Background Decorative Elements */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary to-transparent opacity-50 pointer-events-none"></div>
     </footer>
