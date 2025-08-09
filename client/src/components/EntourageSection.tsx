@@ -82,7 +82,6 @@ const EntourageSection = () => {
           <div className="absolute bottom-1/4 left-1/4 w-48 h-48 border border-gold rounded-full animate-float" style={{ animationDelay: '3s' }}></div>
         </div>
       </div>
-
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -109,7 +108,7 @@ const EntourageSection = () => {
                   <h3 className="text-xl font-display font-semibold text-primary mb-2">
                     {group.title}
                   </h3>
-                  <div className="w-16 h-0.5 bg-gold mx-auto"></div>
+                  <div className="w-16 h-0.5 mx-auto bg-[#413a37]"></div>
                 </div>
 
                 {/* Members List */}
