@@ -48,19 +48,19 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative py-8 bg-background overflow-hidden">
-      {/* Background Slideshow - Clean, No Filters */}
+    <section id="slideshow" className="relative h-screen w-full overflow-hidden">
+      {/* Full Screen Slideshow */}
       <div className="absolute inset-0">
         {images.map((image, index) => (
           <div
-            key={`bg-${index}`}
+            key={`fullscreen-${index}`}
             className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentIndex ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <img
               src={image}
-              alt=""
+              alt={`Wedding photo ${index + 1}`}
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -68,47 +68,23 @@ const SlideshowSection = () => {
         ))}
       </div>
 
-      {/* Main Slideshow Container - Compact Design */}
-      <div className="relative z-10 flex items-center justify-center px-4">
-        <div className="relative w-full max-w-md">
-          {images.map((image, index) => (
-            <div
+      {/* Navigation Dots - Positioned at bottom */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="flex space-x-2">
+          {images.map((_, index) => (
+            <button
               key={index}
-              className={`transition-opacity duration-500 ${
-                index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
+              onClick={() => setCurrentIndex(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentIndex
+                  ? 'bg-white w-8'
+                  : 'bg-white/50 hover:bg-white/80'
               }`}
-            >
-              <img
-                src={image}
-                alt={`Kenneth and Jeizl moments ${index + 1}`}
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
-                style={{
-                  height: '300px',
-                  objectFit: 'cover',
-                  objectPosition: 'center'
-                }}
-                loading={index === 0 ? 'eager' : 'lazy'}
-                data-testid={`img-slideshow-${index + 1}`}
-              />
-            </div>
+              aria-label={`Go to slide ${index + 1}`}
+              data-testid={`button-slide-${index + 1}`}
+            />
           ))}
         </div>
-      </div>
-      
-      {/* Progress indicators */}
-      <div className="relative z-10 flex justify-center space-x-2 pt-4">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex
-                ? 'bg-[#4e403b] w-8'
-                : 'bg-white/70 hover:bg-[#4e403b]/50'
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
       </div>
     </section>
   );
