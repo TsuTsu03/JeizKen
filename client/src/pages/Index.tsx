@@ -74,7 +74,7 @@ const Index = () => {
       {!showInvitation ? (
         <HeroSection onOpenInvitation={handleOpenInvitation} />
       ) : (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-white">
           <Navigation />
           
           {/* Main Content Sections */}

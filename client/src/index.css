@@ -343,8 +343,12 @@
     outline: none !important;
   }
 
-  /* Force white background for invitation section */
+  /* Force white background for invitation section and parent */
   #invitation {
+    background-color: #ffffff !important;
+  }
+  
+  .min-h-screen {
     background-color: #ffffff !important;
   }
 
