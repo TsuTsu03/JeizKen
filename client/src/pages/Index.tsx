@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import SlideshowSection from '@/components/SlideshowSection';
-import InvitationSection from '@/components/InvitationSection';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import VideoSection from '@/components/VideoSection';
@@ -80,10 +79,6 @@ const Index = () => {
           {/* Main Content Sections */}
           <main>
             <SlideshowSection />
-            
-
-            
-            <InvitationSection />
             <CountdownSection />
             <StorySection />
             <VideoSection />
