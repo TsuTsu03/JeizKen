@@ -49,18 +49,7 @@ const InvitationSection = () => {
           <h2 className="text-3xl md:text-4xl font-display font-light text-primary tracking-widest" data-testid="text-wedding-date">August 22, 2025</h2>
         </div>
 
-        {/* Navigation Arrow to RSVP */}
-        <div className="py-4">
-          <a 
-            href="#rsvp" 
-            className="inline-flex items-center justify-center text-primary hover:text-primary/80 transition-colors duration-300"
-            data-testid="link-navigate-rsvp"
-          >
-            <svg className="w-8 h-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </a>
-        </div>
+        
       </div>
     </section>
   );
