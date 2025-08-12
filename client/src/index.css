@@ -356,6 +356,21 @@
     background-image: none !important;
   }
 
+  /* Remove any gradients that might be applied to invitation section elements */
+  #invitation *,
+  #invitation *::before,
+  #invitation *::after {
+    background-image: none !important;
+    background: inherit !important;
+  }
+
+  /* Target any potential gradient classes specifically */
+  #invitation [class*="gradient"],
+  #invitation [class*="bg-gradient"] {
+    background: #ffffff !important;
+    background-image: none !important;
+  }
+
   /* Restore proper border-radius for UI elements that need it */
   .rounded-lg {
     border-radius: 0.5rem !important;
