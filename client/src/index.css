@@ -302,9 +302,13 @@
 
     /* Slideshow mobile fixes - prevent zoom issues */
     #slideshow img {
-      display: block !important;  /* removes inline gap */
-      width: 100% !important;     /* full width */
-      height: auto !important;    /* maintain aspect ratio */
+      display: block !important;        /* removes inline gap */
+      width: 100% !important;           /* full width */
+      height: auto !important;          /* maintain aspect ratio */
+      object-fit: contain !important;   /* show whole image like video */
+      object-position: center !important; /* center the image */
+      margin: 0 !important;
+      padding: 0 !important;
     }
   }
 

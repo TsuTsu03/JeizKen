@@ -62,7 +62,15 @@ const SlideshowSection = () => {
               src={image}
               alt=""
               className="w-full h-full object-cover"
-              style={{ display: 'block', width: '100%', height: 'auto' }}
+              style={{
+                display: 'block',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+                objectPosition: 'center',
+                margin: 0,
+                padding: 0
+              }}
               loading="lazy"
             />
           </div>
@@ -86,7 +94,11 @@ const SlideshowSection = () => {
                 style={{
                   display: 'block',
                   width: '100%',
-                  height: 'auto'
+                  height: 'auto',
+                  objectFit: 'contain',
+                  objectPosition: 'center',
+                  margin: 0,
+                  padding: 0
                 }}
                 loading={index === 0 ? 'eager' : 'lazy'}
                 data-testid={`img-slideshow-${index + 1}`}
