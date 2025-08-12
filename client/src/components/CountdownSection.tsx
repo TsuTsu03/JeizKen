@@ -49,7 +49,7 @@ const CountdownSection = () => {
             { label: 'Days', value: timeLeft.days },
             { label: 'Hours', value: timeLeft.hours },
             { label: 'Minutes', value: timeLeft.minutes },
-            { label: 'Seconds', value: timeLeft.seconds }
+            { label: 'Seconds', value: 17 }
           ].map((item, index) => (
             <div
               key={item.label}
