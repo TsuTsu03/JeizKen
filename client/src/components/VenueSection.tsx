@@ -45,20 +45,7 @@ const VenueSection = () => {
 
               {/* Venue Content */}
               <div className="max-w-lg mx-auto text-center space-y-6">
-                {/* Address Section */}
-                <div className="mb-8">
-                  <div className="flex items-center justify-center mb-3">
-                    <MapPin className="w-5 h-5 text-primary mr-2" />
-                    <span className="text-sm font-body font-medium text-primary tracking-wide">Address</span>
-                  </div>
-                  <div className="space-y-1">
-                    {venue.address.split('\n').map((line, i) => (
-                      <p key={i} className="text-base font-body text-foreground/80" data-testid={`text-${venue.title.toLowerCase()}-address-${i + 1}`}>
-                        {line}
-                      </p>
-                    ))}
-                  </div>
-                </div>
+                
 
                 {/* Description */}
                 <div className="space-y-3 mb-8">
