@@ -97,35 +97,7 @@ const DressCodeSection = () => {
           </div>
         </div>
 
-        {/* Color Palette */}
-        <div className="text-center mb-12">
-          <h3 className="text-xl font-display font-semibold text-primary mb-8">
-            Approved Color Palette for Ladies' Gowns
-          </h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {dressCodeColors.map((colorItem, index) => (
-              <div
-                key={index}
-                className={`group cursor-pointer animate-fade-scale`}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="bg-card border border-border rounded-xl p-4 shadow-soft hover-elegant">
-                  <div
-                    className="w-full h-16 rounded-lg mb-3 border-2 border-white shadow-inner"
-                    style={{ backgroundColor: colorItem.hex }}
-                  ></div>
-                  <p className="text-xs font-medium text-center text-foreground mb-1">
-                    {colorItem.name}
-                  </p>
-                  <p className="text-xs text-center text-muted-foreground font-mono">
-                    {colorItem.hex}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Additional Guidelines */}
         <div className="bg-gradient-elegant border border-border rounded-2xl p-8 shadow-soft max-w-3xl mx-auto">
