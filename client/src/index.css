@@ -339,6 +339,11 @@
     outline: none !important;
   }
 
+  /* Force white background for invitation section */
+  #invitation {
+    background-color: #ffffff !important;
+  }
+
   /* Restore proper border-radius for UI elements that need it */
   .rounded-lg {
     border-radius: 0.5rem !important;
