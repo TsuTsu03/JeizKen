@@ -19,11 +19,10 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
     >
       {/* Overlay for better text readability - No black tint */}
       <div className="absolute inset-0"></div>
-      
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="animate-fade-up opacity-0 [animation-delay:0.3s] mb-8">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl text-white font-script italic leading-tight tracking-wide" data-testid="text-main-invitation">
+          <h1 className="md:text-7xl lg:text-8xl text-white font-script italic tracking-wide text-[50px]" data-testid="text-main-invitation">
             Jeizl & Kenneth
           </h1>
         </div>
@@ -66,7 +65,6 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
           </div>
         </div>
       </div>
-
       {/* Improved mobile responsiveness */}
       <style>{`
         .hero-section {
