@@ -73,6 +73,7 @@
     /* Elegant Typography Scale */
     --font-display: 'Playfair Display', 'Cormorant Garamond', serif;
     --font-script: 'Cormorant Garamond', serif;
+    --font-times: 'Times New Roman', Times, serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 
     /* Smooth Transitions */
@@ -160,6 +161,10 @@
     font-family: var(--font-script);
   }
 
+  .font-times {
+    font-family: var(--font-times);
+  }
+
   /* Mobile-First Responsive Typography */
   .text-hero {
     @apply text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-light tracking-tight;
@@ -237,6 +242,61 @@
     .shadow-soft,
     .shadow-warm {
       box-shadow: none !important;
+    }
+
+    /* Enhanced Mobile Layout Improvements */
+    section {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .max-w-4xl, .max-w-3xl, .max-w-2xl {
+      max-width: 100% !important;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    /* Countdown section mobile improvements */
+    .grid-cols-4 {
+      gap: 0.5rem !important;
+    }
+
+    /* Card padding adjustments */
+    .p-8 {
+      padding: 1rem !important;
+    }
+
+    .p-6 {
+      padding: 0.75rem !important;
+    }
+
+    /* Image sizing for mobile */
+    .w-64 {
+      width: 12rem !important;
+    }
+
+    .h-64 {
+      height: 12rem !important;
+    }
+
+    /* Typography adjustments */
+    .text-4xl {
+      font-size: 2rem !important;
+    }
+    
+    .text-5xl {
+      font-size: 2.5rem !important;
+    }
+    
+    .text-6xl {
+      font-size: 3rem !important;
+    }
+
+    /* Hero section specific mobile fixes */
+    .hero-section {
+      background-attachment: scroll !important;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
   }
 

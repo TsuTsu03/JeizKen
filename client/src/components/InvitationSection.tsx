@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import CountdownSection from '@/components/CountdownSection';
+
 import { Calendar, Clock, MapPin } from 'lucide-react';
 
 const InvitationSection = () => {
@@ -32,10 +32,7 @@ const InvitationSection = () => {
             </div>
           </div>
 
-          {/* Add Countdown Timer before invitation question */}
-          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 mb-8">
-            <CountdownSection />
-          </div>
+
 
           <div className="space-y-6 max-w-lg mx-auto">
             <p className="text-lg font-body text-foreground/85 leading-relaxed" data-testid="text-invitation-question">

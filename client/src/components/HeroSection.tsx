@@ -23,8 +23,8 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="animate-fade-up opacity-0 [animation-delay:0.3s] mb-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-script italic leading-tight tracking-wide" data-testid="text-main-invitation">
-            We're getting married
+          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-times leading-tight tracking-wide" data-testid="text-main-invitation">
+            Jeizl & Kenneth
           </h1>
         </div>
 
@@ -67,11 +67,29 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
         </div>
       </div>
 
-      {/* Mobile responsiveness handled via CSS-in-JS */}
+      {/* Improved mobile responsiveness */}
       <style>{`
+        .hero-section {
+          min-height: 100vh !important;
+        }
         @media (min-width: 768px) {
           .hero-section {
-            min-height: 160vh !important;
+            min-height: 100vh !important;
+          }
+        }
+        @media (max-width: 767px) {
+          .hero-section {
+            background-attachment: scroll !important;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+          }
+          .hero-section h1 {
+            font-size: 2.5rem !important;
+            line-height: 1.2 !important;
+          }
+          .hero-section .bg-white\\/10 {
+            padding: 1.5rem !important;
+            margin-bottom: 2rem !important;
           }
         }
       `}</style>

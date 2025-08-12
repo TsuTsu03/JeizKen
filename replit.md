@@ -68,7 +68,10 @@ Successfully migrated from Lovable to Replit environment:
   - Generated static build in dist/public/ with all assets
   - Created comprehensive deployment guide (VERCEL_DEPLOYMENT.md)
 - **2025-01-13**: Comprehensive content updates for Kenneth and Jeizl's wedding:
-  - Updated HeroSection with couple names and removed "We're saying I do" tagline
+  - Updated HeroSection with couple names "Jeizl & Kenneth" in Times New Roman font
+  - Removed "We're getting married" text as requested
+  - Fixed duplicate countdown timer issue by removing CountdownSection from InvitationSection
+  - Implemented comprehensive mobile responsiveness improvements
   - Changed ampersand color to white in hero section
   - Implemented background music pause/resume during prenup video playback
   - Updated wedding time from 2:00 PM to 2:15 PM across all components
@@ -77,8 +80,12 @@ Successfully migrated from Lovable to Replit environment:
   - Enhanced StorySection with new story content and updated image gallery
   - Updated TimelineSection with new event schedule
   - Updated VenueSection with new venue images and address details
-  - Updated DressCodeSection with new clothing reference images
+  - Updated DressCodeSection with new clothing reference images and color palette
   - Added QR code payment options (GCash and Bank Transfer) to GiftSection
   - Updated SlideshowSection with new image gallery
   - Updated FAQ hashtag from #AlexanderTheGreatGotAnArmie to #KennethAndJeizlWedding
   - Fixed countdown timer to use correct wedding date and time
+  - Cleaned up FAQ section and updated contact information
+  - Added wedding coordinator contact details
+  - Removed wedding entourage section entirely
+  - Enhanced RSVP text styling to match design requirements
