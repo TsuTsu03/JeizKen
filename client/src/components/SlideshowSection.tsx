@@ -48,19 +48,20 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative w-full overflow-hidden bg-background">
-      {/* Single Image Container - Exactly like Video */}
-      <div className="relative w-full overflow-hidden bg-background">
+    <section id="slideshow" className="relative py-8 bg-background overflow-hidden">
+      {/* Background Slideshow */}
+      <div className="absolute inset-0">
         {images.map((image, index) => (
           <div
-            key={index}
-            className={`transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
+            key={`bg-${index}`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentIndex ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <img
               src={image}
-              alt={`Kenneth and Jeizl moments ${index + 1}`}
+              alt=""
+              className="w-full h-full object-cover"
               style={{
                 display: 'block',
                 width: '100%',
@@ -70,10 +71,56 @@ const SlideshowSection = () => {
                 margin: 0,
                 padding: 0
               }}
-              loading={index === 0 ? 'eager' : 'lazy'}
-              data-testid={`img-slideshow-${index + 1}`}
+              loading="lazy"
             />
           </div>
+        ))}
+      </div>
+
+      {/* Main Slideshow Container - Centered */}
+      <div className="relative z-10 flex items-center justify-center px-4">
+        <div className="relative w-full max-w-md">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`transition-opacity duration-500 ${
+                index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
+              }`}
+            >
+              <img
+                src={image}
+                alt={`Kenneth and Jeizl moments ${index + 1}`}
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
+                  objectPosition: 'top',
+                  margin: 0,
+                  padding: 0
+                }}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                data-testid={`img-slideshow-${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      {/* Progress indicators */}
+      <div className="relative z-10 flex justify-center space-x-2 pt-4">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === currentIndex
+                ? 'bg-[#4e403b] w-8'
+                : 'bg-white/70 hover:bg-[#4e403b]/50'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
         ))}
       </div>
       
