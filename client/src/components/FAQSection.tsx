@@ -14,12 +14,8 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "RSVP",
-      answer: "We are so excited to celebrate our wedding day with you! To ensure an intimate and enjoyable experience for everyone, we have reserved seating for each guest individually. We kindly ask that each invitation is for ONE (1) PERSON ONLY. Please RSVP by August 22, 2025 to confirm your attendance. We can't wait to share this unforgettable day with you!"
-    },
-    {
       question: "May I invite a \"PLUS ONE\" to the event?",
-      answer: "As much as we would love to accommodate all our friends and family, we have a limited number of guests. Please understand that this event is strictly by invitation only. Kindly check our invitation to know the number of seats allotted for you. Guests not found on the guestlist provided will not be allowed to enter."
+      answer: "As much as we would love to celebrate with all our friends and family, we are only able to accommodate a limited number of guests. We appreciate your understanding that entry will be limited to those listed on our guest list."
     },
     {
       question: "Is there parking space available for my car?",
@@ -29,33 +25,15 @@ const FAQSection = () => {
       question: "What if I RSVP'd but cannot attend?",
       answer: "We would love to have you at our wedding, but we understand that there are circumstances beyond our control. However, please let us know as soon as possible so we can reallocate your seat/s."
     },
-    {
-      question: "I said \"NO\" to the RSVP but I had a change of plans-I can attend now! What should I do?",
-      answer: "Please check with us first. Unfortunately, we have a strict guest list. Kindly inform us if your schedule clears up, so we can try to accommodate you. If seats become available, we will let you know as soon as possible. Please do not attend unannounced, as we may not have any available seats for you."
-    },
-    {
-      question: "Can I sit anywhere at the reception?",
-      answer: "Please don't. It took us a lot of effort and discussion to finish the seating arrangement, which is planned for everyone's convenience and preference, but there is no need to worry! You'll surely be seated with your friends or people that you have same interest with. Our coordinators will gladly assist you in finding your designated seat after registration. Feel free to ask them for assistance and they will gladly help you."
-    },
+
     {
       question: "When is the appropriate time to leave?",
-      answer: "This event took us months to plan, and we want to celebrate it with the people that are very dear to our hearts. We want you to have fun! Celebrate with us until the end of the program!"
+      answer: "This celebration has been months in the making and we wish to share it with those dearest to our hearts. We hope you'll join us in having fun and celebrating with us all the way to the end of the program!"
     },
-    {
-      question: "How can I help the couple have a great time during their wedding?",
-      answer: "Pray with us for favorable weather and the continuous blessings of our Lord as we enter this new chapter of our lives as husband and wife. RSVP as soon as your schedule is cleared. Dress appropriately and follow our wedding motif. Be on time. Follow the seating arrangement in the reception. Stay until the end of the program. Join the activities and enjoy!"
-    },
-    {
-      question: "Am I allowed to take pictures and/or videos during the ceremony?",
-      answer: "We request everyone to keep the ceremony camera-free. While our I Do's are unplugged, our reception is not and definitely as a couple who loves pictures, you'll get tons of options to take your pictures. We prepared for this event wholeheartedly. Please use our official hashtag: #KennethAndJeizlWedding"
-    },
-    {
-      question: "Do we really need to RSVP? We already said \"YES\" to the couple.",
-      answer: "Yes, please. We will be needing your formal RSVP to consolidate guest details and finalize the headcount for catering and seating purposes."
-    },
+
     {
       question: "Am I allowed to bring my kids at the wedding?",
-      answer: "While we love all of the children in our lives, we have decided to keep our wedding ceremony and reception an adults-only event with the exception our little adorable entourage."
+      answer: "Though children hold a special place in our hearts, we have chosen to keep our wedding an adults-only celebration, with the exception of our adorable little entourage."
     }
   ];
 
@@ -112,12 +90,13 @@ const FAQSection = () => {
         {/* Contact Information */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-elegant border border-border rounded-2xl p-8 shadow-soft max-w-2xl mx-auto">
-            <h3 className="text-xl font-display font-semibold text-primary mb-4">
-              Still have questions?
-            </h3>
             <p className="text-muted-foreground mb-6">
-              We're here to help! Feel free to reach out to us directly if you need more information about our special day.
+              You may also directly contact our wedding coordinator
             </p>
+            <div className="space-y-2">
+              <p className="font-semibold text-primary">Events Management Services</p>
+              <p className="text-primary">09178396781</p>
+            </div>
             <div className="flex justify-center items-center space-x-2">
               <div className="w-8 h-px bg-[#2c2421]"></div>
               <div className="w-2 h-2 rounded-full animate-float bg-[#2c2421]"></div>

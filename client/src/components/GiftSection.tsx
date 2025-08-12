@@ -60,7 +60,7 @@ const GiftSection = () => {
               </h3>
               <div className="text-center mb-4">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/520842373_1301328908363529_2327398962068399395_n-removebg-preview_ldkbng.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013785/526693785_1093088002314041_3562987169417511188_n_cwahup.jpg"
                   alt="GCash QR Code"
                   className="w-64 h-64 mx-auto object-contain"
                 />
@@ -75,11 +75,11 @@ const GiftSection = () => {
           <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
               <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">
-                Bank Transfer
+                BPI Bank Transfer
               </h3>
               <div className="text-center mb-4">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013748/522518959_1301329548363632_2455012436449885651_n-removebg-preview_txhrsf.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013786/526765929_1257484575837230_1343058166809115629_n_y2ybdi.jpg"
                   alt="Bank Transfer QR Code"
                   className="w-64 h-64 mx-auto object-contain"
                 />

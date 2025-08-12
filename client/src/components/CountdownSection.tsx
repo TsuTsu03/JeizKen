@@ -41,15 +41,7 @@ const CountdownSection = () => {
           </h2>
         </div>
 
-        {/* Wedding Date Display */}
-        <div className="mb-12 space-y-2">
-          <h3 className="text-3xl md:text-4xl font-display font-light text-primary tracking-widest" data-testid="text-countdown-date">
-            OCTOBER 8, 2025
-          </h3>
-          <p className="text-lg font-body text-foreground/70" data-testid="text-countdown-time">
-            2:15 PM • Tagaytay Highlands
-          </p>
-        </div>
+
 
         {/* Countdown Timer Grid */}
         <div className="grid grid-cols-4 gap-4 md:gap-8 max-w-lg mx-auto">

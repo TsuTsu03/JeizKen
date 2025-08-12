@@ -75,7 +75,7 @@ const DressCodeSection = () => {
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/532239154_1301329915030095_1205667868082236687_n-removebg-preview_srt9sk.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645048/526212972_2848419708685550_5421439481788505964_n_PhotoGrid-removebg-preview_dqcnk3.png"
                   alt="Women's formal attire"
                   className="w-32 h-32 mx-auto object-contain mb-4"
                 />
@@ -90,7 +90,12 @@ const DressCodeSection = () => {
                 </div>
 
                 <div className="text-center text-muted-foreground">
-                  <p className="leading-relaxed">Floor-length formal gowns in the color palette below.</p>
+                  <p className="leading-relaxed mb-4">Floor-length formal gowns in the color palette below.</p>
+                  <img 
+                    src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013804/519428760_24552310207783945_1683405038722244104_n_vhbnij.jpg"
+                    alt="Color palette for ladies gowns"
+                    className="w-full max-w-sm mx-auto rounded-lg"
+                  />
                 </div>
               </div>
             </div>

@@ -4,31 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        {/* Wedding Coordinator Section */}
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-display font-semibold mb-6">
-            Need Assistance?
-          </h3>
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 max-w-md mx-auto">
-            <h4 className="text-lg font-display font-semibold mb-4">
-              Wedding Coordinator
-            </h4>
-            <div className="space-y-3">
-              <p className="text-primary-foreground/90 font-semibold">
-                EVENTS MANAGEMENT SERVICES
-              </p>
-              <div className="flex items-center justify-center gap-2">
-                <Phone className="w-4 h-4 text-gold" />
-                <a 
-                  href="tel:09178396781" 
-                  className="hover:text-gold/80 transition-colors duration-300 font-semibold text-[#f9f8f7]"
-                >
-                  0917-839-6781
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         {/* Main Footer Content */}
         <div className="text-center space-y-8">
@@ -62,8 +38,7 @@ const Footer = () => {
           {/* Thank You Message */}
           <div className="max-w-2xl mx-auto">
             <p className="text-primary-foreground/80 leading-relaxed italic">
-              "Thank you for being part of our love story. Your presence in our lives has made this journey 
-              even more beautiful, and we can't wait to celebrate with you on our special day."
+              We're grateful to have you as part of our story. You've made our journey more beautiful, and we can't wait to share our special day with you.
             </p>
           </div>
 

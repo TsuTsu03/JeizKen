@@ -22,17 +22,10 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
-        {/* Couple Names - Emphasized */}
-        <div className="animate-fade-up opacity-0 [animation-delay:0.1s] mb-8">
-          <h1 className="text-6xl md:text-8xl text-white font-script italic font-bold tracking-wider mb-2" data-testid="text-couple-names" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-            JEIZL and KENNETH
-          </h1>
-        </div>
-
         <div className="animate-fade-up opacity-0 [animation-delay:0.3s] mb-8">
-          <h2 className="text-3xl md:text-4xl text-white font-display font-light mb-4 uppercase tracking-wide" data-testid="text-wedding-announcement">
-            WE ARE FINALLY<br />SAYING "I DO"
-          </h2>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-script italic leading-tight tracking-wide" data-testid="text-main-invitation">
+            We're getting married
+          </h1>
         </div>
 
         <div className="animate-fade-up opacity-0 [animation-delay:0.6s]">

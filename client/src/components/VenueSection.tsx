@@ -45,7 +45,16 @@ const VenueSection = () => {
 
               {/* Venue Content */}
               <div className="max-w-lg mx-auto text-center space-y-6">
-                
+                {/* Venue Image */}
+                <div className="mb-8">
+                  <img
+                    src={venue.image}
+                    alt={venue.name}
+                    className="w-full h-48 object-cover rounded-lg shadow-sm"
+                    loading="lazy"
+                    data-testid={`img-${venue.title.toLowerCase()}-venue`}
+                  />
+                </div>
 
                 {/* Description */}
                 <div className="space-y-3 mb-8">
@@ -94,16 +103,7 @@ const VenueSection = () => {
                   </div>
                 </div>
 
-                {/* Venue Image */}
-                <div className="mt-8">
-                  <img
-                    src={venue.image}
-                    alt={venue.name}
-                    className="w-full h-48 object-cover rounded-lg shadow-sm"
-                    loading="lazy"
-                    data-testid={`img-${venue.title.toLowerCase()}-venue`}
-                  />
-                </div>
+
               </div>
             </div>
           ))}
