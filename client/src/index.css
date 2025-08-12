@@ -341,7 +341,19 @@
 
   /* Force white background for invitation section */
   #invitation {
+    background: #ffffff !important;
     background-color: #ffffff !important;
+    background-image: none !important;
+  }
+
+  /* Ensure invitation cards have clean white background */
+  #invitation .bg-card,
+  #invitation .bg-background,
+  #invitation .bg-gradient-to-r,
+  #invitation .bg-gradient-elegant {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
   }
 
   /* Restore proper border-radius for UI elements that need it */
