@@ -16,7 +16,7 @@ const InvitationSection = () => {
         {/* Main Invitation Text */}
         <div className="space-y-8">
           <h2 className="text-4xl md:text-5xl font-display text-primary leading-tight tracking-wider" data-testid="text-invitation-title">
-            WE ARE FINALLY<br />
+            ARE FINALLY<br />
             SAYING "<em className="font-script italic">I DO</em>"
           </h2>
           
