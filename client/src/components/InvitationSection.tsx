@@ -34,20 +34,7 @@ const InvitationSection = () => {
 
 
 
-          <div className="space-y-6 max-w-lg mx-auto">
-            <p className="text-lg font-body text-foreground/85 leading-relaxed" data-testid="text-invitation-question">
-              Will you accept this invitation?
-            </p>
-            <p className="text-base font-body text-foreground/70" data-testid="text-invitation-deadline">
-              Please respond on or before
-            </p>
           </div>
-        </div>
-
-        {/* Wedding Date */}
-        <div className="py-8">
-          <h2 className="text-3xl md:text-4xl font-display font-light text-primary tracking-widest" data-testid="text-wedding-date">August 22, 2025</h2>
-        </div>
 
         
       </div>
