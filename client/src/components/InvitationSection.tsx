@@ -8,7 +8,7 @@ const InvitationSection = () => {
       <div className="max-w-2xl mx-auto text-center space-y-12">
         {/* Names */}
         <div className="space-y-4 mb-12">
-          <h1 className="text-6xl md:text-7xl font-times text-primary leading-tight" data-testid="text-couple-names">
+          <h1 className="text-6xl md:text-7xl font-script italic text-primary leading-tight" data-testid="text-couple-names">
             Jeizl <span className="text-primary/70">&</span> Kenneth
           </h1>
         </div>
