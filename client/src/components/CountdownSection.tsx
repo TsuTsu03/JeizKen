@@ -32,7 +32,7 @@ const CountdownSection = () => {
   }, []);
 
   return (
-    <section id="countdown" className="py-20 px-4 bg-background">
+    <section id="countdown" className="py-20 px-4 bg-background mt-[-122px] mb-[-122px]">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
         <div className="mb-16">
