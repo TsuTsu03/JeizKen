@@ -1,34 +1,21 @@
 import { QueryClient } from "@tanstack/react-query";
 
+// Static site configuration - no server API calls
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      queryFn: async ({ queryKey }) => {
-        const url = queryKey[0] as string;
-        const res = await fetch(url);
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        return await res.json();
-      },
+      // Static site - no API endpoints needed
+      retry: false,
+      staleTime: Infinity, // Static content doesn't change
     },
   },
 });
 
 export { queryClient };
 
+// For static wedding site - no API calls needed
 export const apiRequest = async (url: string, options: RequestInit = {}) => {
-  const response = await fetch(url, {
-    headers: {
-      'Content-Type': 'application/json',
-      ...options.headers,
-    },
-    ...options,
-  });
-
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-
-  return response.json();
+  // Wedding invitation is static - no server endpoints
+  console.warn('API calls not available in static deployment');
+  return Promise.resolve({});
 };
