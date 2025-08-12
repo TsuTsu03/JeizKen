@@ -50,34 +50,42 @@ const GiftSection = () => {
           </div>
         </div>
 
-        {/* Additional Information */}
+        {/* Payment Options */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Monetary Gifts */}
+          {/* GCash Payment */}
           <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <div className="w-12 h-12 bg-[#4e403b]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gift className="w-6 h-6 text-[#4e403b]" />
-              </div>
-              <h3 className="text-lg font-display font-semibold text-primary mb-4">
-                Monetary Gifts
+              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">
+                GCash Payment
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Your generous contributions will help us build our future together and create lasting memories during our honeymoon adventures.
+              <div className="text-center mb-4">
+                <img 
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012299/image-2025-01-13T09_59_00_158Z_edqn8l.png"
+                  alt="GCash QR Code"
+                  className="w-64 h-64 mx-auto object-contain"
+                />
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-center">
+                Scan the QR code above to send your generous gift via GCash
               </p>
             </div>
           </div>
 
-          {/* Well Wishes */}
+          {/* Bank Transfer */}
           <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <div className="w-12 h-12 bg-[#4e403b]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Home className="w-6 h-6 text-[#4e403b]" />
-              </div>
-              <h3 className="text-lg font-display font-semibold text-primary mb-4">
-                Heartfelt Wishes
+              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">
+                Bank Transfer
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Your presence at our wedding is truly the most precious gift. Your blessings and well wishes mean the world to us.
+              <div className="text-center mb-4">
+                <img 
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012300/image-2025-01-13T09_59_12_440Z_wqhsnq.png"
+                  alt="Bank Transfer QR Code"
+                  className="w-64 h-64 mx-auto object-contain"
+                />
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-center">
+                Scan the QR code above for bank transfer or direct deposit
               </p>
             </div>
           </div>

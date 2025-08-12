@@ -9,7 +9,7 @@ const CountdownSection = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date('October 8, 2025 14:00:00').getTime();
+    const targetDate = new Date('October 8, 2025 14:15:00').getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -37,7 +37,7 @@ const CountdownSection = () => {
         {/* Section Header */}
         <div className="mb-16">
           <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-countdown-title">
-            Countdown to Forever
+            Forever starts soon
           </h2>
         </div>
 
@@ -47,7 +47,7 @@ const CountdownSection = () => {
             OCTOBER 8, 2025
           </h3>
           <p className="text-lg font-body text-foreground/70" data-testid="text-countdown-time">
-            2:00 PM • Tagaytay Highlands
+            2:15 PM • Tagaytay Highlands
           </p>
         </div>
 

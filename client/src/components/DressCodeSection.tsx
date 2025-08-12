@@ -53,7 +53,7 @@ const DressCodeSection = () => {
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645003/download__6_-removebg-preview_er1f7i.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012298/image-2025-01-13T09_58_40_734Z_qbpj7z.png"
                   alt="Men's formal attire"
                   className="w-32 h-32 mx-auto object-contain mb-4"
                 />
@@ -82,7 +82,7 @@ const DressCodeSection = () => {
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645048/526212972_2848419708685550_5421439481788505964_n_PhotoGrid-removebg-preview_dqcnk3.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012299/image-2025-01-13T09_58_49_893Z_vwewao.png"
                   alt="Women's formal attire"
                   className="w-32 h-32 mx-auto object-contain mb-4"
                 />

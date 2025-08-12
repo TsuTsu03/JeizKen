@@ -47,7 +47,7 @@ const FAQSection = () => {
     },
     {
       question: "Am I allowed to take pictures and/or videos during the ceremony?",
-      answer: "We request everyone to keep the ceremony camera-free. While our I Do's are unplugged, our reception is not and definitely as a couple who loves pictures, you'll get tons of options to take your pictures. We prepared for this event wholeheartedly. Please use our official hashtag: #AlexanderTheGreatGotAnArmie"
+      answer: "We request everyone to keep the ceremony camera-free. While our I Do's are unplugged, our reception is not and definitely as a couple who loves pictures, you'll get tons of options to take your pictures. We prepared for this event wholeheartedly. Please use our official hashtag: #KennethAndJeizlWedding"
     },
     {
       question: "Do we really need to RSVP? We already said \"YES\" to the couple.",

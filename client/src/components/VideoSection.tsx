@@ -1,24 +1,61 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 const VideoSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handlePlay = () => {
+      // Pause background music when video starts
+      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
+      if (audio) {
+        audio.pause();
+      }
+    };
+
+    const handlePause = () => {
+      // Resume background music when video pauses
+      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
+      if (audio) {
+        audio.play().catch(() => {
+          // Silently handle autoplay restrictions
+        });
+      }
+    };
+
+    const handleEnded = () => {
+      // Resume background music when video ends
+      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
+      if (audio) {
+        audio.play().catch(() => {
+          // Silently handle autoplay restrictions
+        });
+      }
+    };
+
+    video.addEventListener('play', handlePlay);
+    video.addEventListener('pause', handlePause);
+    video.addEventListener('ended', handleEnded);
+
+    return () => {
+      video.removeEventListener('play', handlePlay);
+      video.removeEventListener('pause', handlePause);
+      video.removeEventListener('ended', handleEnded);
+    };
+  }, []);
+
   return (
-    <section className="relative w-full overflow-hidden bg-black">
+    <section className="relative w-full overflow-hidden bg-background">
       {/* Section Header */}
-      <div className="text-center py-8 px-4 relative text-[#1a1c25] bg-[#4e403b]">
-        {/* Decorative Elements */}
-        <div className="absolute top-0 left-1/4 w-6 h-6 border border-gold/40 rounded-full"></div>
-        <div className="absolute top-2 right-1/4 w-3 h-3 bg-gold/30 rounded-full"></div>
-        <div className="absolute bottom-0 left-1/3 w-4 h-4 border border-gold/50 rounded-full"></div>
-        <div className="absolute bottom-1 right-1/3 w-2 h-2 bg-gold/40 rounded-full"></div>
-        
-        <h2 className="text-5xl font-script italic text-white mb-8" data-testid="text-video-title">
-          Our Prenup Video
+      <div className="text-center py-8 px-4 bg-background">
+        <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-video-title">
+          Save the Date Video
         </h2>
       </div>
       {/* Video Container */}
-      <div className="relative w-full overflow-hidden bg-black">
+      <div className="relative w-full overflow-hidden bg-background">
         <video
           ref={videoRef}
           loop
@@ -41,8 +78,6 @@ const VideoSection = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      {/* Elegant Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/30 pointer-events-none"></div>
     </section>
   );
 };

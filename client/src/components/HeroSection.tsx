@@ -28,7 +28,7 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
           </h1>
           <div className="flex items-center justify-center mb-4">
             <div className="h-px bg-[#4e403b] w-16 opacity-70"></div>
-            <span className="text-hero-script text-[#4e403b] font-script mx-6" data-testid="text-ampersand">&</span>
+            <span className="text-hero-script text-white font-script mx-6" data-testid="text-ampersand">&</span>
             <div className="h-px bg-[#4e403b] w-16 opacity-70"></div>
           </div>
           <h1 className="text-hero text-white font-display font-light mb-8 uppercase" data-testid="text-bride">
@@ -38,13 +38,10 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
 
         <div className="animate-fade-up opacity-0 [animation-delay:0.6s]">
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 mb-10 max-w-lg mx-auto shadow-2xl">
-            <p className="text-subtitle text-white font-script italic mb-6 text-center" data-testid="text-tagline">
-              We're Saying "I Do"
-            </p>
             <div className="space-y-3">
               <div className="text-center">
                 <p className="text-lg sm:text-xl text-white/90 font-body font-light tracking-wide" data-testid="text-date">
-                  October 8, 2025 at 2:00 PM
+                  October 8, 2025
                 </p>
               </div>
               <div className="text-center">
