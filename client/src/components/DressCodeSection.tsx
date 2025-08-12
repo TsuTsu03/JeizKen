@@ -17,7 +17,6 @@ const DressCodeSection = () => {
         <div className="absolute top-1/3 left-1/4 w-64 h-64 border border-[#4e403b] rounded-full"></div>
         <div className="absolute bottom-1/3 right-1/4 w-48 h-48 border border-[#4e403b] rounded-full"></div>
       </div>
-
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 relative">
@@ -27,7 +26,7 @@ const DressCodeSection = () => {
           <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-[#4e403b]/40 rounded-full"></div>
           <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-[#4e403b]/30 rounded-full"></div>
 
-          <h2 className="text-3xl font-script italic text-primary mb-8" data-testid="text-dresscode-title">
+          <h2 className="font-script italic text-primary mb-8 text-[48px]" data-testid="text-dresscode-title">
             Attire Guide
           </h2>
           <div className="bg-[#4e403b]/10 border border-[#4e403b]/20 rounded-xl p-4 max-w-sm mx-auto relative">
