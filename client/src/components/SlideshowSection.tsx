@@ -62,6 +62,7 @@ const SlideshowSection = () => {
               src={image}
               alt={`Wedding photo ${index + 1}`}
               className="w-full h-full object-cover"
+              style={{ display: 'block', width: '100%' }}
               loading="lazy"
             />
           </div>

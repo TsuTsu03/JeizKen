@@ -299,6 +299,21 @@
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
+
+    /* Slideshow mobile fixes - prevent zoom issues */
+    #slideshow img {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+
+    #slideshow {
+      overflow: hidden !important;
+      width: 100vw !important;
+      height: 100vh !important;
+    }
   }
 
   /* Custom Scrollbar */
