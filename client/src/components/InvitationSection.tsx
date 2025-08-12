@@ -49,9 +49,7 @@ const InvitationSection = () => {
 
         {/* Wedding Date */}
         <div className="py-8">
-          <h2 className="text-3xl md:text-4xl font-display font-light text-primary tracking-widest" data-testid="text-wedding-date">
-            OCT 8, 2025
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-display font-light text-primary tracking-widest" data-testid="text-wedding-date">August 22, 2025</h2>
         </div>
 
         {/* Navigation Arrow to RSVP */}
