@@ -90,10 +90,7 @@ const DressCodeSection = () => {
                 </div>
 
                 <div className="text-center text-muted-foreground">
-                  <p className="leading-relaxed">
-                    Floor-length formal gowns in the color palette below. 
-                    Please choose sophisticated styles that complement the formal atmosphere.
-                  </p>
+                  <p className="leading-relaxed">Floor-length formal gowns in the color palette below.</p>
                 </div>
               </div>
             </div>
