@@ -91,17 +91,7 @@ const GiftSection = () => {
           </div>
         </div>
 
-        {/* Bottom Message */}
-        <div className="animate-fade-up" style={{ animationDelay: '0.6s' }}>
-          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 shadow-soft max-w-2xl mx-auto">
-            <p className="text-foreground/80 font-body italic">
-              "The best gifts are those that come from the heart. Your love and support as we begin this new chapter is all we could ever ask for."
-            </p>
-            <div className="mt-4 text-[#4e403b] font-display text-lg">
-              — Kenneth & Jeizl
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
