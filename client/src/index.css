@@ -300,13 +300,13 @@
       padding-bottom: 2rem;
     }
 
-    /* Slideshow mobile fixes - prevent zoom issues */
+    /* Slideshow mobile fixes - exactly like video */
     #slideshow img {
-      display: block !important;        /* removes inline gap */
-      width: 100% !important;           /* full width */
-      height: auto !important;          /* maintain aspect ratio */
-      object-fit: contain !important;   /* show whole image like video */
-      object-position: center !important; /* center the image */
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      object-fit: contain !important;
+      object-position: top !important;
       margin: 0 !important;
       padding: 0 !important;
     }

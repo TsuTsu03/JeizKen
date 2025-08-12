@@ -48,64 +48,33 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative py-8 bg-background overflow-hidden">
-      {/* Background Slideshow - Clean, No Filters */}
-      <div className="absolute inset-0">
+    <section id="slideshow" className="relative w-full overflow-hidden bg-background">
+      {/* Single Image Container - Exactly like Video */}
+      <div className="relative w-full overflow-hidden bg-background">
         {images.map((image, index) => (
           <div
-            key={`bg-${index}`}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
+            key={index}
+            className={`transition-opacity duration-1000 ${
+              index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
             }`}
           >
             <img
               src={image}
-              alt=""
-              className="w-full h-full object-cover"
+              alt={`Kenneth and Jeizl moments ${index + 1}`}
               style={{
                 display: 'block',
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',
-                objectPosition: 'center',
+                objectPosition: 'top',
                 margin: 0,
                 padding: 0
               }}
-              loading="lazy"
+              loading={index === 0 ? 'eager' : 'lazy'}
+              data-testid={`img-slideshow-${index + 1}`}
             />
           </div>
         ))}
-      </div>
-
-      {/* Main Slideshow Container - Compact Design */}
-      <div className="relative z-10 flex items-center justify-center px-4">
-        <div className="relative w-full max-w-md">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`transition-opacity duration-500 ${
-                index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
-              }`}
-            >
-              <img
-                src={image}
-                alt={`Kenneth and Jeizl moments ${index + 1}`}
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
-                style={{
-                  display: 'block',
-                  width: '100%',
-                  height: 'auto',
-                  objectFit: 'contain',
-                  objectPosition: 'center',
-                  margin: 0,
-                  padding: 0
-                }}
-                loading={index === 0 ? 'eager' : 'lazy'}
-                data-testid={`img-slideshow-${index + 1}`}
-              />
-            </div>
-          ))}
-        </div>
       </div>
       
       {/* Progress indicators */}
