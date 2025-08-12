@@ -80,10 +80,6 @@ const Index = () => {
           {/* Main Content Sections */}
           <main>
             <SlideshowSection />
-            
-
-            
-            <InvitationSection />
             <CountdownSection />
             <StorySection />
             <VideoSection />
