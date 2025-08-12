@@ -32,7 +32,7 @@ const CountdownSection = () => {
   }, []);
 
   return (
-    <section id="countdown" className="py-20 px-4 bg-background mt-[-122px] mb-[-122px]">
+    <section id="countdown" className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
         <div className="mb-16">
@@ -49,7 +49,7 @@ const CountdownSection = () => {
             { label: 'Days', value: timeLeft.days },
             { label: 'Hours', value: timeLeft.hours },
             { label: 'Minutes', value: timeLeft.minutes },
-            { label: 'Seconds', value: 17 }
+            { label: 'Seconds', value: timeLeft.seconds }
           ].map((item, index) => (
             <div
               key={item.label}

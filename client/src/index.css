@@ -339,47 +339,9 @@
     outline: none !important;
   }
 
-  /* Force white background for invitation section - most aggressive approach */
-  #invitation,
-  #invitation section,
-  #invitation div,
-  #invitation > *,
-  #invitation * {
-    background: #ffffff !important;
+  /* Force white background for invitation section */
+  #invitation {
     background-color: #ffffff !important;
-    background-image: none !important;
-    background-attachment: unset !important;
-    background-position: unset !important;
-    background-repeat: unset !important;
-    background-size: unset !important;
-  }
-
-  /* Target all pseudo-elements in invitation section */
-  #invitation *::before,
-  #invitation *::after,
-  #invitation::before,
-  #invitation::after {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    background-image: none !important;
-    content: none !important;
-  }
-
-  /* Remove any possible gradients with specific selectors */
-  #invitation [style*="gradient"],
-  #invitation [class*="gradient"],
-  #invitation [class*="bg-gradient"],
-  #invitation [class*="from-"],
-  #invitation [class*="to-"],
-  #invitation [class*="via-"] {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    background-image: none !important;
-  }
-
-  /* Override any body or html background that might show through */
-  body:has(#invitation) {
-    background: #ffffff !important;
   }
 
   /* Restore proper border-radius for UI elements that need it */
