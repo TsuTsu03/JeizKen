@@ -5,7 +5,7 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 const InvitationSection = () => {
   return (
     <section id="invitation" className="py-20 px-4" style={{ backgroundColor: '#ffffff' }}>
-      <div className="max-w-2xl mx-auto text-center space-y-12">
+      <div className="max-w-2xl mx-auto text-center space-y-12 pt-[137px] pb-[137px]">
         {/* Names */}
         <div className="space-y-4 mb-12">
           <h1 className="text-6xl md:text-7xl font-script italic text-primary leading-tight" data-testid="text-couple-names">
