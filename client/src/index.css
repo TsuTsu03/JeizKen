@@ -142,6 +142,7 @@
 @layer base {
   * {
     @apply border-border;
+    outline: none !important;
   }
 
   body {
@@ -318,10 +319,36 @@
     background-color: #4e403b;
   }
   
-  /* Remove any glass/overlay effects */
+  /* Remove any glass/overlay effects and unwanted borders */
   *::before,
   *::after {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
+  }
+
+  /* Fix the red border issue */
+  section {
+    border: none !important;
+    outline: none !important;
+  }
+
+  /* Restore proper border-radius for UI elements that need it */
+  .rounded-lg {
+    border-radius: 0.5rem !important;
+  }
+  
+  .rounded-xl {
+    border-radius: 0.75rem !important;
+  }
+  
+  .rounded-2xl {
+    border-radius: 1rem !important;
+  }
+
+  /* Remove focus outlines that might appear as red borders */
+  *:focus,
+  *:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
   }
 }

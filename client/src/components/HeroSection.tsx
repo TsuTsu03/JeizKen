@@ -23,7 +23,7 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="animate-fade-up opacity-0 [animation-delay:0.3s] mb-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-times leading-tight tracking-wide" data-testid="text-main-invitation">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl text-white font-times leading-tight tracking-wide" data-testid="text-main-invitation">
             Jeizl & Kenneth
           </h1>
         </div>
