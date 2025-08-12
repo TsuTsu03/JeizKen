@@ -60,7 +60,7 @@ const GiftSection = () => {
               </h3>
               <div className="text-center mb-4">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012299/image-2025-01-13T09_59_00_158Z_edqn8l.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/520842373_1301328908363529_2327398962068399395_n-removebg-preview_ldkbng.png"
                   alt="GCash QR Code"
                   className="w-64 h-64 mx-auto object-contain"
                 />
@@ -79,7 +79,7 @@ const GiftSection = () => {
               </h3>
               <div className="text-center mb-4">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012300/image-2025-01-13T09_59_12_440Z_wqhsnq.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013748/522518959_1301329548363632_2455012436449885651_n-removebg-preview_txhrsf.png"
                   alt="Bank Transfer QR Code"
                   className="w-64 h-64 mx-auto object-contain"
                 />

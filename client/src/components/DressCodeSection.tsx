@@ -27,20 +27,14 @@ const DressCodeSection = () => {
           <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-[#4e403b]/40 rounded-full"></div>
           <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-[#4e403b]/30 rounded-full"></div>
 
-          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-dresscode-title">
-            Dress Code
+          <h2 className="text-3xl font-script italic text-primary mb-8" data-testid="text-dresscode-title">
+            Attire Guide
           </h2>
-          <div className="bg-[#4e403b]/10 border border-[#4e403b]/20 rounded-2xl p-6 max-w-md mx-auto relative">
-            {/* Decorative Corner Elements */}
-            <div className="absolute top-2 left-2 w-3 h-3 border-l-2 border-t-2 border-[#4e403b]/50"></div>
-            <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-[#4e403b]/50"></div>
-            <div className="absolute bottom-2 left-2 w-3 h-3 border-l-2 border-b-2 border-[#4e403b]/50"></div>
-            <div className="absolute bottom-2 right-2 w-3 h-3 border-r-2 border-b-2 border-[#4e403b]/50"></div>
-
-            <p className="text-2xl font-display font-bold text-primary mb-2">
+          <div className="bg-[#4e403b]/10 border border-[#4e403b]/20 rounded-xl p-4 max-w-sm mx-auto relative">
+            <p className="text-lg font-display font-bold text-primary mb-1">
               STRICTLY FORMAL
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
               Elegance is the only beauty that never fades
             </p>
           </div>
@@ -53,7 +47,7 @@ const DressCodeSection = () => {
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012298/image-2025-01-13T09_58_40_734Z_qbpj7z.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/532239154_1301329915030095_1205667868082236687_n-removebg-preview_srt9sk.png"
                   alt="Men's formal attire"
                   className="w-32 h-32 mx-auto object-contain mb-4"
                 />
@@ -82,7 +76,7 @@ const DressCodeSection = () => {
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
                 <img 
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755012299/image-2025-01-13T09_58_49_893Z_vwewao.png"
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/532239154_1301329915030095_1205667868082236687_n-removebg-preview_srt9sk.png"
                   alt="Women's formal attire"
                   className="w-32 h-32 mx-auto object-contain mb-4"
                 />

@@ -35,7 +35,7 @@ const RSVPSection = () => {
                   <Clock className="w-6 h-6 text-[#4e403b]" />
                 </div>
                 <h3 className="font-display font-semibold text-primary mb-1">Time</h3>
-                <p className="text-muted-foreground">2:15 PM</p>
+                <p className="text-muted-foreground">2:30 PM</p>
               </div>
 
               <div className="flex flex-col items-center text-center">
@@ -79,7 +79,7 @@ const RSVPSection = () => {
             {/* RSVP Deadline */}
             <div className="mt-8 p-4 bg-[#4e403b]/5 border border-[#4e403b]/20 rounded-lg">
               <p className="text-primary font-semibold">
-                RSVP Deadline: <span className="text-[#4e403b]">August 20, 2025</span>
+                RSVP Deadline: <span className="text-[#4e403b]">August 22, 2025</span>
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Please respond by this date to help us finalize our arrangements

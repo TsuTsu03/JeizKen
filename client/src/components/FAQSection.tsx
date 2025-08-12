@@ -15,7 +15,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "RSVP",
-      answer: "We are so excited to celebrate our wedding day with you! To ensure an intimate and enjoyable experience for everyone, we have reserved seating for each guest individually. We kindly ask that each invitation is for ONE (1) PERSON ONLY. Please RSVP by August 20, 2025 to confirm your attendance. We can't wait to share this unforgettable day with you!"
+      answer: "We are so excited to celebrate our wedding day with you! To ensure an intimate and enjoyable experience for everyone, we have reserved seating for each guest individually. We kindly ask that each invitation is for ONE (1) PERSON ONLY. Please RSVP by August 22, 2025 to confirm your attendance. We can't wait to share this unforgettable day with you!"
     },
     {
       question: "May I invite a \"PLUS ONE\" to the event?",

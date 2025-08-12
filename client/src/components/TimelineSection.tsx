@@ -3,32 +3,32 @@ import { Clock, Camera, Coffee, Utensils, Music } from 'lucide-react';
 const TimelineSection = () => {
   const timelineEvents = [
     {
-      time: '1:30 PM',
-      event: 'Guest arrival',
-      icon: Clock,
-      description: 'Reception and seating'
-    },
-    {
       time: '2:15 PM',
-      event: 'Wedding begins',
+      event: 'Ceremony',
       icon: Clock,
       description: 'The sacred ceremony begins'
     },
     {
-      time: '3:00 PM',
+      time: '4:00 PM',
       event: 'Photos',
       icon: Camera,
       description: 'Capturing precious moments'
     },
     {
-      time: '5:00 PM',
-      event: 'Reception begins',
+      time: '4:30 PM',
+      event: 'Cocktails',
+      icon: Coffee,
+      description: 'Cocktails and mingling'
+    },
+    {
+      time: '7:00 PM',
+      event: 'Dinner',
       icon: Utensils,
       description: 'Dinner and toasts'
     },
     {
-      time: '8:00 PM',
-      event: 'Dancing party',
+      time: '9:00 PM',
+      event: 'Party',
       icon: Music,
       description: 'Dancing the night away'
     }
@@ -46,11 +46,9 @@ const TimelineSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-timeline-title">
-            Event Timeline
+            Wedding Timeline
           </h2>
-          <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
-            Join us for a day filled with love, laughter, and unforgettable memories as we celebrate our union
-          </p>
+
         </div>
 
         {/* Timeline */}

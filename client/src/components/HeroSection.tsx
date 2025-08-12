@@ -17,23 +17,22 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
         minHeight: '100dvh'
       }}
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      {/* Overlay for better text readability - No black tint */}
+      <div className="absolute inset-0"></div>
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <div className="animate-fade-up opacity-0 [animation-delay:0.2s]">
-          <h1 className="text-hero text-white font-display font-light mb-4 uppercase" data-testid="text-groom">
-            Kenneth
+        {/* Couple Names - Emphasized */}
+        <div className="animate-fade-up opacity-0 [animation-delay:0.1s] mb-8">
+          <h1 className="text-6xl md:text-8xl text-white font-script italic font-bold tracking-wider mb-2" data-testid="text-couple-names" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+            JEIZL and KENNETH
           </h1>
-          <div className="flex items-center justify-center mb-4">
-            <div className="h-px bg-[#4e403b] w-16 opacity-70"></div>
-            <span className="text-hero-script text-white font-script mx-6" data-testid="text-ampersand">&</span>
-            <div className="h-px bg-[#4e403b] w-16 opacity-70"></div>
-          </div>
-          <h1 className="text-hero text-white font-display font-light mb-8 uppercase" data-testid="text-bride">
-            Jeizl
-          </h1>
+        </div>
+
+        <div className="animate-fade-up opacity-0 [animation-delay:0.3s] mb-8">
+          <h2 className="text-3xl md:text-4xl text-white font-display font-light mb-4 uppercase tracking-wide" data-testid="text-wedding-announcement">
+            WE ARE FINALLY<br />SAYING "I DO"
+          </h2>
         </div>
 
         <div className="animate-fade-up opacity-0 [animation-delay:0.6s]">

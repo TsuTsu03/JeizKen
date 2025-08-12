@@ -7,11 +7,11 @@ const VenueSection = () => {
       title: 'Ceremony',
       name: 'Madre de Dios Chapel',
       address: 'Sierra Lane, South Main Avenue\nTagaytay Highlands\nTagaytay, Cavite, Philippines',
-      image: 'https://res.cloudinary.com/dbiboclqa/image/upload/v1755012298/image-2025-01-13T09_58_09_584Z_yhiuev.png',
+      image: 'https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/528272661_2330353877367703_317162366725678148_n-removebg-preview_euk5di.png',
       mapUrl: 'https://maps.app.goo.gl/nRVRNUnTwHaNjGsd7',
-      description: 'The ceremony will be held at Madre de Dios Chapel. It\'s a lovely sacred venue.',
-      details: 'Plenty of parking at the front.',
-      additionalInfo: 'Reception to follow.',
+      description: 'We will exchange vows at Madre de Dios Chapel in Tagaytay Highlands, a beautiful chapel surrounded by lush greenery and cool mountain air.',
+      details: 'Parking is available near the chapel, so we recommend arriving early to secure a good spot.',
+      additionalInfo: 'To enjoy the scenery and for easier access, guests are encouraged to take the Santa Rosa Exit and proceed to Tagaytay Highlands Main Entrance when selecting routes on Google Maps or Waze.',
       startTime: '2:15 PM',
       locationGuide: 'Location Guide →'
     },
@@ -19,12 +19,12 @@ const VenueSection = () => {
       title: 'Reception',
       name: 'Midlands Veranda',
       address: 'Serifina Villa\nMeadow Lane, South Main Avenue\nTagaytay Highlands\nTagaytay, Cavite, Philippines',
-      image: 'https://res.cloudinary.com/dbiboclqa/image/upload/v1755012298/image-2025-01-13T09_58_23_768Z_y6xtay.png',
+      image: 'https://res.cloudinary.com/dbiboclqa/image/upload/v1755013692/522684947_4096852087241511_2099849351157419984_n-removebg-preview_falou3.png',
       mapUrl: 'https://maps.app.goo.gl/opRCpSS5F66JTGg96',
-      description: 'Come for the love, stay for the party!\nPlease join us for dinner, cocktails, and dancing!',
-      details: 'Reception is about 20 min drive away',
-      website: 'www.midlandsveranda.com',
-      startTime: '5:00 PM',
+      description: 'Please join us for dinner, cocktails and dancing!',
+      details: 'Midlands Veranda is also located within Tagaytay Highlands, just a 5-minute walk from Madre de Dios Chapel.',
+      website: '',
+      startTime: '4:30 PM',
       locationGuide: 'Location Guide →'
     }
   ];
