@@ -1,23 +1,11 @@
 import { Button } from '@/components/ui/button';
 
+import { Calendar, Clock, MapPin } from 'lucide-react';
+
 const InvitationSection = () => {
   return (
-    <section 
-      id="invitation" 
-      className="py-20 px-4"
-      style={{ 
-        backgroundColor: '#ffffff',
-        background: '#ffffff',
-        backgroundImage: 'none'
-      }}
-    >
-      <div 
-        className="max-w-2xl mx-auto text-center space-y-12"
-        style={{ 
-          backgroundColor: '#ffffff',
-          background: '#ffffff'
-        }}
-      >
+    <section id="invitation" className="py-20 px-4" style={{ backgroundColor: '#ffffff' }}>
+      <div className="max-w-2xl mx-auto text-center space-y-12">
         {/* Names */}
         <div className="space-y-4 mb-12">
           <h1 className="text-6xl md:text-7xl font-script italic text-primary leading-tight" data-testid="text-couple-names">
@@ -43,6 +31,8 @@ const InvitationSection = () => {
               </p>
             </div>
           </div>
+
+
 
           <div className="space-y-6 max-w-lg mx-auto">
             <p className="text-lg font-body text-foreground/85 leading-relaxed" data-testid="text-invitation-question">

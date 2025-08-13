@@ -343,20 +343,13 @@
     outline: none !important;
   }
 
-  /* Force pure white background everywhere */
+  /* Force white background for invitation section and parent */
   #invitation {
     background-color: #ffffff !important;
-    background: #ffffff !important;
-    background-image: none !important;
-  }
-  
-  #invitation * {
-    background: transparent !important;
   }
   
   .min-h-screen {
     background-color: #ffffff !important;
-    background: #ffffff !important;
   }
 
   /* Restore proper border-radius for UI elements that need it */
