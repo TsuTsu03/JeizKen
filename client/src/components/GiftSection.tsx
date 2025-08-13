@@ -29,15 +29,15 @@ const GiftSection = () => {
             {/* Main Message */}
             <div className="space-y-6">
               <p className="text-2xl font-display font-light text-primary leading-relaxed">
-                Your love, laughter and presence on our wedding day is the greatest gift of all.
+                Your presence at our wedding is the greatest gift.
               </p>
               
               <p className="text-xl font-body text-muted-foreground leading-relaxed">
-                We don't have a list of pots and pans, just hopes and dreams and honeymoon plans.
+                Should you wish to bless us further, a contribution toward building our first home would be deeply appreciated.
               </p>
               
               <p className="text-lg font-body text-foreground/80 leading-relaxed">
-                If giving a gift is on your mind, then a contribution would be kind.
+                This home will be the foundation of our life together and a place where lifelong memories will be made.
               </p>
             </div>
 
