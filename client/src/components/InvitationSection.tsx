@@ -8,7 +8,7 @@ const InvitationSection = () => {
       <div className="max-w-2xl mx-auto text-center space-y-12">
         {/* Names */}
         <div className="space-y-4 mb-12">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-script italic text-primary leading-tight" style={{ fontFamily: '"Great Vibes", "Dancing Script", "Brush Script MT", cursive', fontWeight: 400, letterSpacing: '0.05em' }} data-testid="text-couple-names">
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-script italic text-primary leading-tight pt-[0px] pb-[0px] mt-[10px] mb-[10px]" style={{ fontFamily: '"Great Vibes", "Dancing Script", "Brush Script MT", cursive', fontWeight: 400, letterSpacing: '0.05em' }} data-testid="text-couple-names">
             Jeizl <span className="text-primary opacity-80">&</span> Kenneth
           </h1>
         </div>
