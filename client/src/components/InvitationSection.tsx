@@ -23,10 +23,10 @@ const InvitationSection = () => {
           {/* Date, Time, Location */}
           <div className="space-y-4 max-w-lg mx-auto mb-8">
             <div className="text-center space-y-2">
-              <p className="text-2xl md:text-3xl font-script italic text-black" data-testid="text-wedding-date-detail">
+              <p className="text-3xl md:text-4xl lg:text-5xl font-script italic text-black font-normal" data-testid="text-wedding-date-detail">
                 October 8, 2025 | 2:15 PM
               </p>
-              <p className="text-xl md:text-2xl font-script italic text-black" data-testid="text-wedding-location">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-script italic text-black font-normal" data-testid="text-wedding-location">
                 Tagaytay Highlands
               </p>
             </div>
