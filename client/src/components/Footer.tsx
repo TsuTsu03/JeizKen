@@ -23,9 +23,7 @@ const Footer = () => {
           {/* Wedding Hashtag */}
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 max-w-md mx-auto">
             <p className="text-primary-foreground/90 mb-2">Share your photos with</p>
-            <p className="text-xl font-display font-semibold text-[#4e403b]">
-              #KennethAndJeizlForever
-            </p>
+            <p className="text-xl font-display font-semibold text-[#ffffff]">#JeizWantsTheDy</p>
           </div>
 
           {/* Decorative Elements */}
