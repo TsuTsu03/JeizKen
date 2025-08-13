@@ -54,8 +54,8 @@ const DressCodeSection = () => {
                   Gentlemen
                 </h3>
                 
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-6 mb-6 shadow-lg border border-gray-700">
-                  <span className="text-white font-bold text-xl tracking-wide">Black Suit and Pants</span>
+                <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-[40px] px-8 py-4 mb-6 shadow-lg border border-slate-700 w-full max-w-md mx-auto">
+                  <span className="text-white font-bold text-xl tracking-wide text-center block">Black Suit and Pants</span>
                 </div>
               </div>
 
@@ -81,8 +81,8 @@ const DressCodeSection = () => {
                   Ladies
                 </h3>
                 
-                <div className="bg-gradient-to-r from-[#4e403b] to-[#8B7355] rounded-2xl p-6 mb-6 shadow-lg border border-[#4e403b]/30">
-                  <span className="text-white font-bold text-xl tracking-wide">Long gown in elegant shades</span>
+                <div className="bg-gradient-to-r from-[#4e403b] to-[#8B7355] rounded-[40px] px-8 py-4 mb-6 shadow-lg border border-[#4e403b]/30 w-full max-w-md mx-auto">
+                  <span className="text-white font-bold text-xl tracking-wide text-center block">Long gown in elegant shades</span>
                 </div>
               </div>
 
