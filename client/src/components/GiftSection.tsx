@@ -71,9 +71,7 @@ const GiftSection = () => {
           {/* Bank Transfer */}
           <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">
-                BPI Bank Transfer
-              </h3>
+              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">BPI </h3>
               <div className="text-center mb-4">
                 <img 
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013786/526765929_1257484575837230_1343058166809115629_n_y2ybdi.jpg"
