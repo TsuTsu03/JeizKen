@@ -9,7 +9,6 @@ const GiftSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-[#4e403b] rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-3/4 left-3/4 w-24 h-24 border border-[#4e403b] rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
-
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
         <div className="mb-16">
@@ -55,9 +54,7 @@ const GiftSection = () => {
           {/* GCash Payment */}
           <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">
-                GCash Payment
-              </h3>
+              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">GCash</h3>
               <div className="text-center mb-4">
                 <img 
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013785/526693785_1093088002314041_3562987169417511188_n_cwahup.jpg"
