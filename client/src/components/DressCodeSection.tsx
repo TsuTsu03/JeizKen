@@ -48,19 +48,19 @@ const DressCodeSection = () => {
                 <img 
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/532239154_1301329915030095_1205667868082236687_n-removebg-preview_srt9sk.png"
                   alt="Men's formal attire"
-                  className="w-48 h-48 mx-auto object-contain mb-4"
+                  className="w-96 h-96 mx-auto object-contain mb-6"
                 />
-                <h3 className="text-2xl font-display font-semibold text-primary mb-4">
+                <h3 className="text-2xl font-display font-semibold text-primary mb-6">
                   Gentlemen
                 </h3>
                 
-                <div className="flex items-center justify-center p-4 bg-gradient-to-r from-gray-900 to-black rounded-xl mb-4">
-                  <span className="text-white font-semibold text-lg">Black Suit and Pants</span>
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-6 mb-6 shadow-lg border border-gray-700">
+                  <span className="text-white font-bold text-xl tracking-wide">Black Suit and Pants</span>
                 </div>
               </div>
 
               <div className="text-center text-muted-foreground">
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-lg">
                   Classic black formal attire with dress shirt, tie, and formal shoes. 
                   Please ensure a sophisticated and polished appearance.
                 </p>
@@ -75,19 +75,19 @@ const DressCodeSection = () => {
                 <img 
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645048/526212972_2848419708685550_5421439481788505964_n_PhotoGrid-removebg-preview_dqcnk3.png"
                   alt="Women's formal attire"
-                  className="w-48 h-48 mx-auto object-contain mb-4"
+                  className="w-96 h-96 mx-auto object-contain mb-6"
                 />
-                <h3 className="text-2xl font-display font-semibold text-primary mb-4">
+                <h3 className="text-2xl font-display font-semibold text-primary mb-6">
                   Ladies
                 </h3>
                 
-                <div className="flex items-center justify-center p-4 bg-gradient-to-r from-[#4e403b] to-[#8B7355] rounded-xl mb-4">
-                  <span className="text-white font-semibold text-lg">Long gown in elegant shades</span>
+                <div className="bg-gradient-to-r from-[#4e403b] to-[#8B7355] rounded-2xl p-6 mb-6 shadow-lg border border-[#4e403b]/30">
+                  <span className="text-white font-bold text-xl tracking-wide">Long gown in elegant shades</span>
                 </div>
               </div>
 
               <div className="text-center text-muted-foreground">
-                <p className="leading-relaxed mb-4">Floor-length formal gowns in the color palette below.</p>
+                <p className="leading-relaxed text-lg mb-6">Floor-length formal gowns in the color palette below.</p>
                 <img 
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013804/519428760_24552310207783945_1683405038722244104_n_vhbnij.jpg"
                   alt="Color palette for ladies gowns"
