@@ -40,30 +40,72 @@ const DressCodeSection = () => {
         </div>
 
         {/* Dress Code Requirements */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 mb-16">
           {/* Gentlemen */}
-          <div className="animate-fade-up text-center">
-            <h3 className="text-3xl font-display font-semibold text-black mb-8">
-              Gentlemen
-            </h3>
-            
-            <div className="bg-[#2c3e50] text-white rounded-lg py-4 px-6 shadow-lg">
-              <p className="text-lg font-medium">
-                Black Suit and Pants
-              </p>
+          <div className="animate-fade-up">
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
+              <div className="text-center mb-6">
+                <img 
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/532239154_1301329915030095_1205667868082236687_n-removebg-preview_srt9sk.png"
+                  alt="Men's formal attire"
+                  className="w-96 h-96 mx-auto object-contain mb-6"
+                />
+                <h3 className="text-2xl font-display font-semibold text-primary mb-6">
+                  Gentlemen
+                </h3>
+                
+                <div className="bg-[#2c3e50] text-white rounded-lg py-4 px-6 shadow-lg mb-4">
+                  <p className="text-lg font-medium">
+                    Black Suit and Pants
+                  </p>
+                </div>
+                
+                <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-[40px] px-8 py-4 mb-6 shadow-lg border border-slate-700 w-full max-w-md mx-auto">
+                  <span className="text-white font-bold text-xl tracking-wide text-center block">Black Suit and Pants</span>
+                </div>
+              </div>
+
+              <div className="text-center text-muted-foreground">
+                <p className="leading-relaxed text-lg">
+                  Classic black formal attire with dress shirt, tie, and formal shoes. 
+                  Please ensure a sophisticated and polished appearance.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Ladies */}
-          <div className="animate-fade-up text-center" style={{ animationDelay: '0.2s' }}>
-            <h3 className="text-3xl font-display font-semibold text-black mb-8">
-              Ladies
-            </h3>
-            
-            <div className="bg-[#8B7355] text-white rounded-lg py-4 px-6 shadow-lg">
-              <p className="text-lg font-medium">
-                Long gown in elegant shades
-              </p>
+          <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
+              <div className="text-center mb-6">
+                <img 
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645048/526212972_2848419708685550_5421439481788505964_n_PhotoGrid-removebg-preview_dqcnk3.png"
+                  alt="Women's formal attire"
+                  className="w-96 h-96 mx-auto object-contain mb-6"
+                />
+                <h3 className="text-2xl font-display font-semibold text-primary mb-6">
+                  Ladies
+                </h3>
+                
+                <div className="bg-[#8B7355] text-white rounded-lg py-4 px-6 shadow-lg mb-4">
+                  <p className="text-lg font-medium">
+                    Long gown in elegant shades
+                  </p>
+                </div>
+                
+                <div className="bg-gradient-to-r from-[#4e403b] to-[#8B7355] rounded-[40px] px-8 py-4 mb-6 shadow-lg border border-[#4e403b]/30 w-full max-w-md mx-auto">
+                  <span className="text-white font-bold text-xl tracking-wide text-center block">Long gown in elegant shades</span>
+                </div>
+              </div>
+
+              <div className="text-center text-muted-foreground">
+                <p className="leading-relaxed text-lg mb-6">Floor-length formal gowns in the color palette below.</p>
+                <img 
+                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013804/519428760_24552310207783945_1683405038722244104_n_vhbnij.jpg"
+                  alt="Color palette for ladies gowns"
+                  className="w-full max-w-sm mx-auto rounded-lg"
+                />
+              </div>
             </div>
           </div>
         </div>
