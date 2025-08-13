@@ -90,8 +90,14 @@ const FAQSection = () => {
         {/* Contact Information */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-elegant border border-border rounded-2xl p-8 shadow-soft max-w-2xl mx-auto">
+            <h3 className="text-xl font-semibold text-primary mb-4">
+              Still have questions?
+            </h3>
             <p className="text-muted-foreground mb-6">
-              You may also directly contact our wedding coordinator
+              We're here to help! Feel free to reach out to us if you need more information about our special day.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              You may also contact our wedding coordinator
             </p>
             <div className="space-y-2">
               <p className="font-semibold text-primary">Events Management Services</p>
