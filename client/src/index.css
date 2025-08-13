@@ -6,16 +6,16 @@
 
 @layer base {
   :root {
-    /* Base Colors */
-    --background: 30 15% 97%;
+    /* Base Colors - Changed to pure white */
+    --background: 0 0% 100%;
     --foreground: 20 15% 15%;
 
-    /* Card Colors */
-    --card: 30 20% 98%;
+    /* Card Colors - Changed to pure white */
+    --card: 0 0% 100%;
     --card-foreground: 20 15% 15%;
 
-    /* Popover Colors */
-    --popover: 30 20% 98%;
+    /* Popover Colors - Changed to pure white */
+    --popover: 0 0% 100%;
     --popover-foreground: 20 15% 15%;
 
     /* Primary Wedding Colors */
@@ -60,10 +60,10 @@
     /* Border Radius */
     --radius: 0.75rem;
 
-    /* Elegant Gradients */
-    --gradient-elegant: linear-gradient(135deg, hsl(var(--background)), hsl(var(--muted)));
+    /* Elegant Gradients - Changed to pure white */
+    --gradient-elegant: #ffffff;
     --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(45 75% 75%));
-    --gradient-warm: linear-gradient(135deg, hsl(var(--warm-brown)), hsl(var(--dusty-rose)));
+    --gradient-warm: #ffffff;
 
     /* Elegant Shadows */
     --shadow-elegant: 0 20px 50px -10px hsl(var(--primary) / 0.1);
@@ -393,6 +393,29 @@
   #invitation [class*="gradient"],
   #invitation [class*="bg-gradient"],
   #invitation [class*="from-"],
+  .bg-gradient-elegant,
+  .bg-gradient-warm,
+  [class*="bg-gradient"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+
+  /* Comprehensive body/html fixes */
+  body {
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+
+  html {
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+
+  /* Force white on min-h-screen containers */
+  .min-h-screen {
+    background-color: #ffffff !important;
+  }
   #invitation [class*="to-"],
   #invitation [class*="via-"],
   #invitation [class*="shadow"] {
