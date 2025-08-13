@@ -33,12 +33,12 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 mb-10 max-w-lg mx-auto shadow-2xl">
             <div className="space-y-3">
               <div className="text-center">
-                <p className="text-lg sm:text-xl text-white/90 font-body font-light tracking-wide" data-testid="text-date">
+                <p className="text-lg sm:text-xl text-white/90 font-light tracking-wide" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-date">
                   October 8, 2025
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-lg sm:text-xl text-white/90 font-body font-light tracking-wide" data-testid="text-venue">
+                <p className="text-lg sm:text-xl text-white/90 font-light tracking-wide" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-venue">
                   Tagaytay Highlands
                 </p>
               </div>
