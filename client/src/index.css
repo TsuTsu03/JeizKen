@@ -232,13 +232,13 @@
       -webkit-box-shadow: none !important;
       -moz-box-shadow: none !important;
     }
-    
+
     img {
       -webkit-backdrop-filter: none !important;
       backdrop-filter: none !important;
       filter: none !important;
     }
-    
+
     .shadow-elegant,
     .shadow-soft,
     .shadow-warm {
@@ -284,11 +284,11 @@
     .text-4xl {
       font-size: 2rem !important;
     }
-    
+
     .text-5xl {
       font-size: 2.5rem !important;
     }
-    
+
     .text-6xl {
       font-size: 3rem !important;
     }
@@ -329,7 +329,7 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: #4e403b;
   }
-  
+
   /* Remove any glass/overlay effects and unwanted borders */
   *::before,
   *::after {
@@ -343,24 +343,99 @@
     outline: none !important;
   }
 
-  /* Force white background for invitation section and parent */
-  #invitation {
+  /* Complete removal of all visual effects for invitation section */
+  #invitation,
+  #invitation section,
+  #invitation div,
+  #invitation > *,
+  #invitation * {
+    background: #ffffff !important;
     background-color: #ffffff !important;
+    background-image: none !important;
+    background-attachment: unset !important;
+    background-position: unset !important;
+    background-repeat: unset !important;
+    background-size: unset !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    text-shadow: none !important;
+    border-image: none !important;
+    border-image-source: none !important;
   }
-  
-  .min-h-screen {
+
+  /* Target all pseudo-elements in invitation section */
+  #invitation *::before,
+  #invitation *::after,
+  #invitation::before,
+  #invitation::after {
+    background: #ffffff !important;
     background-color: #ffffff !important;
+    background-image: none !important;
+    content: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    text-shadow: none !important;
+    border-image: none !important;
+  }
+
+  /* Remove any possible gradients with specific selectors */
+  #invitation [style*="gradient"],
+  #invitation [class*="gradient"],
+  #invitation [class*="bg-gradient"],
+  #invitation [class*="from-"],
+  #invitation [class*="to-"],
+  #invitation [class*="via-"],
+  #invitation [class*="shadow"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Override any body or html background that might show through */
+  body:has(#invitation) {
+    background: #ffffff !important;
+  }
+
+  /* Global shadow removal for invitation section */
+  #invitation .shadow,
+  #invitation .shadow-sm,
+  #invitation .shadow-md,
+  #invitation .shadow-lg,
+  #invitation .shadow-xl,
+  #invitation .shadow-2xl,
+  #invitation .shadow-inner,
+  #invitation .shadow-none {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
   }
 
   /* Restore proper border-radius for UI elements that need it */
   .rounded-lg {
     border-radius: 0.5rem !important;
   }
-  
+
   .rounded-xl {
     border-radius: 0.75rem !important;
   }
-  
+
   .rounded-2xl {
     border-radius: 1rem !important;
   }
