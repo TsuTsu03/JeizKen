@@ -23,10 +23,10 @@ const InvitationSection = () => {
           {/* Date, Time, Location */}
           <div className="space-y-4 max-w-lg mx-auto mb-8">
             <div className="text-center space-y-2">
-              <p className="text-2xl md:text-3xl font-script italic text-primary" data-testid="text-wedding-date-detail">
+              <p className="text-2xl md:text-3xl font-script italic text-black" data-testid="text-wedding-date-detail">
                 October 8, 2025 | 2:15 PM
               </p>
-              <p className="text-xl md:text-2xl font-script italic text-primary/80" data-testid="text-wedding-location">
+              <p className="text-xl md:text-2xl font-script italic text-black" data-testid="text-wedding-location">
                 Tagaytay Highlands
               </p>
             </div>
@@ -35,10 +35,10 @@ const InvitationSection = () => {
 
 
           <div className="space-y-6 max-w-lg mx-auto">
-            <p className="text-lg text-foreground/85 leading-relaxed" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-invitation-question">
+            <p className="text-lg text-black leading-relaxed" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-invitation-question">
               Will you accept this invitation?
             </p>
-            <p className="text-base text-foreground/70" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-invitation-deadline">
+            <p className="text-base text-black" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-invitation-deadline">
               Please respond on or before
             </p>
           </div>

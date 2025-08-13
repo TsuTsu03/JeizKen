@@ -416,6 +416,20 @@
   .min-h-screen {
     background-color: #ffffff !important;
   }
+
+  /* Ensure buttons are visible with proper brown background */
+  button[data-testid="button-open-invitation"],
+  button[data-testid="button-rsvp"] {
+    background-color: #4e403b !important;
+    border: none !important;
+    color: white !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  button[data-testid="button-open-invitation"]:hover,
+  button[data-testid="button-rsvp"]:hover {
+    background-color: rgba(78, 64, 59, 0.9) !important;
+  }
   #invitation [class*="to-"],
   #invitation [class*="via-"],
   #invitation [class*="shadow"] {
