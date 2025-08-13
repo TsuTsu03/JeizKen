@@ -112,19 +112,19 @@ const DressCodeSection = () => {
           <div className="space-y-3 text-muted-foreground">
             <p className="flex items-start gap-2">
               <span className="text-[#4e403b] mt-1">•</span>
-              <span>Avoid white, ivory, or cream colors (reserved for the bride)</span>
+              <span>Avoid wearing white, ivory, or cream, as these colors are reserved for the bride.</span>
             </p>
             <p className="flex items-start gap-2">
               <span className="text-[#4e403b] mt-1">•</span>
-              <span>Cocktail dresses and short gowns are not appropriate for this formal event</span>
+              <span>For this formal event, cocktail dresses and short gowns are not suitable.</span>
             </p>
             <p className="flex items-start gap-2">
               <span className="text-[#4e403b] mt-1">•</span>
-              <span>Please ensure your attire is suitable for a religious ceremony</span>
+              <span>Kindly ensure your attire is respectful and appropriate for a religious ceremony.</span>
             </p>
             <p className="flex items-start gap-2">
               <span className="text-[#4e403b] mt-1">•</span>
-              <span>Comfortable formal shoes recommended for the outdoor reception venue</span>
+              <span>Wear comfortable formal shoes so you can dance all night!</span>
             </p>
           </div>
         </div>
