@@ -1,18 +1,27 @@
-import { Heart, Gift, Home } from 'lucide-react';
+import { Heart, Gift, Home } from "lucide-react";
 
 const GiftSection = () => {
   return (
-    <section className="py-20 px-4 bg-background relative overflow-hidden">
+    <section className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-background relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-[#4e403b] rounded-full animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-[#4e403b] rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-3/4 left-3/4 w-24 h-24 border border-[#4e403b] rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div
+          className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-[#4e403b] rounded-full animate-float"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute top-3/4 left-3/4 w-24 h-24 border border-[#4e403b] rounded-full animate-float"
+          style={{ animationDelay: "4s" }}
+        ></div>
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
         <div className="mb-16">
-          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-gifts-title">
+          <h2
+            className="text-5xl font-script italic text-primary mb-8"
+            data-testid="text-gifts-title"
+          >
             Wedding Gifts
           </h2>
         </div>
@@ -30,13 +39,15 @@ const GiftSection = () => {
               <p className="text-2xl font-display font-light text-primary leading-relaxed">
                 Your presence at our wedding is the greatest gift.
               </p>
-              
+
               <p className="text-xl font-body text-muted-foreground leading-relaxed">
-                Should you wish to bless us further, a contribution toward building our first home would be deeply appreciated.
+                Should you wish to bless us further, a contribution toward
+                building our first home would be deeply appreciated.
               </p>
-              
+
               <p className="text-lg font-body text-foreground/80 leading-relaxed">
-                This home will be the foundation of our life together and a place where lifelong memories will be made.
+                This home will be the foundation of our life together and a
+                place where lifelong memories will be made.
               </p>
             </div>
 
@@ -52,11 +63,13 @@ const GiftSection = () => {
         {/* Payment Options */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* GCash Payment */}
-          <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <div className="animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">GCash</h3>
+              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">
+                GCash
+              </h3>
               <div className="text-center mb-4">
-                <img 
+                <img
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013785/526693785_1093088002314041_3562987169417511188_n_cwahup.jpg"
                   alt="GCash QR Code"
                   className="w-64 h-64 mx-auto object-contain"
@@ -69,11 +82,13 @@ const GiftSection = () => {
           </div>
 
           {/* Bank Transfer */}
-          <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <div className="animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div className="bg-card border border-border rounded-xl p-8 shadow-soft hover-elegant h-full">
-              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">BPI </h3>
+              <h3 className="text-lg font-display font-semibold text-primary mb-4 text-center">
+                BPI{" "}
+              </h3>
               <div className="text-center mb-4">
-                <img 
+                <img
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013786/526765929_1257484575837230_1343058166809115629_n_y2ybdi.jpg"
                   alt="Bank Transfer QR Code"
                   className="w-64 h-64 mx-auto object-contain"
@@ -85,8 +100,6 @@ const GiftSection = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
     </section>
   );

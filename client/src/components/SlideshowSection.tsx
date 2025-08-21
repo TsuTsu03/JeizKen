@@ -1,15 +1,15 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 const SlideshowSection = () => {
   const images = [
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/6_10000_pwmazb.jpg',
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754640359/2_tziqai.jpg',
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754640358/1_fwf9zy.jpg',
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754640357/9_xguxpu.jpg',
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754640357/10_f4nulp.jpg',
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754640356/3_x1dwvd.jpg',
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/8_10000_kaycv3.jpg',
-    'https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/4_bpmerb.jpg'
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/6_10000_pwmazb.jpg",
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640359/2_tziqai.jpg",
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640358/1_fwf9zy.jpg",
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640357/9_xguxpu.jpg",
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640357/10_f4nulp.jpg",
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640356/3_x1dwvd.jpg",
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/8_10000_kaycv3.jpg",
+    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/4_bpmerb.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +25,7 @@ const SlideshowSection = () => {
       { threshold: 0.3 }
     );
 
-    const element = document.getElementById('slideshow');
+    const element = document.getElementById("slideshow");
     if (element) {
       observer.observe(element);
     }
@@ -48,26 +48,29 @@ const SlideshowSection = () => {
   }, [isVisible, images.length]);
 
   return (
-    <section id="slideshow" className="relative py-8 bg-background overflow-hidden">
+    <section
+      id="slideshow"
+      className="relative py-4 bg-background overflow-hidden"
+    >
       {/* Background Slideshow */}
       <div className="absolute inset-0">
         {images.map((image, index) => (
           <div
             key={`bg-${index}`}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
+              index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           >
             <img
               src={image}
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fit"
               style={{
-                display: 'block',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-                objectPosition: 'top',
+                display: "block",
+                width: "100%",
+                height: "auto",
+                objectFit: "contain",
+                objectPosition: "top",
                 margin: 0,
                 padding: 0
               }}
@@ -78,13 +81,15 @@ const SlideshowSection = () => {
       </div>
 
       {/* Main Slideshow Container - Centered */}
-      <div className="relative z-10 flex items-center justify-center px-4">
+      <div className="relative z-10 flex items-center justify-center px-12">
         <div className="relative w-full max-w-md">
           {images.map((image, index) => (
             <div
               key={index}
               className={`transition-opacity duration-500 ${
-                index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'
+                index === currentIndex
+                  ? "opacity-100"
+                  : "opacity-0 absolute inset-0"
               }`}
             >
               <img
@@ -92,22 +97,22 @@ const SlideshowSection = () => {
                 alt={`Kenneth and Jeizl moments ${index + 1}`}
                 className="w-full h-auto object-cover rounded-lg shadow-lg"
                 style={{
-                  display: 'block',
-                  width: '100%',
-                  height: 'auto',
-                  objectFit: 'contain',
-                  objectPosition: 'top',
+                  display: "block",
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "contain",
+                  objectPosition: "top",
                   margin: 0,
                   padding: 0
                 }}
-                loading={index === 0 ? 'eager' : 'lazy'}
+                loading={index === 0 ? "eager" : "lazy"}
                 data-testid={`img-slideshow-${index + 1}`}
               />
             </div>
           ))}
         </div>
       </div>
-      
+
       {/* Progress indicators */}
       <div className="relative z-10 flex justify-center space-x-2 pt-4">
         {images.map((_, index) => (
@@ -116,14 +121,14 @@ const SlideshowSection = () => {
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? 'bg-[#4e403b] w-8'
-                : 'bg-white/70 hover:bg-[#4e403b]/50'
+                ? "bg-[#4e403b] w-8"
+                : "bg-white/70 hover:bg-[#4e403b]/50"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
-      
+
       {/* Progress indicators */}
       <div className="relative z-10 flex justify-center space-x-2 pt-4">
         {images.map((_, index) => (
@@ -132,8 +137,8 @@ const SlideshowSection = () => {
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? 'bg-[#4e403b] w-8'
-                : 'bg-white/70 hover:bg-[#4e403b]/50'
+                ? "bg-[#4e403b] w-8"
+                : "bg-white/70 hover:bg-[#4e403b]/50"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

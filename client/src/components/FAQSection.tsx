@@ -1,53 +1,60 @@
-import { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const FAQSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
+    setOpenItems((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
 
   const faqs = [
     {
-      question: "May I invite a \"PLUS ONE\" to the event?",
-      answer: "As much as we would love to celebrate with all our friends and family, we are only able to accommodate a limited number of guests. We appreciate your understanding that entry will be limited to those listed on our guest list."
+      question: 'May I invite a "PLUS ONE" to the event?',
+      answer:
+        "As much as we would love to celebrate with all our friends and family, we are only able to accommodate a limited number of guests. We appreciate your understanding that entry will be limited to those listed on our guest list."
     },
     {
       question: "Is there parking space available for my car?",
-      answer: "Yes, there is parking available for everyone at the venue. However, please take note that it is first come, first served basis, so you might not want to be late."
+      answer:
+        "Yes, there is parking available for everyone at the venue. However, please take note that it is first come, first served basis, so you might not want to be late."
     },
     {
       question: "What if I RSVP'd but cannot attend?",
-      answer: "We would love to have you at our wedding, but we understand that there are circumstances beyond our control. However, please let us know as soon as possible so we can reallocate your seat/s."
+      answer:
+        "We would love to have you at our wedding, but we understand that there are circumstances beyond our control. However, please let us know as soon as possible so we can reallocate your seat/s."
     },
 
     {
       question: "When is the appropriate time to leave?",
-      answer: "This celebration has been months in the making and we wish to share it with those dearest to our hearts. We hope you'll join us in having fun and celebrating with us all the way to the end of the program!"
+      answer:
+        "This celebration has been months in the making and we wish to share it with those dearest to our hearts. We hope you'll join us in having fun and celebrating with us all the way to the end of the program!"
     },
 
     {
       question: "Am I allowed to bring my kids at the wedding?",
-      answer: "Though children hold a special place in our hearts, we have chosen to keep our wedding an adults-only celebration, with the exception of our adorable little entourage."
+      answer:
+        "Though children hold a special place in our hearts, we have chosen to keep our wedding an adults-only celebration, with the exception of our adorable little entourage."
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-background">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-faq-title">
+          <h2
+            className="text-5xl font-script italic text-primary mb-8"
+            data-testid="text-faq-title"
+          >
             Frequently Asked Questions
           </h2>
-          <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
-            We've compiled answers to the most common questions about our wedding day. 
-            If you have additional questions, please don't hesitate to contact us.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We've compiled answers to the most common questions about our
+            wedding day. If you have additional questions, please don't hesitate
+            to contact us.
           </p>
         </div>
 
@@ -74,7 +81,7 @@ const FAQSection = () => {
                   )}
                 </div>
               </button>
-              
+
               {openItems.includes(index) && (
                 <div className="px-8 pb-6">
                   <div className="w-full h-px bg-border mb-4"></div>
@@ -94,19 +101,17 @@ const FAQSection = () => {
               Still have questions?
             </h3>
             <p className="text-muted-foreground mb-6">
-              We're here to help! Feel free to reach out to us if you need more information about our special day.
+              We're here to help! Feel free to reach out to us if you need more
+              information about our special day.
             </p>
             <p className="text-muted-foreground mb-6">
               You may also contact our wedding coordinator
             </p>
             <div className="space-y-2">
-              <p className="font-semibold text-primary">Events Management Services</p>
+              <p className="font-semibold text-primary">
+                Events Management Services
+              </p>
               <p className="text-primary">09178396781</p>
-            </div>
-            <div className="flex justify-center items-center space-x-2">
-              <div className="w-8 h-px bg-[#2c2421]"></div>
-              <div className="w-2 h-2 rounded-full animate-float bg-[#2c2421]"></div>
-              <div className="w-8 h-px bg-[#2c2421]"></div>
             </div>
           </div>
         </div>

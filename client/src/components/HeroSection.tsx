@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 
 interface HeroSectionProps {
   onOpenInvitation: () => void;
@@ -6,15 +6,16 @@ interface HeroSectionProps {
 
 const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
   return (
-    <section 
+    <section
       className="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('https://res.cloudinary.com/dbiboclqa/image/upload/v1754639890/1ST_PAGE_x6bpxd.jpg')",
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'scroll',
-        minHeight: '100dvh'
+        backgroundImage:
+          "url('https://res.cloudinary.com/dbiboclqa/image/upload/v1754639890/1ST_PAGE_x6bpxd.jpg')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundAttachment: "scroll",
+        minHeight: "100dvh"
       }}
     >
       {/* Overlay for better text readability - No black tint */}
@@ -22,9 +23,16 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="animate-fade-up opacity-0 [animation-delay:0.3s] mb-8">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] text-white font-script tracking-wide leading-tight" data-testid="text-main-invitation">
-            KENNETH<br />
-            <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl">&</span><br />
+          <h1
+            className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] text-white font-script tracking-wide leading-tight"
+            data-testid="text-main-invitation"
+          >
+            KENNETH
+            <br />
+            <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+              &
+            </span>
+            <br />
             JEIZL
           </h1>
         </div>
@@ -33,12 +41,20 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 mb-10 max-w-lg mx-auto shadow-2xl">
             <div className="space-y-3">
               <div className="text-center">
-                <p className="text-lg sm:text-xl text-white/90 font-light tracking-wide" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-date">
+                <p
+                  className="text-lg sm:text-xl text-white/90 font-light tracking-wide"
+                  style={{ fontFamily: '"Times New Roman", serif' }}
+                  data-testid="text-date"
+                >
                   October 8, 2025
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-lg sm:text-xl text-white/90 font-light tracking-wide" style={{ fontFamily: '"Times New Roman", serif' }} data-testid="text-venue">
+                <p
+                  className="text-lg sm:text-xl text-white/90 font-light tracking-wide"
+                  style={{ fontFamily: '"Times New Roman", serif' }}
+                  data-testid="text-venue"
+                >
                   Tagaytay Highlands
                 </p>
               </div>
@@ -52,7 +68,7 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                console.log('HeroSection button clicked');
+                console.log("HeroSection button clicked");
                 onOpenInvitation();
               }}
               className="bg-[#4e403b] hover:bg-[#4e403b]/90 text-white font-display font-medium px-8 py-4 text-base shadow-lg border-0 rounded-none relative overflow-hidden transform transition-all duration-300 group-hover:scale-105 z-20"

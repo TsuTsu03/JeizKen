@@ -465,7 +465,7 @@
   }
 
   /* Restore proper border-radius for UI elements that need it */
-  .rounded-lg {
+  .rounded-lg shadow-lg {
     border-radius: 0.5rem !important;
   }
 

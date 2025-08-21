@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 const VideoSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -9,7 +9,9 @@ const VideoSection = () => {
 
     const handlePlay = () => {
       // Pause background music when video starts
-      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
+      const audio = document.querySelector(
+        'audio[data-testid="background-audio"]'
+      ) as HTMLAudioElement;
       if (audio) {
         audio.pause();
       }
@@ -17,7 +19,9 @@ const VideoSection = () => {
 
     const handlePause = () => {
       // Resume background music when video pauses
-      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
+      const audio = document.querySelector(
+        'audio[data-testid="background-audio"]'
+      ) as HTMLAudioElement;
       if (audio) {
         audio.play().catch(() => {
           // Silently handle autoplay restrictions
@@ -27,7 +31,9 @@ const VideoSection = () => {
 
     const handleEnded = () => {
       // Resume background music when video ends
-      const audio = document.querySelector('audio[data-testid="background-audio"]') as HTMLAudioElement;
+      const audio = document.querySelector(
+        'audio[data-testid="background-audio"]'
+      ) as HTMLAudioElement;
       if (audio) {
         audio.play().catch(() => {
           // Silently handle autoplay restrictions
@@ -35,14 +41,14 @@ const VideoSection = () => {
       }
     };
 
-    video.addEventListener('play', handlePlay);
-    video.addEventListener('pause', handlePause);
-    video.addEventListener('ended', handleEnded);
+    video.addEventListener("play", handlePlay);
+    video.addEventListener("pause", handlePause);
+    video.addEventListener("ended", handleEnded);
 
     return () => {
-      video.removeEventListener('play', handlePlay);
-      video.removeEventListener('pause', handlePause);
-      video.removeEventListener('ended', handleEnded);
+      video.removeEventListener("play", handlePlay);
+      video.removeEventListener("pause", handlePause);
+      video.removeEventListener("ended", handleEnded);
     };
   }, []);
 
@@ -50,7 +56,10 @@ const VideoSection = () => {
     <section className="relative w-full overflow-hidden bg-background">
       {/* Section Header */}
       <div className="text-center py-8 px-4 bg-background">
-        <h2 className="text-5xl font-script italic text-primary mb-8" data-testid="text-video-title">
+        <h2
+          className="text-5xl font-script italic text-primary mb-8"
+          data-testid="text-video-title"
+        >
           Save the Date Video
         </h2>
       </div>
@@ -62,11 +71,11 @@ const VideoSection = () => {
           playsInline
           controls
           style={{
-            display: 'block',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-            objectPosition: 'top',
+            display: "block",
+            width: "100%",
+            height: "auto",
+            objectFit: "contain",
+            objectPosition: "top",
             margin: 0,
             padding: 0
           }}
