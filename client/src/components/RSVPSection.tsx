@@ -5,7 +5,7 @@ const RSVPSection = () => {
   return (
     <section
       id="rsvp"
-      className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-gradient-warm relative overflow-hidden"
+      className="rounded-lg py-8 shadow-2xl  px-4 bg-gradient-warm relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
@@ -14,9 +14,9 @@ const RSVPSection = () => {
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
-        <div className="mb-4">
+        <div className="">
           <h2
-            className="text-5xl font-script italic text-primary mb-4"
+            className="text-5xl font-script italic text-primary mb-2"
             data-testid="text-rsvp-title"
           >
             Please RSVP
@@ -24,7 +24,7 @@ const RSVPSection = () => {
         </div>
 
         {/* Main RSVP Content */}
-        <div className="animate-fade-up mb-4">
+        <div className="animate-fade-up">
           <div className="bg-white/95 backdrop-blur-sm border border-white/20 rounded-2xl p-12 shadow-elegant">
             {/* Wedding Details */}
             <div className="flex gap-8 mb-12 justify-between">
@@ -89,9 +89,7 @@ const RSVPSection = () => {
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center justify-center w-full h-full z-10"
               >
-                <span className="relative z-10 font-script italic">
-                  RSVP Now
-                </span>
+                <span className="relative z-10 font-script">RSVP Now</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform skew-x-12 group-hover:animate-pulse"></div>
               </a>
             </Button>
@@ -111,7 +109,7 @@ const RSVPSection = () => {
 
         {/* Additional Information */}
         <div className="animate-fade-up" style={{ animationDelay: "0.3s" }}>
-          <div className="bg-white/90 backdrop-blur-sm border border-white/20 rounded-xl p-8 shadow-soft max-w-2xl mx-auto">
+          <div className="bg-white/90 backdrop-blur-sm border border-white/20 rounded-xl px-4 shadow-soft max-w-2xl mx-auto">
             <h3 className="text-lg font-display font-semibold text-primary mb-2">
               Important Reminders
             </h3>

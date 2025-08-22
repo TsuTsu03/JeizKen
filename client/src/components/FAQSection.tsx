@@ -41,12 +41,12 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-background">
+    <section className="rounded-lg py-8 shadow-2xl  px-4 bg-background">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2
-            className="text-5xl font-script italic text-primary mb-8"
+            className="text-5xl font-script italic text-primary mb-6"
             data-testid="text-faq-title"
           >
             Frequently Asked Questions

@@ -57,14 +57,14 @@ const VideoSection = () => {
       {/* Section Header */}
       <div className="text-center py-8 px-4 bg-background">
         <h2
-          className="text-5xl font-script italic text-primary mb-8"
+          className="text-5xl font-script italic text-primary"
           data-testid="text-video-title"
         >
           Save the Date Video
         </h2>
       </div>
       {/* Video Container */}
-      <div className="relative w-full overflow-hidden bg-background">
+      <div className="relative w-full overflow-hidden bg-background pb-4">
         <video
           ref={videoRef}
           loop

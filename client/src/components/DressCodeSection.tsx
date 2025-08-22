@@ -15,17 +15,17 @@ const DressCodeSection = () => {
   return (
     <section
       id="dresscode"
-      className="rounded-lg py-20 shadow-2xl  px-4 bg-background relative overflow-hidden"
+      className="rounded-lg py-8 shadow-2xl  px-4 bg-background relative overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5"></div>
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16 relative">
+        <div className="text-center mb-12 relative">
           {/* Decorative Elements */}
 
           <h2
-            className="font-script italic text-primary mb-8 text-[48px]"
+            className="font-script italic text-primary mb-2 text-[48px]"
             data-testid="text-dresscode-title"
           >
             Attire Guide
@@ -41,7 +41,7 @@ const DressCodeSection = () => {
         </div>
 
         {/* Dress Code Requirements */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-10">
           {/* Gentlemen */}
           <div className="animate-fade-up">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
@@ -49,14 +49,14 @@ const DressCodeSection = () => {
                 <img
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/532239154_1301329915030095_1205667868082236687_n-removebg-preview_srt9sk.png"
                   alt="Men's formal attire"
-                  className="w-96 h-96 mx-auto object-contain mb-6"
+                  className="w-96 h-70 mx-auto object-contain"
                 />
                 <h3 className="text-2xl font-display font-semibold text-primary mb-6">
                   Gentlemen
                 </h3>
 
                 <div className="bg-[#2c3e50] text-white rounded-lg py-4 px-6 shadow-lg mb-4">
-                  <p className="text-lg font-medium">Black Suit and Pants</p>
+                  <p className="text-lg font-medium">Black Suit</p>
                 </div>
               </div>
 
@@ -76,7 +76,7 @@ const DressCodeSection = () => {
                 <img
                   src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645048/526212972_2848419708685550_5421439481788505964_n_PhotoGrid-removebg-preview_dqcnk3.png"
                   alt="Women's formal attire"
-                  className="w-96 h-96 mx-auto object-contain mb-6"
+                  className="w-96 h-70 mx-auto object-contain"
                 />
                 <h3 className="text-2xl font-display font-semibold text-primary mb-6">
                   Ladies

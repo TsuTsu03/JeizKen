@@ -37,7 +37,7 @@ const TimelineSection = () => {
   return (
     <section
       id="timeline"
-      className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-background relative overflow-hidden"
+      className="shadow-lg rounded-lg py-8 px-4 bg-background relative overflow-hidden"
     >
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5">
@@ -47,9 +47,9 @@ const TimelineSection = () => {
 
       <div className="max-w-4xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2
-            className="text-5xl font-script italic text-primary mb-8"
+            className="text-5xl font-script italic text-primary mb-2"
             data-testid="text-timeline-title"
           >
             Wedding Timeline
@@ -122,12 +122,7 @@ const TimelineSection = () => {
         </div>
 
         {/* Bottom Decorative */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-2">
-            <div className="w-8 h-px bg-[#4e403b]"></div>
-            <div className="w-2 h-2 bg-[#4e403b] rounded-full animate-float"></div>
-            <div className="w-8 h-px bg-[#4e403b]"></div>
-          </div>
+        <div className="text-center">
           <p className="mt-4 text-muted-foreground font-body italic">
             A celebration of love from dusk till dawn
           </p>

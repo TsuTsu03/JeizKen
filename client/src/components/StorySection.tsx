@@ -10,13 +10,13 @@ const StorySection = () => {
   return (
     <section
       id="story"
-      className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-background"
+      className="rounded-lg py-8 shadow-2xl px-4 bg-background"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2
-            className="text-5xl font-script italic text-primary mb-8"
+            className="text-5xl font-script italic text-primary"
             data-testid="text-story-title"
           >
             Our Story

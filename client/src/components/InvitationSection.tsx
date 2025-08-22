@@ -6,47 +6,30 @@ const InvitationSection = () => {
   return (
     <section
       id="invitation"
-      className="rounded-lg shadow-2xl mt-10 mb-10 py-10 px-20"
+      className="rounded-lg shadow-2xl mt-10 mb-10 py-5 px-20"
     >
       <div className="rounded-lg shadow-2xl max-w-2xl mx-auto text-center space-y-10">
         {/* Names */}
         <div className="flex flex-col items-center justify-center text-center">
-          <h1
-            className="text-7xl md:text-8xl lg:text-9xl font-script italic text-primary leading-tight pt-[0px] pb-[0px] mt-[25px] mb-[15px]"
-            style={{
-              fontFamily:
-                '"Great Vibes", "Dancing Script", "Brush Script MT", cursive',
-              fontWeight: 400,
-              letterSpacing: "0.05em"
-            }}
-          >
-            Kenneth
-          </h1>
-
-          {/* Overlapping ampersand */}
-          <span
-            className="absolute pl-12 mix-blend-multiply text-[80px] italic text-primary opacity-60 leading-tight pt-[0px] pb-[0px]"
-            style={{
-              fontFamily:
-                '"Great Vibes", "Dancing Script", "Brush Script MT", cursive',
-              fontWeight: 100,
-              letterSpacing: "0.05em"
-            }}
-          >
-            &
-          </span>
-
-          <h1
-            className="text-7xl md:text-8xl lg:text-9xl font-script italic text-primary leading-tight pt-[0px] pb-[0px] mt-[15px] mb-[25px]"
-            style={{
-              fontFamily:
-                '"Great Vibes", "Dancing Script", "Brush Script MT", cursive',
-              fontWeight: 400,
-              letterSpacing: "0.05em"
-            }}
-          >
-            Jeizl
-          </h1>
+          {/* Names */}
+          <div className="space-y-4">
+            <h1
+              className="text-7xl md:text-8xl lg:text-9xl font-script italic text-primary leading-tight pt-[0px] pb-[0px] mt-[25px] mb-[25px]"
+              style={{
+                fontFamily:
+                  '"Great Vibes", "Dancing Script", "Brush Script MT", cursive',
+                fontWeight: 400,
+                letterSpacing: "0.05em"
+              }}
+              data-testid="text-couple-names"
+            >
+              Kenneth{" "}
+              <span className="text-primary opacity-80 text-[40px] md:text-[70px]">
+                &
+              </span>{" "}
+              Jeizl
+            </h1>
+          </div>
         </div>
 
         {/* Main Invitation Text */}

@@ -84,7 +84,7 @@ const Index = () => {
           <Navigation />
 
           {/* Main Content Sections */}
-          <main className="bg-[#e6e0d4] flex flex-col space-y-4 px-12">
+          <main className="bg-[#e6e0d4] flex flex-col space-y-1 px-2">
             <SlideshowSection />
             <InvitationSection />
             <div className="mt-16 flex justify-center items-center space-x-4">

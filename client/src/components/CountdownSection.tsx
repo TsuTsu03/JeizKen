@@ -36,13 +36,13 @@ const CountdownSection = () => {
   return (
     <section
       id="countdown"
-      className="shadow-2xl rounded-lg py-20 shadow-2xl  px-4 bg-background"
+      className="shadow-2xl rounded-lg py-8  px-4 bg-background"
     >
       <div className="rounded-lg max-w-4xl mx-auto text-center">
         {/* Section Header */}
-        <div className="mb-16">
+        <div className="mb-10">
           <h2
-            className="text-5xl font-script italic text-primary mb-8"
+            className="text-5xl font-script italic text-primary mb-2"
             data-testid="text-countdown-title"
           >
             Forever starts soon
@@ -71,13 +71,6 @@ const CountdownSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Decorative Elements */}
-        <div className="mt-16 flex justify-center space-x-4">
-          <div className="w-12 h-px bg-[#4e403b]"></div>
-          <div className="w-2 h-2 bg-[#4e403b] rounded-full animate-float"></div>
-          <div className="w-12 h-px bg-[#4e403b]"></div>
         </div>
       </div>
     </section>

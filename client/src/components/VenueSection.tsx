@@ -40,7 +40,7 @@ const VenueSection = () => {
   return (
     <section
       id="venue"
-      className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-background"
+      className="shadow-lg rounded-lg py-8 px-4 bg-background"
     >
       <div className="max-w-4xl mx-auto">
         {/* Venues List */}
@@ -54,7 +54,7 @@ const VenueSection = () => {
               {/* Venue Title */}
               <div className="text-center mb-12">
                 <h2
-                  className="text-5xl font-script italic text-primary mb-8"
+                  className="text-5xl font-script italic text-primary mb-2"
                   data-testid={`text-${venue.title.toLowerCase()}-title`}
                 >
                   {venue.title}

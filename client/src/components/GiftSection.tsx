@@ -2,7 +2,7 @@ import { Heart, Gift, Home } from "lucide-react";
 
 const GiftSection = () => {
   return (
-    <section className="shadow-lg rounded-lg py-20 shadow-2xl  px-4 bg-background relative overflow-hidden">
+    <section className="shadow-lg rounded-lg py-8  px-4 bg-background relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-[#4e403b] rounded-full animate-float"></div>
@@ -17,9 +17,9 @@ const GiftSection = () => {
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
-        <div className="mb-16">
+        <div className="mb-8">
           <h2
-            className="text-5xl font-script italic text-primary mb-8"
+            className="text-5xl font-script italic text-primary mb-2"
             data-testid="text-gifts-title"
           >
             Wedding Gifts
@@ -35,17 +35,26 @@ const GiftSection = () => {
             </div>
 
             {/* Main Message */}
-            <div className="space-y-6">
-              <p className="text-2xl font-display font-light text-primary leading-relaxed">
+            <div className="space-y-2">
+              <p
+                className="text-2xl font-display font-light text-primary leading-relaxed"
+                style={{ fontFamily: '"Times New Roman", serif' }}
+              >
                 Your presence at our wedding is the greatest gift.
               </p>
 
-              <p className="text-xl font-body text-muted-foreground leading-relaxed">
+              <p
+                className="text-xl font-display text-foreground/80 leading-relaxed"
+                style={{ fontFamily: '"Times New Roman", serif' }}
+              >
                 Should you wish to bless us further, a contribution toward
                 building our first home would be deeply appreciated.
               </p>
 
-              <p className="text-lg font-body text-foreground/80 leading-relaxed">
+              <p
+                className="text-xl font-display text-foreground/80 leading-relaxed"
+                style={{ fontFamily: '"Times New Roman", serif' }}
+              >
                 This home will be the foundation of our life together and a
                 place where lifelong memories will be made.
               </p>

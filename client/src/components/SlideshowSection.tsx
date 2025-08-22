@@ -50,7 +50,7 @@ const SlideshowSection = () => {
   return (
     <section
       id="slideshow"
-      className="relative py-4 bg-background overflow-hidden"
+      className="relative py-[18px] md:py-8 bg-background overflow-hidden sm:w-auto sm:max-w-none sm:ml-0 w-screen max-w-[100vw] ml-[calc(50%-50vw)]"
     >
       {/* Background Slideshow */}
       <div className="absolute inset-0">
@@ -82,7 +82,7 @@ const SlideshowSection = () => {
 
       {/* Main Slideshow Container - Centered */}
       <div className="relative z-10 flex items-center justify-center px-12">
-        <div className="relative w-full max-w-md">
+        <div className="relative w-screen max-w-md">
           {images.map((image, index) => (
             <div
               key={index}
