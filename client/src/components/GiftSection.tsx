@@ -1,4 +1,6 @@
 import { Heart, Gift, Home } from "lucide-react";
+import gcash from "./assets/gcash.jpg";
+import bpi from "./assets/bpi.jpg";
 
 const GiftSection = () => {
   return (
@@ -79,7 +81,7 @@ const GiftSection = () => {
               </h3>
               <div className="text-center mb-4">
                 <img
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013785/526693785_1093088002314041_3562987169417511188_n_cwahup.jpg"
+                  src={gcash}
                   alt="GCash QR Code"
                   className="w-64 h-64 mx-auto object-contain"
                 />
@@ -98,7 +100,7 @@ const GiftSection = () => {
               </h3>
               <div className="text-center mb-4">
                 <img
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013786/526765929_1257484575837230_1343058166809115629_n_y2ybdi.jpg"
+                  src={bpi}
                   alt="Bank Transfer QR Code"
                   className="w-64 h-64 mx-auto object-contain"
                 />

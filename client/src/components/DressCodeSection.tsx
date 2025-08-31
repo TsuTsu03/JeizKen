@@ -1,4 +1,6 @@
 import dresscode from "./assets/dresscode.jpeg";
+import menDresscode from "./assets/menDresscode.png";
+import womenDresscode from "./assets/womenDresscode.png";
 
 const DressCodeSection = () => {
   const dressCodeColors = [
@@ -47,7 +49,7 @@ const DressCodeSection = () => {
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
                 <img
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/532239154_1301329915030095_1205667868082236687_n-removebg-preview_srt9sk.png"
+                  src={menDresscode}
                   alt="Men's formal attire"
                   className="w-96 h-70 mx-auto object-contain"
                 />
@@ -74,7 +76,7 @@ const DressCodeSection = () => {
             <div className="bg-card border border-border rounded-2xl p-8 shadow-soft hover-elegant h-full">
               <div className="text-center mb-6">
                 <img
-                  src="https://res.cloudinary.com/dbiboclqa/image/upload/v1754645048/526212972_2848419708685550_5421439481788505964_n_PhotoGrid-removebg-preview_dqcnk3.png"
+                  src={womenDresscode}
                   alt="Women's formal attire"
                   className="w-96 h-70 mx-auto object-contain"
                 />

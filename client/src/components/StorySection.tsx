@@ -1,10 +1,16 @@
+import missingpiece1 from "@/components/assets/missingpiece/missingpiece1.jpg";
+import missingpiece2 from "@/components/assets/missingpiece/missingpiece2.jpg";
+import missingpiece3 from "@/components/assets/missingpiece/missingpiece3.jpg"; // typo? "mssingpiece3.jpg"
+import missingpiece4 from "@/components/assets/missingpiece/missingpiece4.jpg";
+import missingpiece5 from "@/components/assets/missingpiece/missingpiece5.jpg";
+
 const StorySection = () => {
   const storyImages = [
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1755012195/3S7A8479_1_r11vpj.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1755012195/3S7A8274_11_szffxb.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1755012195/3S7A7802_2_a2af0n.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1755012197/3S7A8218_1_yxuskq.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1755012197/3S7A82166_t10wrx.jpg"
+    missingpiece1,
+    missingpiece2,
+    missingpiece4,
+    missingpiece5,
+    missingpiece3
   ];
 
   return (

@@ -16,6 +16,7 @@ import GiftSection from "@/components/GiftSection";
 import RSVPSection from "@/components/RSVPSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import enchanted from "@/components/assets/enchanted.mp3";
 
 const Index = () => {
   const [showInvitation, setShowInvitation] = useState(false);
@@ -72,7 +73,7 @@ const Index = () => {
         ref={audioRef}
         loop
         preload="auto"
-        src="https://res.cloudinary.com/dbiboclqa/video/upload/v1754639888/ytmp3free.cc_the-biggest-taylor-swift-wedding-entrance-pt-10-youtubemp3free.org_oaw336.mp3"
+        src={enchanted}
         style={{ display: "none" }}
         data-testid="background-audio"
       />

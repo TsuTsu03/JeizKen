@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, ExternalLink } from "lucide-react";
+import ceremony from "@/components/assets/ceremony.png";
+import reception from "@/components/assets/reception.png";
 
 const VenueSection = () => {
   const venues = [
@@ -8,8 +10,7 @@ const VenueSection = () => {
       name: "Madre de Dios Chapel",
       address:
         "Sierra Lane, South Main Avenue\nTagaytay Highlands\nTagaytay, Cavite, Philippines",
-      image:
-        "https://res.cloudinary.com/dbiboclqa/image/upload/v1755013747/528272661_2330353877367703_317162366725678148_n-removebg-preview_euk5di.png",
+      image: ceremony,
       mapUrl: "https://maps.app.goo.gl/nRVRNUnTwHaNjGsd7",
       description:
         "We will exchange vows at Madre de Dios Chapel in Tagaytay Highlands, a beautiful chapel surrounded by lush greenery and cool mountain air.",
@@ -25,8 +26,7 @@ const VenueSection = () => {
       name: "Midlands Veranda",
       address:
         "Serifina Villa\nMeadow Lane, South Main Avenue\nTagaytay Highlands\nTagaytay, Cavite, Philippines",
-      image:
-        "https://res.cloudinary.com/dbiboclqa/image/upload/v1755013692/522684947_4096852087241511_2099849351157419984_n-removebg-preview_falou3.png",
+      image: reception,
       mapUrl: "https://maps.app.goo.gl/opRCpSS5F66JTGg96",
       description: "Please join us for dinner, cocktails and dancing!",
       details:

@@ -1,15 +1,25 @@
 import { useState, useEffect, useRef } from "react";
+import slideshow1 from "@/components/assets/slideshow/slideshow1.jpg";
+import slideshow2 from "@/components/assets/slideshow/slideshow2.jpg";
+import slideshow3 from "@/components/assets/slideshow/slideshow3.jpg";
+import slideshow4 from "@/components/assets/slideshow/slideshow4.jpg";
+import slideshow5 from "@/components/assets/slideshow/slideshow5.jpg";
+import slideshow6 from "@/components/assets/slideshow/slideshow6.jpg";
+import slideshow7 from "@/components/assets/slideshow/slideshow7.jpg";
+import slideshow8 from "@/components/assets/slideshow/slideshow8.jpg";
+import slideshow9 from "@/components/assets/slideshow/slideshow9.jpg";
 
 const SlideshowSection = () => {
   const images = [
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/6_10000_pwmazb.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640359/2_tziqai.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640358/1_fwf9zy.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640357/9_xguxpu.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640357/10_f4nulp.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754640356/3_x1dwvd.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/8_10000_kaycv3.jpg",
-    "https://res.cloudinary.com/dbiboclqa/image/upload/v1754660578/4_bpmerb.jpg"
+    slideshow1,
+    slideshow2,
+    slideshow3,
+    slideshow4,
+    slideshow5,
+    slideshow6,
+    slideshow7,
+    slideshow8,
+    slideshow9
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

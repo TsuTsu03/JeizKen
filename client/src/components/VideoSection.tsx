@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import savethedate from "@/components/assets/savethedate.mp4";
 
 const VideoSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -80,10 +81,7 @@ const VideoSection = () => {
             padding: 0
           }}
         >
-          <source
-            src="https://res.cloudinary.com/dbiboclqa/video/upload/v1754639909/SAVE_THE_DATE_VIDEO_ydgklt.mp4"
-            type="video/mp4"
-          />
+          <source src={savethedate} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

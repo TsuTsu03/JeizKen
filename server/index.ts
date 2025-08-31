@@ -59,38 +59,43 @@ app.use((req, res, next) => {
 
     // Use PORT environment variable for production (Cloud Run) or default to 5000 for development
     const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 5000;
-    const host = process.env.NODE_ENV === 'production' ? '0.0.0.0' : '0.0.0.0';
-    
-    const serverInstance = server.listen({
-      port,
-      host,
-      reusePort: process.env.NODE_ENV !== 'production',
-    })
-    .on('listening', () => {
-      log(`Server listening on ${host}:${port} in ${process.env.NODE_ENV || 'development'} mode`);
-    })
-    .on('error', (err: any) => {
-      if (err.code === 'EADDRINUSE') {
-        log(`Port ${port} is already in use. Please use a different port.`);
-      } else {
-        log(`Server error: ${err.message}`);
-      }
-      process.exit(1);
-    });
+    const host =
+      process.env.NODE_ENV === "production" ? "0.0.0.0" : "127.0.0.1";
+
+    const serverInstance = server
+      .listen(port, host, () => {
+        log(
+          `🚀 Server listening on ${host}:${port} in ${
+            process.env.NODE_ENV || "development"
+          } mode`
+        );
+      })
+      .on("error", (err: any) => {
+        if (err.code === "EADDRINUSE") {
+          log(`Port ${port} is already in use. Please use a different port.`);
+        } else {
+          log(`Server error: ${err.message}`);
+        }
+        process.exit(1);
+      });
 
     // Graceful shutdown
     const shutdown = (signal: string) => {
       log(`Received ${signal}. Shutting down gracefully...`);
       serverInstance.close(() => {
-        log('Server closed');
+        log("Server closed");
         process.exit(0);
       });
     };
 
-    process.on('SIGTERM', () => shutdown('SIGTERM'));
-    process.on('SIGINT', () => shutdown('SIGINT'));
+    process.on("SIGTERM", () => shutdown("SIGTERM"));
+    process.on("SIGINT", () => shutdown("SIGINT"));
   } catch (error) {
-    log(`Failed to initialize server: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    log(
+      `Failed to initialize server: ${
+        error instanceof Error ? error.message : "Unknown error"
+      }`
+    );
     process.exit(1);
   }
 })();

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import titlePage from "@/components/assets/titlePage.jpg";
 
 interface HeroSectionProps {
   onOpenInvitation: () => void;
@@ -9,8 +10,7 @@ const HeroSection = ({ onOpenInvitation }: HeroSectionProps) => {
     <section
       className="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       style={{
-        backgroundImage:
-          "url('https://res.cloudinary.com/dbiboclqa/image/upload/v1754639890/1ST_PAGE_x6bpxd.jpg')",
+        backgroundImage: `url(${titlePage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
