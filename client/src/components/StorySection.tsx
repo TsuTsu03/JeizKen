@@ -6,9 +6,9 @@ import missingpiece5 from "@/components/assets/missingpiece/missingpiece5.jpg";
 
 const StorySection = () => {
   const storyImages = [
-    missingpiece1,
-    missingpiece2,
     missingpiece4,
+    missingpiece2,
+    missingpiece1,
     missingpiece5,
     missingpiece3
   ];
