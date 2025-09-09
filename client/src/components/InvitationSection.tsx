@@ -82,7 +82,7 @@ const InvitationSection = () => {
               style={{ fontFamily: '"Times New Roman", serif' }}
               data-testid="text-rsvp-date"
             >
-              September 7, 2025
+              September 17, 2025
             </p>
           </div>
         </div>

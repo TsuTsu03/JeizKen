@@ -98,7 +98,7 @@ const RSVPSection = () => {
             <div className="mt-8 p-4 bg-[#4e403b]/5 border border-[#4e403b]/20 rounded-lg">
               <p className="text-primary font-semibold">
                 RSVP Deadline:{" "}
-                <span className="text-[#4e403b]">September 7, 2025</span>
+                <span className="text-[#4e403b]">September 17, 2025</span>
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Please respond by this date to help us finalize our arrangements
